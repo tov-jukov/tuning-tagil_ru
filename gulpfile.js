@@ -37,7 +37,7 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/font-awesome-5/svg-with-js/js/fontawesome-all.min.js',
+		// 'app/libs/font-awesome-5/svg-with-js/js/fontawesome-all.min.js',
 		'app/libs/jQuery.mmenu/dist/jquery.mmenu.all.js',
 		'app/libs/jQuery.mhead/dist/jquery.mhead.js',
 		'app/js/common.js', // Always at the end
