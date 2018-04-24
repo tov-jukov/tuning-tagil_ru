@@ -10,9 +10,9 @@ $(function() {
 			navbars: [{
 				height: 2,
 				content: [
-					'<a href="#/" class="fa fa-phone"></a>',
-					'<img src="img/profile-2-w.png" />',
-					'<a href="#/" class="fa fa-envelope"></a>'
+					'<a href="#" class="fa fa-phone"></a>',
+					'<div class="logo"><img src="img/ms-logo.svg" /></div>',
+					'<a href="#" class="fa fa-envelope"></a>'
 				]
 			}, {
 				content: ["prev", "title"]
