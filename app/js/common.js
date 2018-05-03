@@ -5,7 +5,8 @@ $(function() {
 
 
 // $(".preloader").fadeOut();
-$(".preloader").console.log('dfdfdf');
+
+$(".preloader").fadeOut("slow");
 
 
 });
