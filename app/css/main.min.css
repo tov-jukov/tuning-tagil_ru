@@ -1,7 +1,5 @@
 @import url(../libs/jQuery.mmenu/dist/jquery.mmenu.all.css);
 @import url(../libs/jQuery.mhead/dist/jquery.mhead.css);
-@import url(../css/demo.css);
-@import url(../css/hamburgers.css);
 @import url(../libs/font-awesome-5/web-fonts-with-css/css/fontawesome-all.css);
 @font-face {
   font-family: "roboto-example";
@@ -2297,78 +2295,29 @@ b,
 strong {
   font-weight: bold; }
 
-.mm-menu {
-  height: -webkit-calc( 100% - 40px) !important;
-  height: calc( 100% - 40px) !important;
-  background: #4bb5ef; }
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/preloader.gif); }
 
-.mm-navbar_size-2 {
-  text-align: center;
-  position: relative;
-  border-bottom: none;
-  display: block !important; }
-  .mm-navbar_size-2:before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-    width: 1px; }
-  .mm-navbar_size-2 > * {
-    color: #fff !important;
-    display: inline-block;
-    vertical-align: middle; }
-  .mm-navbar_size-2 img {
-    opacity: 0.6;
-    border: 1px solid #fff;
-    -webkit-border-radius: 60px;
-            border-radius: 60px;
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    margin: 0 10px; }
-  .mm-navbar_size-2 a {
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    -webkit-border-radius: 40px;
-            border-radius: 40px;
-    color: rgba(255, 255, 255, 0.8) !important;
-    font-size: 16px !important;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    padding: 0; }
-    .mm-navbar_size-2 a:hover {
-      border-color: #fff;
-      color: #fff !important; }
-
-.mm-panels > .mm-panel:after {
-  content: none;
-  display: none; }
-
-.mm-panels > .mm-panel > .mm-listview {
-  margin: 0; }
-
-.mm-listview {
-  text-transform: uppercase; }
-
-.mm-listitem:last-child:after {
-  content: none;
-  display: none; }
-
-.mm-listitem a, .mm-listitem span {
-  color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-  padding-right: 20px !important; }
-
-.mm-listitem a:hover {
-  color: #fff; }
-  .mm-listitem a:hover + span {
+.top-line {
+  background-color: grey;
+  text-align: center; }
+  .top-line a {
     color: #fff; }
-
-.logo img {
-  width: 200px; }
-
-.mm-panel, .mm-panels, .mm-navbars_top {
-  background-color: #000; }
+  .top-line ul, .top-line li {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .top-line li {
+    display: inline-block; }
 
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
