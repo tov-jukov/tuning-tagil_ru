@@ -110,6 +110,8 @@ b, strong
 // .mm-panel, .mm-panels, .mm-navbars_top
 // 	background-color: #000
 
+body
+	background-color: $main-color
 
 .preloader
 	position: fixed
@@ -117,14 +119,14 @@ b, strong
 	left: 0
 	width: 100%
 	height: 100%
-	background-color: #fff
+	background-color: #000000
 	z-index: 999
 	background-repeat: no-repeat
 	background-position: center
 	background-image: url(../img/preloader.gif)
 
-.top-line
-	background-color: grey
+.top-menu
+	background-color: $main-color
 	text-align: center
 	a
 		color: #fff
@@ -132,7 +134,15 @@ b, strong
 		list-style: none
 		padding: 0
 		margin: 0
-	li
+	.sf-menu
+		margin: auto
+		display: inline-block
+		float: none
+		li
+			background-color: transparent
+			a
+				color: #fff
+	> li
 		display: inline-block
 
 
