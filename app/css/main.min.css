@@ -35,7 +35,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 @-ms-viewport {
   width: device-width; }
@@ -2311,6 +2311,18 @@ body {
   background-position: center;
   background-image: url(../img/preloader.gif); }
 
+.tmp-red {
+  background: red; }
+
+.tmp-green {
+  background: green; }
+
+.top-line {
+  min-height: 100px; }
+  .top-line .logo {
+    width: 100px;
+    height: 50px; }
+
 .top-menu {
   background-color: #000;
   text-align: center; }
@@ -2323,13 +2335,26 @@ body {
   .top-menu .sf-menu {
     margin: auto;
     display: inline-block;
-    float: none; }
+    float: none;
+    font-size: 17px; }
     .top-menu .sf-menu li {
       background-color: transparent; }
+      .top-menu .sf-menu li:hover {
+        background-color: rgba(254, 210, 191, 0);
+        background-image: -webkit-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: -webkit-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: -o-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: -ms-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%); }
       .top-menu .sf-menu li a {
-        color: #fff; }
-  .top-menu > li {
-    display: inline-block; }
+        color: #fff;
+        border-bottom: none;
+        border-top: none;
+        border-left-color: #333333;
+        padding: 0 20px 0;
+        text-transform: uppercase; }
+        .top-menu .sf-menu li a:hover {
+          text-decoration: none; }
 
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
