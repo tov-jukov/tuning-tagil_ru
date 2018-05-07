@@ -2356,5 +2356,14 @@ body {
         .top-menu .sf-menu li a:hover {
           text-decoration: none; }
 
+.wrap-video-bg {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
