@@ -132,7 +132,7 @@ body
 	background: green
 
 .top-line
-	min-height: 100px
+	min-height: 80px
 	.logo
 		width: 100px
 		height: 50px
@@ -178,15 +178,58 @@ body
 		// display: inline-block
 
 
-.wrap-video-bg
-	min-width: 100%
-	min-height: 100%
-	width: auto
-	height: auto
-	position: absolute
-	top: 50%
-	left: 50%
+.social
+	li
+		display: inline-block
+		text-decoration-style: none
+		a
+			color: #fff
+		i
+			font-size: 24px
+			padding: 10px
 
+
+.video-bg
+	// min-height: 700px
+	// height: 500px;
+	position: relative
+	overflow-y: hidden
+	color: black
+	background: url('../assets/video.png') no-repeat
+	background-size: cover
+	background-position: center center
+	top: 0
+	bottom: 0
+	// height: 100vh
+	// background-image: url(../img/pattern.png)
+    // background-repeat: repeat
+    // // height: 100%
+    // // width: 100%
+
+.wrap-video-bg
+	// min-width: 100%
+	// min-height: 100%
+	// width: auto
+	// height: auto
+	// position: relative
+	// top: 50%
+	// left: 50%
+	// z-index: -1
+
+.overlay
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.65)
+	background-image: url(../img/pattern.png)
+	background-repeat: repeat
+	z-index: 3
+
+.two
+	min-height: 500px
+	background-color: blue
 
 
 
