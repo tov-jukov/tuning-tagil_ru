@@ -35,7 +35,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @-ms-viewport {
   width: device-width; }
@@ -2213,36 +2213,6 @@ html {
         -ms-flex-item-align: stretch !important;
             align-self: stretch !important; } }
 
-.w-25 {
-  width: 25% !important; }
-
-.w-50 {
-  width: 50% !important; }
-
-.w-75 {
-  width: 75% !important; }
-
-.w-100 {
-  width: 100% !important; }
-
-.h-25 {
-  height: 25% !important; }
-
-.h-50 {
-  height: 50% !important; }
-
-.h-75 {
-  height: 75% !important; }
-
-.h-100 {
-  height: 100% !important; }
-
-.mw-100 {
-  max-width: 100% !important; }
-
-.mh-100 {
-  max-height: 100% !important; }
-
 ::-webkit-input-placeholder {
   color: #666; }
 
@@ -2366,13 +2336,19 @@ body {
     font-size: 24px;
     padding: 10px; }
 
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 720px;
+  padding-bottom: 0;
+  padding-top: 0; }
+
 .two {
   height: 500px;
   background-color: blue; }
 
-.tree {
-  height: 600px;
-  background-color: red; }
+.three {
+  height: 600px; }
 
 .video-bg {
   position: relative;
