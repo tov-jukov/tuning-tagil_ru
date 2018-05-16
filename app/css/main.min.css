@@ -2621,7 +2621,7 @@ section {
 .two {
   height: auto;
   background-color: #fff;
-  padding: 30px 0 0 0; }
+  padding: 30px 0; }
 
 .three {
   height: 600px; }
@@ -2687,7 +2687,8 @@ section {
   .card .card-text {
     color: #000;
     font-size: 20px;
-    line-height: 10px;
+    text-transform: uppercase;
+    line-height: .5rem;
     min-height: 100px; }
   .card-top-head {
     height: 80px;
