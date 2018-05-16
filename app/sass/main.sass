@@ -218,8 +218,10 @@ section
 	background-color: #000
 
 .two
-	height: 500px
-	background-color: blue
+	height: auto
+	background-color: #fff
+	// padding-top: 50px
+	padding: $gutter 0 0 0
 
 .three
 	height: 600px
@@ -294,5 +296,96 @@ section
 		border-radius: 90px
 		display: inline-block
 		margin-top: 20px
+
+// $var1: #eeeeee
+
+// body 
+// 	background: @var1
+.card
+	margin-bottom: $gutter
+	border: none
+	.card-text
+		color: #000
+		font-size: 20px
+		line-height: 10px
+		min-height: 100px
+	&-top-head
+		// background-color: #f00
+		height: 80px
+		width: 100%
+		display: table
+		.card-block
+			display: table-cell
+			vertical-align: middle
+
+.card-hover
+	opacity: 0
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	color: white
+	background-color: rgba(170, 7, 76, .9)
+	overflow: hidden
+	border-radius: 10px
+	&.fade-in
+		transition: opacity 150ms
+	
+	&.zoom-in
+		transform: scale(0)
+		transition: opacity 300ms, transform 0s 300ms
+	
+	&.slide-down
+		height: 0
+		transition: opacity 300ms, height 0s 300ms
+	
+	&-content 
+		padding: 1.5rem
+
+.has-card-hover:hover .card-hover.fade-in
+	opacity: 1
+
+.has-card-hover:hover .card-hover.zoom-in
+	opacity: 1
+	transition: transform 500ms
+	transform: scale(1)
+
+.has-card-hover:hover .card-hover.slide-down
+	opacity: 1
+	height: 100%
+	transition: height 300ms
+
+.has-card-hover 
+	position: relative
+	cursor: pointer
+
+.card-img-with-frame
+	padding: 1rem
+	background: white
+	&.card-img-top 
+		padding-bottom: 10px
+	
+	&.card-img-bottom 
+		padding-top: 0
+	
+
+.card-with-transparent-card-block
+	background: transparent
+	border-color: transparent
+	.card-img-top, .card-img-bottom 
+		border: 1px solid rgba(0, 0, 0, .125)
+	
+	.card-img-with-frame.card-img-top 
+		padding-bottom: 1rem
+	
+	.card-img-with-frame.card-img-bottom 
+		padding-top: 1rem
+	
+
+
+
+
+
 
 @import "media" // Always at the end
