@@ -201,32 +201,106 @@ body
 
 
 section
-	padding-top: 50px
-	padding-bottom: 50px
+	padding: $gutter 0
 
-
- .one
+.one
 	height: 720px
-	padding-bottom: 0
-	padding-top: 0
+	padding: 0 0
 // // 	// height: 
-// // 	// position: relative
+	position: relative
 // // 	height: 720px
 // // 	// height: 500px 
 // // 	margin: 0
 // // 	padding: 0
 	background-color: #000
 
+.video-bg
+	position: relative
+	// min-height: 900px
+	// height: 100%
+	h1
+		font-size: 52px
+.video-bg-mask
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 9
+	width: 100%
+	height: 100%
+	background: rgba(0, 0, 0, 0.2)
+	background-image: url(../img/pattern4x4.png)
+	background-repeat: repeat
+	
+
+// .video-wrap
+// 	position: absolute
+// 	width: 100%
+// 	height: 100%
+// 	overflow: hidden
+video
+	// min-height: 700px
+	// min-width: 100%
+	// width: auto
+	// background-position: center center
+	background-repeat: no-repeat
+	// overflow: hidden
+	background-size: contain
+
+// .video-bg .post_title
+// 	display: block
+// 	width: 80%
+// 	height: auto
+// 	background: transparent
+// 	vertical-align: bottom
+// 	margin: auto
+// 	bottom: 0
+// 	position: absolute
+// 	top: 13%
+// 	left: 10%
+// 	z-index: 10
+// 	padding-top: 15px
+// 	padding-bottom: 15px
+// 	text-align: center
+// 	color: #fff
+
+// .contact
+// 	font-size: 18px
+// 	color: #fff
+// 	border: 1px solid #fff
+// 	padding: 10px 20px
+// 	border-radius: 90px
+// 	display: inline-block
+// 	margin-top: 20px
+
 .two
 	height: auto
 	background-color: #fff
 	// padding-top: 50px
 	padding: $gutter 0
+	h2
+		text-transform: uppercase
+		font-size: 24px
+		color: #000
+		margin-bottom: $gutter
 
 .three
 	height: 600px
-	
-	// background-color: red
+	background-color: red
+	padding: $gutter 0
+	h2
+		text-transform: uppercase
+		font-size: 24px
+		color: #fff
+		margin-bottom: $gutter
+	.map
+		height: 500px
+		background-color: green
+
+footer
+	height: 400px
+	background-color: blue
+
+
 
 // .v-bg
 // 	pointer-events: none
@@ -243,59 +317,7 @@ section
 	// background-repeat: repeat
 	// z-index: 3
 
-.video-bg
-	position: relative
-	min-height: 700px
-	h1
-		font-size: 52px
 
-.video-bg-mask
-	position: absolute
-	top: 0
-	left: 0
-	z-index: 9
-	width: 100%
-	height: 100%
-	background: rgba(0, 0, 0, 0.2)
-	background-image: url(../img/pattern4x4.png)
-	background-repeat: repeat
-
-.video-wrap
-	position: relative
-	width: 100%
-	height: 100%
-	overflow: hidden
-	video
-		min-height: 700px
-		min-width: 100%
-		width: 100%
-		background-position: center center
-		background-repeat: no-repeat
-
-.video-bg .post_title
-	display: block
-	width: 80%
-	height: auto
-	background: transparent
-	vertical-align: bottom
-	margin: auto
-	bottom: 0
-	position: absolute
-	top: 13%
-	left: 10%
-	z-index: 10
-	padding-top: 15px
-	padding-bottom: 15px
-	text-align: center
-	color: #fff
-	.contact
-		font-size: 18px
-		color: #fff
-		border: 1px solid #fff
-		padding: 10px 20px
-		border-radius: 90px
-		display: inline-block
-		margin-top: 20px
 
 // $var1: #eeeeee
 
