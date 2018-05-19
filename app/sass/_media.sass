@@ -14,7 +14,24 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
-
+	.one
+		background-color: 0
+		.video-bg
+			background-color: 0
+			// background: rgba(0, 0, 0, 0.2)
+			// background-image: url(../assets/video.png)
+			// background-repeat: no-repeat ---0 top no-repeat #0e438b
+			background: url(../assets/video.png) 0 no-repeat #525d62
+    		-webkit-background-size: cover
+    		background-size: cover
+			opacity: 50%
+		.video-wrap
+			// z-index: 999
+			// background-color: red
+			video
+				display: none
+		.video-bg-mask
+			display: none
 
 /*==========  Mobile First  ==========*/
 

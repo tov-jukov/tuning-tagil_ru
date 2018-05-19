@@ -132,13 +132,35 @@ body
 	background: green
 
 .top-line
-	min-height: 80px
+	padding: $gutter 0 $gutter
 	.logo
-		width: 100px
-		height: 50px
-	
+		img
+			height: 80px
+			width: auto
+
+	i
+		font-size: 21px
+
+	.phone
+		font-size: 21px
+		margin-top: 32px
+		
+		// text-align: center
+
+.social
+	margin-top: 32px
+	font-size: 21px
+	li
+		display: inline-block
+		text-decoration-style: none
+		a
+			color: #fff
+		i
+			font-size: 21px
+			padding: 0 10px 0
 
 .top-menu
+	margin-top: 10px 
 	background-color: $main-color
 	text-align: center
 	a
@@ -172,31 +194,11 @@ body
 				border-left-color: darken($text,80%)
 				padding: 0 20px 0
 				text-transform: uppercase
+				border-top-width: 0
 				&:hover
 					text-decoration: none
 	// > li
 		// display: inline-block
-
-
-.social
-	li
-		display: inline-block
-		text-decoration-style: none
-		a
-			color: #fff
-		i
-			font-size: 24px
-			padding: 10px
-
-// .wrap-video-bg
-	// min-width: 100%
-	// min-height: 100%
-	// width: auto
-	// height: auto
-	// position: relative
-	// top: 50%
-	// left: 50%
-	// z-index: -1
 
 
 
@@ -206,45 +208,97 @@ section
 .one
 	height: 720px
 	padding: 0 0
+
+	.video-bg
+		height: 100%
+		overflow: hidden
+		position: relative
+
+		video
+			top: 50%
+			width: 100%
+			transform: translate(-50%, -50%)
+			opacity: 0.5
+			left: 50%
+			z-index: 0
+			position: absolute
+		
+		.video-bg-mask
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 9
+			width: 100%
+			height: 100%
+			background: rgba(0, 0, 0, 0.2)
+			background-image: url(../img/pattern4x4.png)
+			background-repeat: repeat
+
+
+	// .video-bg
+	// 	height: 720px
+	// 	// margin: 0 auto
+	// 	// display: block
+	// 	margin-left: auto
+	// 	margin-right: auto
+
+	// .video-wrap
+	// 	position: relative
+	// 	// top: -50%
+	// 	// left: -50%
+	// 	// width: auto
+	// 	// height: 100%
+
+	// video
+	// 	position: absolute
+	// 	top: 0
+	// 	bottom: 0
+	// 	right: 0
+	// 	left: 0
+	// 	margin: auto
+	// 	// min-height: 100%
+	// 	min-width: 100%		
 // // 	// height: 
-	position: relative
+	// position: relative
 // // 	height: 720px
 // // 	// height: 500px 
 // // 	margin: 0
 // // 	padding: 0
-	background-color: #000
+	// background-color: #000
 
-.video-bg
-	position: relative
-	// min-height: 900px
-	// height: 100%
-	h1
-		font-size: 52px
-.video-bg-mask
-	position: absolute
-	top: 0
-	left: 0
-	z-index: 9
-	width: 100%
-	height: 100%
-	background: rgba(0, 0, 0, 0.2)
-	background-image: url(../img/pattern4x4.png)
-	background-repeat: repeat
-	
+// .video-bg
+// 	// position: relative
+// 		// min-height: 900px
+// 		// height: 100%
+// 	h1
+// 		font-size: 52px
+// .video-bg-mask
+// 	position: absolute
+// 	top: 0
+// 	left: 0
+// 	z-index: 9
+// 	width: 100%
+// 	height: auto
+// 	background: rgba(0, 0, 0, 0.2)
+// 	background-image: url(../img/pattern4x4.png)
+// 	background-repeat: repeat
+
 
 // .video-wrap
 // 	position: absolute
 // 	width: 100%
 // 	height: 100%
 // 	overflow: hidden
-video
-	// min-height: 700px
-	// min-width: 100%
-	// width: auto
-	// background-position: center center
-	background-repeat: no-repeat
-	// overflow: hidden
-	background-size: contain
+	// video
+	// 	position: absolute
+	// 	// min-height: 700px
+	// 	// min-width: 100%
+	// 	// width: auto
+	// 	// background-position: center center
+	// 	// background-repeat: no-repeat
+	// 	overflow: hidden
+	// 	background-size: contain
+	// 	// opacity: .5
 
 // .video-bg .post_title
 // 	display: block
@@ -285,7 +339,7 @@ video
 
 .three
 	height: 600px
-	background-color: red
+	background-color: #f00
 	padding: $gutter 0
 	h2
 		text-transform: uppercase
