@@ -2775,6 +2775,7 @@ footer {
 /*==========  Desktop First  ==========*/
 @media (max-width: 575.98px) {
   .one {
+    height: 400px;
     background-color: 0; }
     .one .video-bg {
       background-color: 0;
@@ -2783,8 +2784,6 @@ footer {
         background-background-size: cover;
       opacity: 50%; }
     .one .video-wrap video {
-      display: none; }
-    .one .video-bg-mask {
       display: none; } }
 
 /*==========  Mobile First  ==========*/
