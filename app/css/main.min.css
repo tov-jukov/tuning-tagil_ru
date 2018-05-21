@@ -2775,7 +2775,7 @@ footer {
 /*==========  Desktop First  ==========*/
 @media (max-width: 575.98px) {
   .one {
-    height: 420px;
+    height: 400px;
     background-color: 0; }
     .one .video-bg {
       background-color: 0;
