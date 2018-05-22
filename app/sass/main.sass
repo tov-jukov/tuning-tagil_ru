@@ -206,13 +206,23 @@ section
 	padding: $gutter 0
 
 .one
-	height: 720px
-	padding: 0 0
+	// height: 720px
+	// padding: 0 0
 	display: block
 
 	.video-bg
 		display: block
-		position: relative
+		height: 720px
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-flex-wrap: nowrap
+		-ms-flex-wrap: nowrap
+		flex-wrap: nowrap
+		background-color: rgba(0, 0, 0, .42)
+		
 
 	.video-bg-mask
 		position: absolute
@@ -226,20 +236,35 @@ section
 		background-repeat: repeat
 
 	.vidio-wrap
-		position: absolute
-		top: 50%
-		left: 50%
-		min-width: 100%
-		min-height: 100%
-		width: auto
-		height: auto
-		z-index: -100
-		-ms-transform: translateX(-50%) translateY(-50%)
-		-moz-transform: translateX(-50%) translateY(-50%)
-		-webkit-transform: translateX(-50%) translateY(-50%)
-		transform: translateX(-50%) translateY(-50%)
-		// background: url(../images/clouds.jpg) no-repeat
-		background-size: cover
+		video
+			background-size: cover
+			background-position: 50% 50%
+			position: absolute
+			right: -100%
+			bottom: -100%
+			top: -100%
+			left: -100%
+			margin: auto
+			min-width: 100%
+			min-height: 100%
+			z-index: -100
+
+
+		// overflow: hidden
+		// position: absolute
+		// top: 50%
+		// left: 50%
+		// min-width: 100%
+		// min-height: 100%
+		// width: auto
+		// height: auto
+		// z-index: -100
+		// -ms-transform: translateX(-50%) translateY(-50%)
+		// -moz-transform: translateX(-50%) translateY(-50%)
+		// -webkit-transform: translateX(-50%) translateY(-50%)
+		// transform: translateX(-50%) translateY(-50%)
+		// // background: url(../images/clouds.jpg) no-repeat
+		// background-size: cover
 
 	p
 		-vendor-animation-duration: 30s
