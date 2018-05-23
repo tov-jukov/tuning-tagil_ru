@@ -2662,8 +2662,8 @@ section {
     margin-bottom: 30px; }
 
 .three {
-  height: 600px;
-  background-color: #f00;
+  height: auto;
+  background-color: #fff;
   padding: 30px 0; }
   .three h2 {
     text-transform: uppercase;
