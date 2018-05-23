@@ -39,7 +39,7 @@ gulp.task('js', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/jQuery.mmenu/dist/jquery.mmenu.all.js',
 		'app/libs/jQuery.mhead/dist/jquery.mhead.js',
-		'app/libs/jquery-background-video/jquery.background-video.js',
+		// 'app/libs/jquery-background-video/jquery.background-video.js',
 		//'app/libs/font-awesome-5/svg-with-js/js/fontawesome-all.min.js',
 		'app/js/common.js', // Always at the end
 		])
