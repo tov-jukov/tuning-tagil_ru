@@ -206,42 +206,44 @@ section
 	padding: $gutter 0
 
 .one
-
 	height: 720px
-	background-color: red
+	// background-color: red
 	padding: 0 0
 	// display: block
 
-	// .video-bg
-	// 	display: block
-	// 	position: relative
-
-	// .video-bg-mask
-	// 	position: absolute
-	// 	top: 0
-	// 	left: 0
-	// 	z-index: 9
-	// 	width: 100%
-	// 	height: 100%
-	// 	background: rgba(0, 0, 0, 0.2)
-	// 	background-image: url(../img/pattern4x4.png)
-	// 	background-repeat: repeat
-
-	// .vidio-wrap
-	// 	position: absolute
-	// 	top: 50%
-	// 	left: 50%
-	// 	min-width: 100%
-	// 	min-height: 100%
-	// 	width: auto
-	// 	height: auto
-	// 	z-index: -100
-	// 	-ms-transform: translateX(-50%) translateY(-50%)
-	// 	-moz-transform: translateX(-50%) translateY(-50%)
-	// 	-webkit-transform: translateX(-50%) translateY(-50%)
-	// 	transform: translateX(-50%) translateY(-50%)
-	// 	// background: url(../images/clouds.jpg) no-repeat
-	// 	background-size: cover
+	.w-background-video
+		position: relative
+		overflow: hidden
+		height: 720px
+		color: white
+		> video
+			background-size: cover
+			background-position: 50% 50%
+			position: absolute
+			right: -100%
+			bottom: -100%
+			top: -100%
+			left: -100%
+			margin: auto
+			min-width: 100%
+			min-height: 100%
+			z-index: -1
+	
+	.background-video
+		display: block
+		height: 720px
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-flex-wrap: nowrap
+		-ms-flex-wrap: nowrap
+		flex-wrap: nowrap
+		background-color: rgba(74, 61, 45, 0.42)
+		// background: rgba(0, 0, 0, 0.2)
+		background-image: url(../img/pattern4x4.png)
+		background-repeat: repeat
 
 	p
 		-vendor-animation-duration: 30s
@@ -256,13 +258,26 @@ section
 		z-index: 200
 		top: 80%
 		left: 50%
-		font-size: 42px
+		font-size: 54px
 		display: block
 		animation-delay: 2s
 		&,.animated
 			animation-duration: 2s
 		a
 			color: #fff
+	
+	.vbg-text
+		// background-color: red
+		position: absolute
+		display: block
+		top: 30%
+		left: 50%
+		margin-left: -25%
+		// width: 50%
+		font-size: 54px
+		font-weight: bolder
+		text-transform: uppercase
+		z-index: 200
 	
 	// .video-bg
 	// 	height: 100%
@@ -382,15 +397,79 @@ section
 .three
 	height: auto
 	background-color: #fff
-	padding: $gutter 0
+	padding: $gutter 0 0
+	position: relative
+	// background-color: red
 	h2
 		text-transform: uppercase
 		font-size: 24px
-		color: #fff
+		color: #000
 		margin-bottom: $gutter
-	.map
-		height: 500px
-		background-color: green
+
+	.yamap-wrap
+		// height: 400px
+		height: 450px
+		padding: 0
+		margin: 0
+		// background-color: green
+		
+
+	.as
+		position: absolute
+		bottom: 0
+		height: 140px
+		// background-color: red
+		background: rgba(0, 0, 0, 0.3)
+		padding-top: 35px
+		width: 100%
+		ul
+			li
+				list-style: none
+				margin-bottom: 10px
+				font-size: 18px
+				text-transform: uppercase
+				font-weight: bold
+				i
+					margin-right: 15px
+
+
+
+		// z-index: 1000
+		strong
+			// &:nth-of-type(2)
+			// background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAADsElEQVRYR82Yy2sTQRzH55fZxO6KgkI9qCiolCp4KCIi6EGEehF8RsHHfyC2iFYqJo1NK9oKKtKT4ElBjQ9UPHlV8YHag6AFxWcRBaVqm41NZsfvxDRu0pjuC9OBIbuT3+Oz8/zNj1iFImUiIkyxkTGJSishMhs1UknWQ9uwZOwjMfmMsdB1roduECVGy+1QeUMuHd8EoB60L/Lg1IvKK/g7qBld1+zKRTApozxnNh5FQ5sX63510Is9mv7yEFFKKFtFsGw63oPuPeDXgR99BRc2kgeLYBi+KLrzsh+jwenKKIb1ChUm+msYnhuccV+WBrnOF1DOjO9kUp73ZSpoZWK7KZeOpWB3a9C2fdq7qsDewsh8D4YwV/8uHg/61VTeKbAMJKa4MPzBkmxLmPgnwcQ96M1zoetUdFSBqS93Wj5zslaQ3v1OKYyOxJpCxO7i0XBqwKmcOzCiXZreecFuHB+2A+8lbU6dV5NzA/aT60P1RGd+lRvMpmMnsVO3BgE0ZsMxGE6Ffm50NVVyLjMdDcKyBmoCBqf3NCO5qtw5NujpIi1SWJ/NtQJ7A7AFdudypGN2jll3iNiSIKGULcdDqYQ5s+aS0T04BiHSh1sko1NBQ7kGwzzbh3l2cgxEmol5Qop+vM8IGs5Vj8H5e6zMBvvKzA7H11FI3s53aIDFLRjmuGxFr522M4h0rA279PEAudzNsYLjb1yEFtO0I1+KQ4qJJszYRbxvCwrOdY8VHN/ienIDVmPxOMO2YVgZ8UBKttQGp8LkN6iu7w9ewVRYcYAbyRMl20fm8EJh0SO0zUT9AurNmp68nzNjpyC/101vegaDE4EAc7M2teum3SEO9uXoya0a8T7SE+/Vf+qiI8zGO3hc4xTOD5jyMWIxtjZiJB9O5FD+bK8XXHsMOUexn18wxfPVkrw5MjXxdCK4QpikhlqbSDYIMBXHfpfMWh/Wu1Vs9s9SGFI1vOpmX7UEA/bHRQaLtC2ka3248mOES4tatcLMncNXbJ8ISv2vwH7gd5oTYScyRPI5k3RWSOt+OCteszptlhC0Gr2qLrJOt41RQpA3gKXc4MTpf5TJX0Ym6fVtsl54J2eKYGhhPtuD4VSH76X/OIequKJtmtGZsqWhYr142V9LOAQpvWGjM5+fK0nc4TxTYfKe2sBRH9dftIxL3I3BIFe2BcfuMRd7jt/vUKnOdpUTsxsal4NVf+YXRMaK4gH5WLYMdQ5q2C9BQT+LX3WhecKIrvO6UKpScvg3A6mDJPlK4cQAAAAASUVORK5CYII=)
+			// background-repeat: no-repeat
+			// background-position: left 50%
+			// padding: 12px 0 12px 47px
+			// color: white
+			// font-size: 1.25em
+			// font-weight: 700
+			// text-transform: uppercase
+			// margin-right: 35px
+			// &:nth-of-type(1)
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAADvklEQVRYR81YTWgTQRSet7Np3U17EMH/H/xBW9FD0YtQRDx5ESqaehBFPSiKWgS1VJM0JEGlXjz4gwUPgh60alH04E0RvKn1ZIs/KFTFm9Y225rsjt/EJm5+rJvdTe3CQLLz3ve+fTPvzZtHrMwjRKzGNMwWxgQGrYPIXIyacrIu3g0LxgaJiZeMKb1cU+4RxX4W41Dxi0wqugWEuvB+mQujblTewl67qifv2pXzxIQI8YzRcBovTrhB96oDL3apWv9Joh5TYuWJpVPRLrj3uFcDXvQluYCeaM8Tw/KF4M5bXkD90xUhLOttGt/o7wA83z9wT0ifuMaXUMaI7mBCXPcE5bcysZ2USUV6gLvNb2yPeHcksQ8AWeQRyG/1j5LYKFBr3SAjivuEoIucK49ZLeEDPxMbm7PYMq2NTGEHhWCr3eBC56ckhiit+LGIRFSZpp5B1rbKaWfzYqqxE3Jhe1pyaskVMSS/o1xPnHdixDQiYXgu4UTWLlMxMSzfC0VLriX8cGIM6UixRjOvsOSrnMjnZComxoh2q1r8mt2ImYocwXoeVBgbReq5woPJy/b5jBHZi8+4WlVinPEFpMcGc0bKnhpCbFaDyQc5GWGEF5uC3leXmNav5g5aaQjeuAJv7CsyekHVE4fzxMS+gGnMKiltJiJa8VJy7WsNUXc6B2qmwm2CUUEgkGD7eTDRnSc2HJttKuaXqnrMsnhTTV2s7483skWl3HPbMRAQ4gbXBvbYvZo2TjWTUJ5WlRiiMcK1RLLYiBjqmMHqa8eQ14aL59Ij0dPIZx1VJQaXvFG1xIoK0oUKj8rqZWFViUlwYdGmQF38kRNDOFlaIXfTiaynBDuu/ARRt+FfxpDxyTIiz+Hlpn/JFs9XHJX5TU9sfUBLTLihMyPRzYzE/UpJSXnXxKD6jGvx5r/tNRxFaiZlvsL8ykkmlv2uVlWPy0Kz5DFHwgcE0SU3pDx6LGtyEPV5Y3GKED86Z5rc6sf89P9FTHrtIrx2yE4AkSijUEaj68fDHsvbFEwQDu34Q/kGZ+cu5P+C6sMNO0lsCIr1bpTzOsS+g10LWUoQUSjvp7onPFlap1ORAVSkyz0C+a2evYxM0evbVL3wTs0Wwbel2W6P24PW7431G+930ra1oSLn8OdYdYw5Q8WZfy6gx7P9uYLGnWk0yBK5IFk6g/RDCjd67XVbSeMuB41bz1ZUXGfxfzJbnR2yJ2b/vJIerJzMBsSoFcIP9GPZGox5GAE//AIMeZH5hPEcd9RePk3pKdcc/gV8UpwkI5L2fAAAAABJRU5ErkJggg==)
+			background-repeat: no-repeat
+			background-position: left 50%
+			padding: 12px 0 12px 47px
+			color: white
+			font-size: 1.25em
+			font-weight: 700
+			text-transform: uppercase
+		a
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAADAUlEQVRYR82YS2sUQRRGbYwKgoJCXGhQSCSg4EJEgqALEeJGiEYTwcc/EBPEGOIPkJgI6iIrwZWCZqKi4sqtER+oWbgRlBgfiIKCL9BIMp6v6RnKnnGmqrsm0wUfPV19694z9a4K5pVJ+Xx+Idm7I23huRIpz0f6gZN36Bm6gW4GQTAddxzEM4DaQ94QWuuDwsLHS2z6gbtu2hbBAJrPh1PohIWzWpioMk4COCPnJpg+9NUiooPPIcD6i2DUVhcvow4OamnaBdxYEHX0V0RqqmU0B9/vsW0W2EF+XHIoOBemhwWWI9K+uYjmEOOawF5TYI1DoYJp3hw8CcpXKjIlsF9YLHJw/BbbvegDGkerHcramk4LTP/cNn3EsI1RM6UCFN3I4x5abOvA1s4V7BBQl03nwB3g/Z882+CV7FzAvuOoEbDfcYfAnSWv1wdQwYcL2ARQarqSBFgrmS/qBTYO2NYytbWUPE057fUCmwSsOda/tB26i9b7hJIvl6aUfRNwWjLCRBP28DjnGyoJ2DHA1NELYJrDJtAy33CuNfYGgFZzZFJrO8m7g7Sf85ZcwRS4F7DzJgFw2lye9kaVoI8p9he0DrhPRpNqw3kFdfuCS1Jjin0bdQBXXM6oNS1LD9AGA07b5EnkfH5ICqbYfYCdiTVpC++P0HKkGu1E95FG7lGX2kwDptroBO5WDG4z79rfjfBNg0XTigaG5rvttnBpwBTjJ9oBwMNqAYFrxOYxstr7pQUTz2fUDtxTCzittWrqhmq2PsAU4yvaBZz2Zv9NUZOqebWUVUy+wBREO2HNZ+pbs/Go0ai9SP7+alD6LrBvPJfYGFvaPMfuAtJo1LFwBdqGdJC1nTbCrbX2UdpPZSmFh5HMHt8ye+DVvVfWrghawtsemlOL79WMdLJuRnXOvIYaBux4neGGgQrv5+IXd1psj9QJboS4PSUXdwUYmlXH/0GHOSft/9BV54DuxExHJXewUZ/TgNBlnu5jN6FVaEFagqj8H5460DxBuhzOlbsc/gvZDSyffp98ewAAAABJRU5ErkJggg==)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			width: 38px
+			height: 38px
+			display: inline-block
+			// float: right
+			// margin-left: 15px
+			margin-top: 10px
+
+
+
+
+
 
 footer
 	height: 400px
@@ -425,7 +504,7 @@ footer
 		min-height: 100px
 	&-top-head
 		// background-color: #f00
-		height: 80px
+		height: $gutter*2
 		width: 100%
 		display: table
 		.card-block
