@@ -5,18 +5,11 @@
 @import url(../libs/animate.css/animate.min.css);
 @import url(../css/m.css);
 @font-face {
-  font-family: "roboto-example";
+  font-family: "bebas-neue";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "roboto-example";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+  src: url("../fonts/BebasNeueRegular/BebasNeueRegular.eot");
+  src: url("../fonts/BebasNeueRegular/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular/BebasNeueRegular.ttf") format("truetype"); }
 
 /*!
  * Bootstrap Reboot v4.0.0 (https://getbootstrap.com)
@@ -3501,7 +3494,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: "roboto-example", sans-serif;
+  font-family: "bebas-neue", sans-serif;
   overflow-x: hidden;
   color: #fff; }
   body input, body textarea {
@@ -3670,7 +3663,8 @@ section, footer {
     top: 30%;
     left: 50%;
     margin-left: -25%;
-    font-size: 54px;
+    width: 50%;
+    font-size: 72px;
     font-weight: bolder;
     text-transform: uppercase;
     z-index: 200; }
