@@ -3541,7 +3541,7 @@ body {
   background: green; }
 
 .top-line {
-  padding: 30px 0 30px; }
+  padding: 30px 0 15px; }
   .top-line .logo img {
     height: 80px;
     width: auto; }
@@ -3550,6 +3550,8 @@ body {
   .top-line .phone {
     font-size: 21px;
     margin-top: 32px; }
+    .top-line .phone i {
+      margin: 0 10px 0; }
 
 .social {
   margin-top: 32px;
@@ -3562,7 +3564,7 @@ body {
       color: #fff; }
     .social li i {
       font-size: 21px;
-      padding: 0 10px 0; }
+      margin: 0 10px 0; }
 
 .top-menu {
   margin-top: 10px;
@@ -3578,7 +3580,7 @@ body {
     margin: auto;
     display: inline-block;
     float: none;
-    font-size: 17px; }
+    font-size: 22px; }
     .top-menu .sf-menu li {
       background-color: transparent; }
       .top-menu .sf-menu li:hover {
@@ -3660,14 +3662,17 @@ section, footer {
   .one .vbg-text {
     position: absolute;
     display: block;
-    top: 30%;
+    top: 20%;
     left: 50%;
     margin-left: -25%;
     width: 50%;
     font-size: 72px;
     font-weight: bolder;
+    line-height: 90px;
     text-transform: uppercase;
     z-index: 200; }
+    .one .vbg-text span {
+      color: red; }
 
 .two {
   height: auto;
@@ -3675,7 +3680,7 @@ section, footer {
   padding: 30px 0; }
   .two h2 {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 30px;
     color: #000;
     margin-bottom: 30px; }
 
@@ -3686,7 +3691,7 @@ section, footer {
   position: relative; }
   .three h2 {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 30px;
     color: #000;
     margin-bottom: 30px; }
   .three .yamap-wrap {
@@ -3731,7 +3736,7 @@ section, footer {
   border: none; }
   .card .card-text {
     color: #000;
-    font-size: 20px;
+    font-size: 26px;
     text-transform: uppercase;
     line-height: .5rem;
     min-height: 100px; }
@@ -3820,9 +3825,9 @@ section, footer {
     padding-top: 1rem; }
 
 .crd-img img {
-  -webkit-transition: all 0.5s linear 0s;
-  -o-transition: all 0.5s linear 0s;
-  transition: all 0.5s linear 0s;
+  -webkit-transition: all 0.4s linear 0s;
+  -o-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
   z-index: 220; }
 
 .crd-img:hover img {
@@ -3842,19 +3847,8 @@ footer {
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 575.98px) {
-  .one {
-    height: 400px;
-    background-color: 0; }
-    .one .video-bg {
-      background-color: 0;
-      background: url(../assets/video.png) 0 no-repeat #525d62;
-        background--webkit-background-size: cover;
-        background-background-size: cover;
-      opacity: 50%; }
-    .one .video-wrap video {
-      display: none; }
-    .one .background-video {
-      height: 400px; }
+  .one, .w-background-video, .background-video {
+    height: 400px; }
   .top-line .logo img {
     height: 68px;
     width: auto; }
@@ -3863,7 +3857,7 @@ footer {
     .card-top-head {
       height: 30px; }
   .three .yamap-wrap {
-    height: 450px;
+    height: 400px;
     padding: 0;
     margin: 0; }
   .three .as {

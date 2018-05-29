@@ -132,7 +132,7 @@ body
 	background: green
 
 .top-line
-	padding: $gutter 0 $gutter
+	padding: $gutter 0 $gutter/2
 	.logo
 		img
 			height: 80px
@@ -144,6 +144,9 @@ body
 	.phone
 		font-size: 21px
 		margin-top: 32px
+		i
+			margin: 0 10px 0
+
 		
 		// text-align: center
 
@@ -157,7 +160,7 @@ body
 			color: #fff
 		i
 			font-size: 21px
-			padding: 0 10px 0
+			margin: 0 10px 0
 
 .top-menu
 	margin-top: 10px 
@@ -173,7 +176,7 @@ body
 		margin: auto
 		display: inline-block
 		float: none
-		font-size: 17px
+		font-size: 22px
 		li
 			background-color: transparent
 			&:hover
@@ -210,6 +213,8 @@ section, footer
 	// background-color: red
 	padding: 0 0
 	// display: block
+
+
 
 	.w-background-video
 		position: relative
@@ -270,14 +275,17 @@ section, footer
 		// background-color: red
 		position: absolute
 		display: block
-		top: 30%
+		top: 20%
 		left: 50%
 		margin-left: -25%
 		width: 50%
 		font-size: 72px
 		font-weight: bolder
+		line-height: 90px
 		text-transform: uppercase
 		z-index: 200
+		span
+			color: red
 	
 .two
 	height: auto
@@ -286,7 +294,7 @@ section, footer
 	padding: $gutter 0
 	h2
 		text-transform: uppercase
-		font-size: 24px
+		font-size: 30px
 		color: #000
 		margin-bottom: $gutter
 
@@ -298,7 +306,7 @@ section, footer
 	// background-color: red
 	h2
 		text-transform: uppercase
-		font-size: 24px
+		font-size: 30px
 		color: #000
 		margin-bottom: $gutter
 
@@ -365,7 +373,7 @@ section, footer
 	border: none
 	.card-text
 		color: #000
-		font-size: 20px
+		font-size: 26px
 		text-transform: uppercase
 		line-height: .5rem
 		min-height: 100px
@@ -445,10 +453,10 @@ section, footer
 
 .crd-img
 	img
-		-webkit-transition: all 0.5s linear 0s
-		-moz-transition: all 0.5s linear 0s
-		-o-transition: all 0.5s linear 0s
-		transition: all 0.5s linear 0s
+		-webkit-transition: all 0.4s linear 0s
+		-moz-transition: all 0.4s linear 0s
+		-o-transition: all 0.4s linear 0s
+		transition: all 0.4s linear 0s
 		z-index: 220
 
 .crd-img:hover
