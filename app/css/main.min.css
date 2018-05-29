@@ -3482,11 +3482,11 @@ html {
   color: #666; }
 
 ::-moz-selection {
-  background-color: #f00;
+  background-color: #e31e24;
   color: #fff; }
 
 ::selection {
-  background-color: #f00;
+  background-color: #e31e24;
   color: #fff; }
 
 body {
@@ -3605,12 +3605,12 @@ section, footer {
   padding: 30px 0; }
 
 .one {
-  height: 720px;
+  height: 82vh;
   padding: 0 0; }
   .one .w-background-video {
     position: relative;
     overflow: hidden;
-    height: 720px;
+    height: 82vh;
     color: white; }
     .one .w-background-video > video {
       -webkit-background-size: cover;
@@ -3627,7 +3627,7 @@ section, footer {
       z-index: -1; }
   .one .background-video {
     display: block;
-    height: 720px;
+    height: 82vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -3648,9 +3648,9 @@ section, footer {
     position: absolute;
     color: #fff;
     z-index: 200;
-    top: 80%;
+    top: 85%;
     left: 50%;
-    font-size: 54px;
+    font-size: 52px;
     display: block;
     -webkit-animation-delay: 2s;
             animation-delay: 2s; }
@@ -3659,20 +3659,25 @@ section, footer {
               animation-duration: 2s; }
     .one .next a {
       color: #fff; }
+      .one .next a:focus {
+        outline: none; }
   .one .vbg-text {
     position: absolute;
     display: block;
     top: 20%;
-    left: 50%;
-    margin-left: -25%;
-    width: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
     font-size: 72px;
     font-weight: bolder;
     line-height: 90px;
     text-transform: uppercase;
-    z-index: 200; }
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px; }
     .one .vbg-text span {
-      color: red; }
+      color: #e31e24; }
 
 .two {
   height: auto;
@@ -3833,7 +3838,9 @@ section, footer {
 .crd-img:hover img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  -webkit-box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3); }
 
 footer {
   height: 280px; }
@@ -3844,6 +3851,17 @@ footer {
       text-transform: uppercase; }
   footer .social {
     margin-top: 0; }
+
+@media screen and (min-device-aspect-ratio: 16 / 9) and (max-height: 768px), screen and (min-device-aspect-ratio: 16 / 10) {
+  .one {
+    height: 74vh; }
+    .one .w-background-video {
+      height: 74vh; }
+    .one .background-video {
+      height: 74vh; }
+    .one .vbg-text {
+      font-size: 60px;
+      line-height: 60px; } }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 575.98px) {
