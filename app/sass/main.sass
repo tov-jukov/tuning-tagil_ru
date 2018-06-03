@@ -38,6 +38,12 @@ body
 b, strong
 	font-weight: bold
 
+a
+	color: #fff
+	text-decoration: none
+	&:link, &:visited, &:hover, &:active
+		text-decoration: none
+		color: #fff
 //
 
 // .mm-menu
@@ -131,9 +137,13 @@ body
 .tmp-green
 	background: green
 
+.tmp-blue
+	background: blue
+
 .top-line
-	padding: $gutter 0 $gutter/2
+	padding: $gutter/2 0 $gutter/2
 	.logo
+		text-align: center
 		img
 			height: 80px
 			width: auto
@@ -142,13 +152,17 @@ body
 		font-size: 21px
 
 	.phone
-		font-size: 21px
+		font-size: 22px
 		margin-top: 32px
+		ul
+			// text-align: left
+			// margin: 0
+			padding: 0
+			text-align: center
+			li
+				list-style-type: none
 		i
 			margin: 0 10px 0
-
-		
-		// text-align: center
 
 .social
 	margin-top: 32px
@@ -211,7 +225,7 @@ section, footer
 
 .one
 	// height: 720px
-	height: 82vh
+	height: 84vh
 	// background-color: red
 	padding: 0 0
 	// display: block
@@ -219,7 +233,7 @@ section, footer
 	.w-background-video
 		position: relative
 		overflow: hidden
-		height: 82vh
+		height: 84vh
 		color: white
 		> video
 			background-size: cover
@@ -237,7 +251,7 @@ section, footer
 	.background-video
 		display: block
 		// height: 720px
-		height: 82vh
+		height: 84vh
 		-webkit-box-orient: vertical
 		-webkit-box-direction: normal
 		-webkit-flex-direction: column
@@ -262,13 +276,11 @@ section, footer
 		color: #fff
 		// background-color: red
 		z-index: 200
-		top: 85%
+		top: 82%
 		left: 50%
 		font-size: 52px
 		display: block
 		animation-delay: 2s
-		
-			
 		&,.animated
 			animation-duration: 2s
 		a
@@ -301,9 +313,27 @@ section, footer
 	background-color: #fff
 	// padding-top: 50px
 	padding: $gutter 0
+	// position: relative
+	.wrap-line3d
+		color: #000
+		position: relative
+		// background-color: red
+		.line3d
+			position: relative
+			background-color: green
+			&:after
+				content: '444'
+				position: absolute
+				height: 24px
+				left: 0
+				z-index: 230
+				background: url(https://vpn99.net/images/command_bottom_bg.png) no-repeat top center
+				background-color: red
+
+
 	h2
 		text-transform: uppercase
-		font-size: 30px
+		font-size: 32px
 		color: #000
 		margin-bottom: $gutter
 
@@ -409,15 +439,22 @@ section, footer
 
 .three
 	height: auto
-	background-color: #fff
+	background-color: #f4f4f4
 	padding: $gutter 0 0
 	position: relative
+	box-shadow: 0 5px 10px rgba(39, 36, 39, .1)
 	// background-color: red
-	h2
-		text-transform: uppercase
-		font-size: 30px
-		color: #000
-		margin-bottom: $gutter
+
+
+	.three-head
+		position: relative
+		box-shadow: 0 5px 10px rgba(39, 36, 39, .2)
+		z-index: 220
+		h2
+			text-transform: uppercase
+			font-size: 30px
+			color: #000
+			margin-bottom: $gutter
 
 	.yamap-wrap
 		// height: 400px
@@ -478,14 +515,14 @@ section, footer
 			// margin-left: 15px
 			margin-top: 10px
 
-
-
 // footer
 
 footer
 	height: 250px
 	// background-color: blue
 	ul
+		margin: 0
+		padding: 15px 0 15px
 		li
 			list-style: none
 			a

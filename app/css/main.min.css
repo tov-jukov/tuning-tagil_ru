@@ -3654,6 +3654,13 @@ b,
 strong {
   font-weight: bold; }
 
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #fff; }
+
 body {
   background-color: #000; }
 
@@ -3675,16 +3682,26 @@ body {
 .tmp-green {
   background: green; }
 
+.tmp-blue {
+  background: blue; }
+
 .top-line {
-  padding: 30px 0 15px; }
-  .top-line .logo img {
-    height: 80px;
-    width: auto; }
+  padding: 15px 0 15px; }
+  .top-line .logo {
+    text-align: center; }
+    .top-line .logo img {
+      height: 80px;
+      width: auto; }
   .top-line i {
     font-size: 21px; }
   .top-line .phone {
-    font-size: 21px;
+    font-size: 22px;
     margin-top: 32px; }
+    .top-line .phone ul {
+      padding: 0;
+      text-align: center; }
+      .top-line .phone ul li {
+        list-style-type: none; }
     .top-line .phone i {
       margin: 0 10px 0; }
 
@@ -3741,12 +3758,12 @@ section, footer {
   padding: 30px 0; }
 
 .one {
-  height: 82vh;
+  height: 84vh;
   padding: 0 0; }
   .one .w-background-video {
     position: relative;
     overflow: hidden;
-    height: 82vh;
+    height: 84vh;
     color: white; }
     .one .w-background-video > video {
       -webkit-background-size: cover;
@@ -3763,7 +3780,7 @@ section, footer {
       z-index: -1; }
   .one .background-video {
     display: block;
-    height: 82vh;
+    height: 84vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -3784,7 +3801,7 @@ section, footer {
     position: absolute;
     color: #fff;
     z-index: 200;
-    top: 85%;
+    top: 82%;
     left: 50%;
     font-size: 52px;
     display: block;
@@ -3819,9 +3836,23 @@ section, footer {
   height: auto;
   background-color: #fff;
   padding: 30px 0; }
+  .two .wrap-line3d {
+    color: #000;
+    position: relative; }
+    .two .wrap-line3d .line3d {
+      position: relative;
+      background-color: green; }
+      .two .wrap-line3d .line3d:after {
+        content: '444';
+        position: absolute;
+        height: 24px;
+        left: 0;
+        z-index: 230;
+        background: url(https://vpn99.net/images/command_bottom_bg.png) no-repeat top center;
+        background-color: red; }
   .two h2 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 32px;
     color: #000;
     margin-bottom: 30px; }
   .two .card {
@@ -3923,14 +3954,21 @@ section, footer {
 
 .three {
   height: auto;
-  background-color: #fff;
+  background-color: #f4f4f4;
   padding: 30px 0 0;
-  position: relative; }
-  .three h2 {
-    text-transform: uppercase;
-    font-size: 30px;
-    color: #000;
-    margin-bottom: 30px; }
+  position: relative;
+  -webkit-box-shadow: 0 5px 10px rgba(39, 36, 39, 0.1);
+          box-shadow: 0 5px 10px rgba(39, 36, 39, 0.1); }
+  .three .three-head {
+    position: relative;
+    -webkit-box-shadow: 0 5px 10px rgba(39, 36, 39, 0.2);
+            box-shadow: 0 5px 10px rgba(39, 36, 39, 0.2);
+    z-index: 220; }
+    .three .three-head h2 {
+      text-transform: uppercase;
+      font-size: 30px;
+      color: #000;
+      margin-bottom: 30px; }
   .three .yamap-wrap {
     height: 450px;
     padding: 0;
@@ -3970,16 +4008,19 @@ section, footer {
 
 footer {
   height: 250px; }
-  footer ul li {
-    list-style: none; }
-    footer ul li a {
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 17px; }
-      footer ul li a:hover {
+  footer ul {
+    margin: 0;
+    padding: 15px 0 15px; }
+    footer ul li {
+      list-style: none; }
+      footer ul li a {
         color: #fff;
-        text-decoration: none; }
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 17px; }
+        footer ul li a:hover {
+          color: #fff;
+          text-decoration: none; }
   footer hr {
     border: 0;
     height: 1px;
@@ -4002,24 +4043,35 @@ footer {
     footer .footer-address p, footer .footer-phone p, footer .footer-mail p, footer .footer-time p {
       display: table-cell; }
 
-@media screen and (min-device-aspect-ratio: 16 / 9) and (max-height: 768px), screen and (min-device-aspect-ratio: 16 / 10) {
-  .one {
-    height: 74vh; }
-    .one .w-background-video {
-      height: 74vh; }
-    .one .background-video {
-      height: 74vh; }
-    .one .vbg-text {
-      font-size: 60px;
-      line-height: 60px; } }
-
 /*==========  Desktop First  ==========*/
+@media (max-width: 991.98px) {
+  .top-line .phone {
+    margin-top: 10px;
+    font-size: 32px; }
+    .top-line .phone ul {
+      text-align: center; } }
+
 @media (max-width: 575.98px) {
-  .one, .w-background-video, .background-video {
-    height: 400px; }
-  .top-line .logo img {
-    height: 68px;
-    width: auto; }
+  .top-line {
+    padding: 7.5px 0 7.5px; }
+    .top-line .logo img {
+      height: 68px;
+      width: auto; }
+    .top-line .phone {
+      margin-top: 10px;
+      font-size: 32px; }
+      .top-line .phone ul {
+        text-align: center; }
+  .one {
+    height: 300px; }
+    .one .w-background-video, .one .background-video {
+      height: 300px; }
+    .one .vbg-text {
+      font-size: 42px;
+      line-height: 45px; }
+    .one .next {
+      top: 75%;
+      left: 42%; }
   .card {
     margin-bottom: 15px; }
     .card-top-head {
@@ -4037,6 +4089,18 @@ footer {
       font-size: 12px; }
       .three .as ul li i {
         margin-right: 15px;
-        margin-left: -30px; } }
+        margin-left: -30px; }
+  footer .logo img {
+    width: 260px; } }
 
 /*==========  Mobile First  ==========*/
+@media screen and (device-aspect-ratio: 1336 / 768) {
+  .one {
+    height: 74vh; }
+    .one .w-background-video {
+      height: 74vh; }
+    .one .background-video {
+      height: 74vh; }
+    .one .vbg-text {
+      font-size: 60px;
+      line-height: 60px; } }

@@ -1,22 +1,6 @@
 @import "vars"
 
 
-@media screen and (min-device-aspect-ratio: 16/9) and (max-height: 768px), screen and (min-device-aspect-ratio: 16/10)
-	.one
-		height: 74vh
-		// background-color: red
-
-		.w-background-video
-			height: 74vh
-
-		.background-video
-			height: 74vh
-
-		.vbg-text
-			font-size: 60px
-			line-height: 60px
-			// color: blue
-
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
@@ -24,6 +8,14 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+	.top-line
+		.phone
+			// padding-top: 5px
+			margin-top: 10px
+			font-size: 32px
+			ul
+				text-align: center
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -33,15 +25,35 @@
 
 	// .one
 	// 	background-color: #000
-	.one, .w-background-video, .background-video
-		height: 400px
 
 
 	.top-line
+		padding: $gutter/4 0 $gutter/4
 		.logo
 			img
 				height: 68px
 				width: auto
+		.phone
+			// padding-top: 5px
+			margin-top: 10px
+			font-size: 32px
+			ul
+				text-align: center
+				// margin-left: 15px
+
+	.one
+		height: 300px
+	
+		.w-background-video, .background-video
+			height: 300px
+
+		.vbg-text
+			font-size: 42px
+			line-height: 45px
+
+		.next
+			top: 75%
+			left: 42%
 
 	.card
 		margin-bottom: $gutter/2
@@ -72,6 +84,11 @@
 					i
 						margin-right: 15px
 						margin-left: -30px
+	
+	footer
+		.logo
+			img
+				width: 260px
 
 /*==========  Mobile First  ==========*/
 
@@ -88,5 +105,21 @@
 +media-breakpoint-up(xl)
 
 
+// @media screen and (min-device-aspect-ratio: 16/9) and (max-height: 768px), screen and (min-device-aspect-ratio: 16/10) and (max-height: 768px)
+	
+@media screen and (device-aspect-ratio: 1336/768)
+	.one
+		height: 74vh
+		// background-color: red
 
+		.w-background-video
+			height: 74vh
+
+		.background-video
+			height: 74vh
+
+		.vbg-text
+			font-size: 60px
+			line-height: 60px
+			// color: blue
 
