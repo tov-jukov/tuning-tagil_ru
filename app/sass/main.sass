@@ -320,16 +320,28 @@ section, footer
 		// background-color: red
 		.line3d
 			position: relative
+			// width: 100%
+			// margin: 0 auto
+			// padding: 0
+			// text-align: center
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
 			background-color: green
+			z-index: 250
 			&:after
-				content: '444'
+				content: ''
 				position: absolute
-				height: 24px
+				// top: 35px
 				left: 0
-				z-index: 230
-				background: url(https://vpn99.net/images/command_bottom_bg.png) no-repeat top center
-				background-color: red
-
+				top: 30px
+				width: 100%
+				height: 17px
+				// background: url(/images/command_bg_left.png) no-repeat center;
+				background-size: contain
+				background: url(../img/bottom-bg.png) no-repeat top center
+				// background-color: red
+				z-index: 250
 
 	h2
 		text-transform: uppercase
@@ -348,7 +360,7 @@ section, footer
 			min-height: 100px
 		&-top-head
 			// background-color: #f00
-			height: $gutter*2
+			height: $gutter*2.6
 			width: 100%
 			display: table
 			.card-block

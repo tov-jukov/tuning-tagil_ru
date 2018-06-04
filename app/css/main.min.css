@@ -3841,15 +3841,21 @@ section, footer {
     position: relative; }
     .two .wrap-line3d .line3d {
       position: relative;
-      background-color: green; }
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background-color: green;
+      z-index: 250; }
       .two .wrap-line3d .line3d:after {
-        content: '444';
+        content: '';
         position: absolute;
-        height: 24px;
         left: 0;
-        z-index: 230;
-        background: url(https://vpn99.net/images/command_bottom_bg.png) no-repeat top center;
-        background-color: red; }
+        top: 30px;
+        width: 100%;
+        height: 17px;
+        -webkit-background-size: contain;
+                background-size: contain;
+        background: url(../img/bottom-bg.png) no-repeat top center;
+        z-index: 250; }
   .two h2 {
     text-transform: uppercase;
     font-size: 32px;
@@ -3865,7 +3871,7 @@ section, footer {
       line-height: .5rem;
       min-height: 100px; }
     .two .card-top-head {
-      height: 60px;
+      height: 78px;
       width: 100%;
       display: table; }
       .two .card-top-head .card-block {
