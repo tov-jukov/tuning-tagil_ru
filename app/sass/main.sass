@@ -218,6 +218,54 @@ body
 	// > li
 		// display: inline-block
 
+// button
+
+.button
+	display: inline-block
+	border: none
+	background-color: $red
+	color: #FFF
+	font-size: 32px
+	letter-spacing: 1px
+	text-transform: uppercase
+	padding: 8px 24px
+	border-radius: 5px
+	box-shadow: 0 2px 0 darken($red, 20)
+	transition: all .15s ease
+	&:hover, &:focus
+		color: #FFF
+		text-decoration: none
+	&:hover
+		background-color: lighten($red, 8)
+	&:active
+		background-color: darken($red, 8)
+		transform: translateY(2px)
+
+.button-black
+	display: inline-block
+	border: none
+	background-color: $btn
+	color: #FFF
+	font-size: 20px
+	letter-spacing: 1px
+	text-transform: uppercase
+	padding: 4px 12px
+	border-radius: 5px
+	box-shadow: 0 2px 0 lighten($btn, 50)
+	transition: all .15s ease
+	&:hover, &:focus
+		color: #FFF
+		text-decoration: none
+	&:hover
+		background-color: darken($btn, 50)
+	&:active
+		background-color: lighten($btn, 50)
+		transform: translateY(2px)
+
+
+//===
+
+
 
 
 section, footer
