@@ -32,3 +32,21 @@ $('a[href^="#"]').on('click', function(event) {
 
 
 });
+
+$(".toggle-mnu").click(function() {
+    $(this).toggleClass("on");
+    // $(".main-mnu").slideToggle();
+    return false;
+});
+
+$(document).ready(function() {
+    $('.menu-trigger').click(function() {
+      $('nav ul').slideToggle(500);
+    });//end slide toggle
+    
+    $(window).resize(function() {		
+          if (  $(window).width() > 500 ) {			
+              $('nav ul').removeAttr('style');
+           }
+      });//end resize
+});//end ready
