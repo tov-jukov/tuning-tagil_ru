@@ -1,6 +1,3 @@
-@import url(../libs/jQuery.mmenu/dist/jquery.mmenu.all.css);
-@import url(../libs/jQuery.mhead/dist/jquery.mhead.css);
-@import url(../libs/superfish/dist/css/superfish.css);
 @import url(../libs/font-awesome-5/web-fonts-with-css/css/fontawesome-all.css);
 @import url(../libs/animate.css/animate.min.css);
 @import url(../css/m.css);
@@ -3812,7 +3809,9 @@ body {
   text-align: center; }
   .smm nav {
     width: 100%;
-    background-color: #65A8A6; }
+    font-size: 24px; }
+  .smm ul {
+    padding: 0; }
   .smm ul li {
     display: inline-block; }
   .smm a {
@@ -4128,6 +4127,15 @@ footer {
     font-size: 32px; }
     .top-line .phone ul {
       text-align: center; } }
+
+@media (max-width: 767.98px) {
+  .menu-trigger {
+    display: block; }
+    .menu-trigger nav ul {
+      display: none; }
+      .menu-trigger nav ul li {
+        display: block;
+        border-top: 1px #79896D solid; } }
 
 @media (max-width: 575.98px) {
   .top-line {

@@ -1,8 +1,5 @@
 $(function() {
 
-
-
-
 // прелоадер
 $(".preloader").fadeOut("slow");
 
@@ -28,25 +25,30 @@ $('a[href^="#"]').on('click', function(event) {
 
 // ----]
 
-
-
-
-});
-
-$(".toggle-mnu").click(function() {
-    $(this).toggleClass("on");
-    // $(".main-mnu").slideToggle();
-    return false;
-});
-
-$(document).ready(function() {
-    $('.menu-trigger').click(function() {
-      $('nav ul').slideToggle(500);
-    });//end slide toggle
+    // $('.menu-trigger').click(function() {
+    //     $('.smenu').slideToggle(500);
+    // console.log("нажали")
+    // });//end slide toggle
     
-    $(window).resize(function() {		
-          if (  $(window).width() > 500 ) {			
-              $('nav ul').removeAttr('style');
-           }
-      });//end resize
-});//end ready
+    // $(window).resize(function() {		
+    //         if (  $(window).width() > 500 ) {			
+    //             $('nav ul').removeAttr('style');
+    //         }
+    // });//end resize
+
+    $(".menu-trigger").click(function(){
+        $("nav ul").slideToggle(500);
+    });
+
+
+});
+
+// $(".toggle-mnu").click(function() {
+//     $(this).toggleClass("on");
+//     // $(".main-mnu").slideToggle();
+//     return false;
+// });
+
+// $(document).ready(function() {
+
+// });//end ready
