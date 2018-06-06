@@ -3808,6 +3808,24 @@ body {
         -ms-transform: translateY(2px);
             transform: translateY(2px); }
 
+.smm {
+  text-align: center; }
+  .smm nav {
+    width: 100%;
+    background-color: #65A8A6; }
+  .smm ul li {
+    display: inline-block; }
+  .smm a {
+    color: #F8ECC2;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px; }
+    .smm a:hover {
+      background: #E65540; }
+  .smm .menu-trigger {
+    display: none;
+    color: #F8ECC2; }
+
 section, footer {
   padding: 30px 0; }
 
@@ -4122,6 +4140,13 @@ footer {
       font-size: 32px; }
       .top-line .phone ul {
         text-align: center; }
+  .smm .menu-trigger {
+    display: block; }
+  .smm nav ul {
+    display: none; }
+    .smm nav ul li {
+      display: block;
+      border-top: 1px #79896D solid; }
   .one {
     height: 300px; }
     .one .w-background-video, .one .background-video {
