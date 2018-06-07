@@ -1,11 +1,11 @@
 $(function() {
-
+console.log("ready?");
 // прелоадер
 $(".preloader").fadeOut("slow");
 
 // плавный переход по ссылкам [----
 
-$('a[href^="#"]').on('click', function(event) {
+$('a[href^="#"]:not(.menu-trigger)').on('click', function(event) {
     // отменяем стандартное действие
     event.preventDefault();
     
@@ -37,8 +37,15 @@ $('a[href^="#"]').on('click', function(event) {
     // });//end resize
 
     $(".menu-trigger").click(function(){
-        $("nav ul").slideToggle(500);
+        console.log("click");
+         $("nav ul").slideToggle(500);
     });
+
+    $(window).resize(function() {     
+        if (  $(window).width() > 500 ) {           
+            $('nav ul').removeAttr('style');
+         }
+    });//end resize
 
 
 });
