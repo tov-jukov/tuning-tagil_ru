@@ -141,7 +141,7 @@ body
 	background: blue
 
 .top-line
-	padding: $gutter/2 0 $gutter/2
+	padding: $gutter/2 0 0
 	.logo
 		text-align: center
 		img
@@ -209,10 +209,10 @@ body
 				color: #fff
 				border-bottom: none
 				border-top: none
+				border-top-width: 0
 				border-left-color: darken($text,80%)
 				padding: 0 20px 0
 				text-transform: uppercase
-				border-top-width: 0
 				&:hover
 					text-decoration: none
 	// > li
@@ -269,6 +269,8 @@ body
 .smm
 	// background-color: $red
 	text-align: center
+	padding: 0
+
 	nav
 		width: 100%
 		// background-color: #65A8A6
@@ -277,13 +279,32 @@ body
 		padding: 0
 	ul li
 		display: inline-block
+		border-top: 0px
+		border-right: 1px solid #ffffff
+		border-bottom: 0px 
+		border-left: 0px
+    	&:last-child
+      		border-right: 0
+		
 	a
-		color: #F8ECC2
+		color: #fff
 		display: block
 		text-decoration: none
-		padding: 20px 30px
+		padding: 4px 20px
+		// border-bottom: none
+		// border-top: none
+		// border-top-width: 0
+		// border-left-color: #fff
+
+
 		&:hover
-			background: #E65540
+			// background: #E65540
+			background-color: rgba(254, 210, 191, 0)
+			background-image: -webkit-radial-gradient(center center, 120px 25px, rgb(249, 73, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%)
+			background-image: radial-gradient(ellipse 120px 25px at center center, rgb(249, 73, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%)
+			background-image: -ms-radial-gradient(center center, 120px 25px, rgb(249, 73, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%)
+			
+
 
 	.menu-trigger
 		display: none
