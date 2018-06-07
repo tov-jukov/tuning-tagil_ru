@@ -3682,6 +3682,12 @@ body {
 .tmp-blue {
   background: blue; }
 
+h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 30px; }
+
 .top-line {
   padding: 15px 0 0; }
   .top-line .logo {
@@ -3751,7 +3757,7 @@ body {
         .top-menu .sf-menu li a:hover {
           text-decoration: none; }
 
-.button {
+.button-red {
   display: inline-block;
   border: none;
   background-color: #e31e24;
@@ -3759,7 +3765,7 @@ body {
   font-size: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 8px 24px;
+  padding: 0px 24px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   -webkit-box-shadow: 0 2px 0 #8a1115;
@@ -3767,12 +3773,12 @@ body {
   -webkit-transition: all .15s ease;
   -o-transition: all .15s ease;
   transition: all .15s ease; }
-  .button:hover, .button:focus {
+  .button-red:hover, .button-red:focus {
     color: #FFF;
     text-decoration: none; }
-  .button:hover {
+  .button-red:hover {
     background-color: #e84247; }
-  .button:active {
+  .button-red:active {
     background-color: #c0181d;
     -webkit-transform: translateY(2px);
         -ms-transform: translateY(2px);
@@ -3810,7 +3816,8 @@ body {
   padding: 0; }
   .smm nav {
     width: 100%;
-    font-size: 24px; }
+    font-size: 24px;
+    line-height: 22px; }
   .smm ul {
     padding: 0; }
   .smm ul li {
@@ -3939,11 +3946,6 @@ section, footer {
                 background-size: contain;
         background: url(../img/bottom-bg.png) no-repeat top center;
         z-index: 250; }
-  .two h2 {
-    text-transform: uppercase;
-    font-size: 32px;
-    color: #000;
-    margin-bottom: 30px; }
   .two .card {
     margin-bottom: 30px;
     border: none; }
@@ -4095,6 +4097,10 @@ section, footer {
       display: inline-block;
       margin-top: 10px; }
 
+.one-work {
+  background-color: #fff;
+  color: #000; }
+
 footer {
   height: 250px; }
   footer ul {
@@ -4138,18 +4144,36 @@ footer {
     margin-top: 10px;
     font-size: 32px; }
     .top-line .phone ul {
-      text-align: center; } }
-
-@media (max-width: 767.98px) {
+      text-align: center; }
   .smm .menu-trigger {
-    display: block; }
+    display: block;
+    border-bottom: 1px #79896D solid; }
   .smm nav ul {
     display: none; }
     .smm nav ul li {
       display: block;
-      border-top: 1px #79896D solid; }
+      height: 32px; }
   .smm ul li {
     border: 0; } }
+
+@media (max-width: 767.98px) {
+  .smm .menu-trigger {
+    display: block;
+    border-bottom: 1px #79896D solid; }
+  .smm nav ul {
+    display: none; }
+    .smm nav ul li {
+      display: block; }
+  .smm ul li {
+    border: 0; }
+  .one {
+    height: 450px; }
+    .one .w-background-video, .one .background-video {
+      height: 450px; }
+    .one .vbg-text {
+      top: 25%;
+      font-size: 42px;
+      line-height: 45px; } }
 
 @media (max-width: 575.98px) {
   .top-line {
@@ -4163,12 +4187,12 @@ footer {
       .top-line .phone ul {
         text-align: center; }
   .smm .menu-trigger {
-    display: block; }
+    display: block;
+    border-bottom: 1px #79896D solid; }
   .smm nav ul {
     display: none; }
     .smm nav ul li {
-      display: block;
-      border-top: 1px #79896D solid; }
+      display: block; }
   .smm ul li {
     border: 0; }
   .one {
@@ -4176,6 +4200,7 @@ footer {
     .one .w-background-video, .one .background-video {
       height: 300px; }
     .one .vbg-text {
+      top: 6%;
       font-size: 42px;
       line-height: 45px; }
     .one .next {
