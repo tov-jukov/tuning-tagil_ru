@@ -20,13 +20,17 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
-	.menu-trigger
-		display: block
+	.smm
+		.menu-trigger
+			display: block
+			// background-color: green
 		nav ul
 			li
 				display: block
 				border-top: 1px #79896D solid
 			display: none
+		ul li
+			border: 0
 
 
 // ≥576px
@@ -34,7 +38,6 @@
 
 	// .one
 	// 	background-color: #000
-
 
 	.top-line
 		padding: $gutter/4 0 $gutter/4
@@ -49,17 +52,17 @@
 			ul
 				text-align: center
 				// margin-left: 15px
-
-
-	.menu-trigger
-		display: block
-	nav ul
-		li
+	.smm
+		.menu-trigger
 			display: block
-			border-top: 1px #79896D solid
-		display: none
-
-
+			// background-color: green
+		nav ul
+			li
+				display: block
+				border-top: 1px #79896D solid
+			display: none
+		ul li
+			border: 0
 
 	.one
 		height: 300px

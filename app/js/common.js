@@ -41,11 +41,12 @@ $('a[href^="#"]:not(.menu-trigger)').on('click', function(event) {
          $("nav ul").slideToggle(500);
     });
 
-    $(window).resize(function() {     
-        if (  $(window).width() > 500 ) {           
-            $('nav ul').removeAttr('style');
-         }
-    });//end resize
+    // $(window).resize(function() {     
+    //     if (  $(window).width() > 500 ) {           
+    //         $('nav ul').removeAttr('style');
+    //      }
+    // });
+    //end resize
 
 
 });
