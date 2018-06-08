@@ -3765,7 +3765,7 @@ h2 {
   font-size: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 0px 24px;
+  padding: 0 24px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   -webkit-box-shadow: 0 2px 0 #8a1115;
@@ -3907,7 +3907,8 @@ section, footer {
   .one .vbg-text {
     position: absolute;
     display: block;
-    top: 20%;
+    height: 55%;
+    top: 25%;
     left: 0;
     right: 0;
     width: 100%;
@@ -3921,6 +3922,9 @@ section, footer {
     padding-bottom: 10px; }
     .one .vbg-text span {
       color: #e31e24; }
+    .one .vbg-text .button-red {
+      line-height: 60px;
+      padding-top: 8px; }
 
 .two {
   height: auto;
