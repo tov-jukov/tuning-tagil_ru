@@ -1,5 +1,6 @@
 $(function() {
 console.log("ready?");
+
 // прелоадер
 $(".preloader").fadeOut("slow");
 
@@ -41,14 +42,21 @@ $('a[href^="#"]:not(.menu-trigger)').on('click', function(event) {
          $("nav ul").slideToggle(500);
     });
 
-    $(window).resize(function() {     
-        if (  $(window).width() > 800 ) {           
+    $(window).resize(function() {
+        if (  $(window).width() > 800 ) {
             $('nav ul').removeAttr('style');
          }
     });
     //end resize
 
+    $(window).resize(function(){
+        if($(".w-background-video").height() < 510) {
+            $("p.next").hide();
+            console.log($(".w-background-video").height());
+        }
 
+    });
+    
 });
 
 // $(".toggle-mnu").click(function() {

@@ -4103,6 +4103,10 @@ section, footer {
 .one-work {
   background-color: #fff;
   color: #000; }
+  .one-work .work-bg {
+    height: 250px;
+    width: 100%;
+    background-color: red; }
 
 footer {
   height: 250px; }
@@ -4115,7 +4119,8 @@ footer {
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-size: 17px; }
+        font-size: 17px;
+        white-space: nowrap; }
         footer ul li a:hover {
           color: #fff;
           text-decoration: none; }
