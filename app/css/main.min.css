@@ -3888,11 +3888,11 @@ section, footer {
     -vendor-animation-iteration-count: infinite; }
   .one .next {
     text-align: center;
-    position: absolute;
     color: #fff;
     z-index: 200;
-    top: 82%;
-    left: 50%;
+    margin-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     font-size: 52px;
     display: block;
     -webkit-animation-delay: 2s;
@@ -3907,8 +3907,7 @@ section, footer {
   .one .vbg-text {
     position: absolute;
     display: block;
-    height: 55%;
-    top: 25%;
+    top: 10%;
     left: 0;
     right: 0;
     width: 100%;
