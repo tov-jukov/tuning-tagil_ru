@@ -27,7 +27,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 @-ms-viewport {
   width: device-width; }
@@ -3742,8 +3742,8 @@ h2 {
       .top-menu .sf-menu li:hover {
         background-color: rgba(254, 210, 191, 0);
         background-image: -webkit-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
-        background-image: -webkit-radial-gradient(center center, ellipse 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
-        background-image: -o-radial-gradient(center center, ellipse 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: -webkit-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: -o-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
         background-image: radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
         background-image: -ms-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%); }
       .top-menu .sf-menu li a {
@@ -3839,8 +3839,8 @@ h2 {
     .smm a:hover {
       background-color: rgba(254, 210, 191, 0);
       background-image: -webkit-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
-      background-image: -webkit-radial-gradient(center center, ellipse 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
-      background-image: -o-radial-gradient(center center, ellipse 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+      background-image: -webkit-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+      background-image: -o-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
       background-image: radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
       background-image: -ms-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%); }
 
@@ -3872,7 +3872,7 @@ section, footer {
       position: absolute;
       color: #fff;
       z-index: 200;
-      top: 80%;
+      top: 75%;
       left: 50%;
       margin-left: -25px;
       right: 50%;
