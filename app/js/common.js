@@ -42,13 +42,21 @@ $('a[href^="#"]:not(.menu-trigger)').on('click', function(event) {
          $("nav ul").slideToggle(500);
     });
 
+
+    $(".button-red").click(function(){
+        $("p.next").hide();
+    });
+
+
     $(window).resize(function() {
         if (  $(window).width() > 800 ) { 
             $('nav ul').removeAttr('style');
-         }
-        if($(".w-background-video").outerHeight() < 510) { // прячет стрелку 
+         };
+        // if($(".w-background-video").outerHeight() < 500) { 
+        // прячет стрелку
+            if( $(window).height() < 640 ){
             $("p.next").hide();
-        }
+        };
     });
     //end resize
    
