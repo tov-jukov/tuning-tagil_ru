@@ -1,4 +1,6 @@
 @import url(../libs/font-awesome-5/web-fonts-with-css/css/fontawesome-all.css);
+@import url(../libs/photoswipe/dist/photoswipe.css);
+@import url(../libs/photoswipe/dist/default-skin/default-skin.css);
 @import url(../libs/animate.css/animate.min.css);
 @import url(../css/m.css);
 @font-face {
@@ -27,7 +29,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @-ms-viewport {
   width: device-width; }
@@ -3742,8 +3744,8 @@ h2 {
       .top-menu .sf-menu li:hover {
         background-color: rgba(254, 210, 191, 0);
         background-image: -webkit-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
-        background-image: -webkit-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
-        background-image: -o-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: -webkit-radial-gradient(center center, ellipse 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: -o-radial-gradient(center center, ellipse 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
         background-image: radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
         background-image: -ms-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%); }
       .top-menu .sf-menu li a {
@@ -3839,8 +3841,8 @@ h2 {
     .smm a:hover {
       background-color: rgba(254, 210, 191, 0);
       background-image: -webkit-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
-      background-image: -webkit-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
-      background-image: -o-radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+      background-image: -webkit-radial-gradient(center center, ellipse 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+      background-image: -o-radial-gradient(center center, ellipse 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
       background-image: radial-gradient(ellipse 120px 25px at center center, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
       background-image: -ms-radial-gradient(center center, 120px 25px, #f94900 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%); }
 
@@ -3848,7 +3850,7 @@ section, footer {
   padding: 30px 0; }
 
 .one {
-  height: 84vh;
+  height: 820px;
   padding: 0 0; }
   .one .w-background-video {
     position: relative;
@@ -3872,7 +3874,7 @@ section, footer {
       position: absolute;
       color: #fff;
       z-index: 200;
-      top: 75%;
+      bottom: 5%;
       left: 50%;
       margin-left: -25px;
       right: 50%;
@@ -3892,7 +3894,7 @@ section, footer {
           outline: none; }
   .one .background-video {
     display: block;
-    height: 84vh;
+    height: 820px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -3953,102 +3955,112 @@ section, footer {
                 background-size: contain;
         background: url(../img/bottom-bg.png) no-repeat top center;
         z-index: 250; }
-  .two .card {
-    margin-bottom: 30px;
-    border: none; }
-    .two .card .card-text {
-      color: #000;
-      font-size: 26px;
-      text-transform: uppercase;
-      line-height: .5rem;
-      min-height: 100px; }
-    .two .card-top-head {
-      height: 78px;
-      width: 100%;
-      display: table; }
-      .two .card-top-head .card-block {
-        display: table-cell;
-        vertical-align: middle; }
-  .two .card-hover {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    color: white;
-    background-color: rgba(170, 7, 76, 0.9);
-    overflow: hidden;
-    -webkit-border-radius: 10px;
-            border-radius: 10px; }
-    .two .card-hover.fade-in {
-      -webkit-transition: opacity 150ms;
-      -o-transition: opacity 150ms;
-      transition: opacity 150ms; }
-    .two .card-hover.zoom-in {
-      -webkit-transform: scale(0);
-          -ms-transform: scale(0);
-              transform: scale(0);
-      -webkit-transition: opacity 300ms, -webkit-transform 0s 300ms;
-      transition: opacity 300ms, -webkit-transform 0s 300ms;
-      -o-transition: opacity 300ms, transform 0s 300ms;
-      transition: opacity 300ms, transform 0s 300ms;
-      transition: opacity 300ms, transform 0s 300ms, -webkit-transform 0s 300ms; }
-    .two .card-hover.slide-down {
-      height: 0;
-      -webkit-transition: opacity 300ms, height 0s 300ms;
-      -o-transition: opacity 300ms, height 0s 300ms;
-      transition: opacity 300ms, height 0s 300ms; }
-    .two .card-hover-content {
-      padding: 1.5rem; }
-  .two .has-card-hover:hover .card-hover.fade-in {
-    opacity: 1; }
-  .two .has-card-hover:hover .card-hover.zoom-in {
-    opacity: 1;
-    -webkit-transition: -webkit-transform 500ms;
-    transition: -webkit-transform 500ms;
-    -o-transition: transform 500ms;
-    transition: transform 500ms;
-    transition: transform 500ms, -webkit-transform 500ms;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1); }
-  .two .has-card-hover:hover .card-hover.slide-down {
-    opacity: 1;
-    height: 100%;
-    -webkit-transition: height 300ms;
-    -o-transition: height 300ms;
-    transition: height 300ms; }
-  .two .has-card-hover {
-    position: relative;
-    cursor: pointer; }
-  .two .card-img-with-frame {
-    padding: 1rem;
-    background: white; }
-    .two .card-img-with-frame.card-img-top {
-      padding-bottom: 10px; }
-    .two .card-img-with-frame.card-img-bottom {
-      padding-top: 0; }
-  .two .card-with-transparent-card-block {
-    background: transparent;
-    border-color: transparent; }
-    .two .card-with-transparent-card-block .card-img-top, .two .card-with-transparent-card-block .card-img-bottom {
-      border: 1px solid rgba(0, 0, 0, 0.125); }
-    .two .card-with-transparent-card-block .card-img-with-frame.card-img-top {
-      padding-bottom: 1rem; }
-    .two .card-with-transparent-card-block .card-img-with-frame.card-img-bottom {
-      padding-top: 1rem; }
-  .two .crd-img img {
-    -webkit-transition: all 0.4s linear 0s;
-    -o-transition: all 0.4s linear 0s;
-    transition: all 0.4s linear 0s;
-    z-index: 220; }
-  .two .crd-img:hover img {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3); }
+
+.card {
+  margin-bottom: 30px;
+  border: none; }
+  .card .card-text {
+    color: #000;
+    font-size: 26px;
+    text-transform: uppercase;
+    line-height: .5rem;
+    min-height: 100px; }
+  .card-top-head {
+    height: 78px;
+    width: 100%;
+    display: table; }
+    .card-top-head .card-block {
+      display: table-cell;
+      vertical-align: middle; }
+
+.card-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  background-color: rgba(170, 7, 76, 0.9);
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+  .card-hover.fade-in {
+    -webkit-transition: opacity 150ms;
+    -o-transition: opacity 150ms;
+    transition: opacity 150ms; }
+  .card-hover.zoom-in {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: opacity 300ms, -webkit-transform 0s 300ms;
+    transition: opacity 300ms, -webkit-transform 0s 300ms;
+    -o-transition: opacity 300ms, transform 0s 300ms;
+    transition: opacity 300ms, transform 0s 300ms;
+    transition: opacity 300ms, transform 0s 300ms, -webkit-transform 0s 300ms; }
+  .card-hover.slide-down {
+    height: 0;
+    -webkit-transition: opacity 300ms, height 0s 300ms;
+    -o-transition: opacity 300ms, height 0s 300ms;
+    transition: opacity 300ms, height 0s 300ms; }
+  .card-hover-content {
+    padding: 1.5rem; }
+
+.has-card-hover:hover .card-hover.fade-in {
+  opacity: 1; }
+
+.has-card-hover:hover .card-hover.zoom-in {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  -o-transition: transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
+
+.has-card-hover:hover .card-hover.slide-down {
+  opacity: 1;
+  height: 100%;
+  -webkit-transition: height 300ms;
+  -o-transition: height 300ms;
+  transition: height 300ms; }
+
+.has-card-hover {
+  position: relative;
+  cursor: pointer; }
+
+.card-img-with-frame {
+  padding: 1rem;
+  background: white; }
+  .card-img-with-frame.card-img-top {
+    padding-bottom: 10px; }
+  .card-img-with-frame.card-img-bottom {
+    padding-top: 0; }
+
+.card-with-transparent-card-block {
+  background: transparent;
+  border-color: transparent; }
+  .card-with-transparent-card-block .card-img-top, .card-with-transparent-card-block .card-img-bottom {
+    border: 1px solid rgba(0, 0, 0, 0.125); }
+  .card-with-transparent-card-block .card-img-with-frame.card-img-top {
+    padding-bottom: 1rem; }
+  .card-with-transparent-card-block .card-img-with-frame.card-img-bottom {
+    padding-top: 1rem; }
+
+.crd-img img {
+  -webkit-transition: all 0.4s linear 0s;
+  -o-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
+  z-index: 220; }
+
+.crd-img:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3); }
 
 .three {
   height: auto;
@@ -4112,6 +4124,30 @@ section, footer {
     width: 100%;
     background-color: red; }
 
+.one-work-inner {
+  background-color: #fff;
+  color: #000; }
+
+.wrapper {
+  padding: 5px; }
+
+.mason {
+  position: relative; }
+
+.mason__item {
+  float: left;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.mason__img {
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.mason__hide {
+  display: none; }
+
 footer {
   height: 250px; }
   footer ul {
@@ -4159,7 +4195,7 @@ footer {
       text-align: center; }
   .smm .menu-trigger {
     display: block;
-    border-bottom: 1px #79896D solid; }
+    border-bottom: 1px #1b1b1b solid; }
   .smm nav ul {
     display: none; }
     .smm nav ul li {
@@ -4171,7 +4207,7 @@ footer {
 @media (max-width: 767.98px) {
   .smm .menu-trigger {
     display: block;
-    border-bottom: 1px #79896D solid; }
+    border-bottom: 1px #1b1b1b solid; }
   .smm nav ul {
     display: none; }
     .smm nav ul li {
@@ -4200,7 +4236,7 @@ footer {
         text-align: center; }
   .smm .menu-trigger {
     display: block;
-    border-bottom: 1px #79896D solid; }
+    border-bottom: 1px #1b1b1b solid; }
   .smm nav ul {
     display: none; }
     .smm nav ul li {
@@ -4241,6 +4277,25 @@ footer {
 
 /*==========  Mobile First  ==========*/
 @media screen and (device-aspect-ratio: 1336 / 768) {
+  .one {
+    height: 74vh; }
+    .one .w-background-video {
+      height: 74vh; }
+    .one .background-video {
+      height: 74vh; }
+    .one .vbg-text {
+      font-size: 60px;
+      line-height: 60px; } }
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-width: 1440px) and (max-width: 1920px) and (-o-min-device-pixel-ratio: 5/4), only screen and (min-width: 1440px) and (max-width: 1920px) and (min-resolution: 120dpi) {
+  .one {
+    height: 620px; }
+    .one .w-background-video {
+      height: 620px; }
+    .one .background-video {
+      height: 620px; } }
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) and (-webkit-min-device-pixel-ratio: 1.0416666666666667), only screen and (min-width: 1200px) and (max-width: 1400px) and (-o-min-device-pixel-ratio: 25/24), only screen and (min-width: 1200px) and (max-width: 1400px) and (min-resolution: 100dpi) {
   .one {
     height: 74vh; }
     .one .w-background-video {

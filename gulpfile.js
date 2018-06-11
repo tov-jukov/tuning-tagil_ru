@@ -41,6 +41,9 @@ gulp.task('js', function() {
 		// 'app/libs/jQuery.mhead/dist/jquery.mhead.js',
 		// 'app/libs/jquery-background-video/jquery.background-video.js',
 		//'app/libs/font-awesome-5/svg-with-js/js/fontawesome-all.min.js',
+		'app/libs/MasonJS/dist/mason.min.js',
+		'app/libs/photoswipe/dist/photoswipe.js',
+		'app/libs/photoswipe/dist/photoswipe-ui-default.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

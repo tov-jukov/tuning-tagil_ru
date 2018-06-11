@@ -1,0 +1,30 @@
+{
+  "name": "MasonJS",
+  "authors": [
+    "Drew Dahlman <info@drewdahlman.com>"
+  ],
+  "description": "MasonJS - for creating perfect grids.",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": null
+  },
+  "homepage": "https://github.com/DrewDahlman/Mason",
+  "_release": "758d4ed3a4",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "758d4ed3a45e0b8a6ab8a55f923dd465386bc722"
+  },
+  "_source": "https://github.com/DrewDahlman/Mason.git",
+  "_target": "*",
+  "_originalSource": "mason.js",
+  "_direct": true
+}
