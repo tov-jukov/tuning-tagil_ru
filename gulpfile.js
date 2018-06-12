@@ -3,7 +3,7 @@ var syntax        = 'sass'; // Syntax: sass or scss;
 var gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
 		sass          = require('gulp-sass'),
-		browsersync   = require('browser-sync'),
+		browserSync   = require('browser-sync'),
 		concat        = require('gulp-concat'),
 		uglify        = require('gulp-uglify'),
 		cleancss      = require('gulp-clean-css'),
@@ -13,34 +13,30 @@ var gulp          = require('gulp'),
 		rsync         = require('gulp-rsync');
 
 gulp.task('browser-sync', function() {
-	browsersync({
+	browserSync({
 		server: {
 			baseDir: 'app'
 		},
 		notify: false,
-		open: false,
-		// tunnel: true,
-		// tunnel: "tagil-tuning-ru", //Demonstration page: http://projectname.localtunnel.me
+		// open: false,
+		// online: false, // Work Offline Without Internet Connection
+		// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
 	})
 });
 
 gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
-	.pipe(sass({ outputStyle: 'expand' }).on("error", notify.onError()))
+	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
-	//.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
+	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('app/css'))
-	.pipe(browsersync.reload( {stream: true} ))
+	.pipe(browserSync.stream())
 });
 
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		// 'app/libs/jQuery.mmenu/dist/jquery.mmenu.all.js',
-		// 'app/libs/jQuery.mhead/dist/jquery.mhead.js',
-		// 'app/libs/jquery-background-video/jquery.background-video.js',
-		//'app/libs/font-awesome-5/svg-with-js/js/fontawesome-all.min.js',
 		'app/libs/MasonJS/dist/mason.min.js',
 		'app/libs/photoswipe/dist/photoswipe.js',
 		'app/libs/photoswipe/dist/photoswipe-ui-default.js',
@@ -49,7 +45,7 @@ gulp.task('js', function() {
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/js'))
-	.pipe(browsersync.reload({ stream: true }))
+	.pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('rsync', function() {
@@ -70,7 +66,7 @@ gulp.task('rsync', function() {
 gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/*.html', browsersync.reload)
+	gulp.watch('app/*.html', browserSync.reload)
 });
 
 gulp.task('default', ['watch']);
