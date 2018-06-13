@@ -6,7 +6,7 @@ $(".preloader").fadeOut("slow");
 
 // плавный переход по ссылкам [----
 
-$('a[href^="#"]:not(.menu-trigger)').on('click', function(event) {
+$('a[href^="#"]:not(.menu-trigger,.button-red)').on('click', function(event) {
     // отменяем стандартное действие
     event.preventDefault();
     
