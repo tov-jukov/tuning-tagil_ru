@@ -579,23 +579,104 @@ section, footer
 		span
 			font-weight: bold
 
-.wrapper
-	padding: 0px
+// .wrapper
+// 	padding: 0px
 
-.mason
-	position: relative
+// .mason
+// 	position: relative
 
-.mason__item
-	float: left
-	background-position: center
-	background-size: cover
+// .mason__item
+// 	float: left
+// 	background-position: center
+// 	background-size: cover
 
-.mason__img
-	background-position: center
-	background-size: cover
+// .mason__img
+// 	background-position: center
+// 	background-size: cover
 
-.mason__hide
-	display: none
+// .mason__hide
+// 	display: none
+
+
+	.wrapper
+		margin: 2em auto
+		max-width: 970px
+
+	img
+		vertical-align: middle
+		max-width: 100%
+
+	.masonry
+		display: flex
+		width: 100%
+
+	.masonry--h
+		flex-flow: row wrap
+
+	.masonry--v
+		flex-flow: column wrap
+		max-height: 1080px
+
+	.masonry--h, .masonry--v
+		margin-left: -8px
+		// /* Adjustment for the gutter
+		counter-reset: brick
+
+	.masonry-brick
+		overflow: hidden
+		border-radius: 5px
+		margin: 0 0 8px 8px
+		// /* Some Gutter
+		background-color: #333
+		color: white
+		position: relative
+		&:after
+			position: absolute
+			top: 50%
+			left: 50%
+			z-index: 5000
+			transform: translate(-50%, -50%)
+			counter-increment: brick
+			content: counter(brick)
+			transition: font-size .25s, opacity .25s ease-in-out
+			font-weight: 700
+			opacity: .5
+			font-size: 1.25em
+		&:hover:after
+			font-size: 2.25em
+			opacity: 1
+
+	.masonry-brick--h
+		flex: auto
+		height: 250px
+		min-width: 150px
+
+	.masonry-img 
+		object-fit: cover
+		width: 100%
+		height: 100%
+		filter: brightness(50%)
+
+
+
+	// /* Page assets */
+
+	// .labs-pagination 
+	// 	margin-bottom: 1.5rem
+	// 	font-size: 12px
+
+
+	// .labs-page 
+	// 	text-transform: uppercase
+	// 	display: inline-block
+	// 	padding: .5em .75em
+	// 	border: 2px solid #333
+
+
+	// .labs-page:hover,
+	// .labs-page--current 
+	// 	background-color: #333
+	// 	color: rgba(255, 255, 255, .75)
 
 
 // footer

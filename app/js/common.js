@@ -111,7 +111,7 @@ function photoSwipe() {
     $(document).ready(function() {
         $(".mason").mason({
             itemSelector: ".mason__item",
-            ratio: 1,
+            ratio: 1.5,
             sizes: [
                 [1,1],
                 [1,2],

@@ -6,9 +6,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+	.one-work-inner
+		h2
+			color: red
+			&:after
+				content: "-LG"
+
+
+
 // ≥992px
 +media-breakpoint-down(md)
-
+	
 	.top-line
 		.phone
 			// padding-top: 5px
@@ -30,6 +38,20 @@
 			display: none
 		ul li
 			border: 0
+
+
+
+
+	.one-work-inner
+		h2
+			color: red
+			&:after
+				content: "-MD"
+
+
+
+
+
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -58,6 +80,15 @@
 			top: 25%
 			font-size: 42px
 			line-height: 45px
+
+
+	.one-work-inner
+		h2
+			color: red
+			&:after
+				content: "-SM"
+
+
 
 
 // ≥576px
@@ -162,6 +193,14 @@
 			text-align: center!important
 			// padding-top: 5px
 
+	.one-work-inner
+		h2
+			color: red
+			&:after
+				content: "-XS"
+
+
+
 /*==========  Mobile First  ==========*/
 
 // ≤576px
@@ -175,6 +214,37 @@
 
 // ≤1200px
 +media-breakpoint-up(xl)
+
+	.one-work-inner
+		h2
+			color: red
+			&:after
+				content: "-LX"
+
+// /* Horizontal masonry bricks on desktop-sized screen
+
+	.masonry-brick--h
+		&:nth-child(4n+1)
+			width: 200px
+		&:nth-child(4n+2)
+			width: 250px
+		&:nth-child(4n+3)
+			width: 120px
+		&:nth-child(4n+4)
+			width: 280px
+
+	// /* Adjusting vertical masonry height on desktop-sized screen
+
+	.masonry--v
+		max-height: 1600px
+
+	// /* Vertical masonry bricks on desktop-sized screen
+
+	.masonry-brick--v
+		width: 33.33333%
+
+
+
 
 
 // @media screen and (min-device-aspect-ratio: 16/9) and (max-height: 768px), screen and (min-device-aspect-ratio: 16/10) and (max-height: 768px)
