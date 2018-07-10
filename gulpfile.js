@@ -38,6 +38,8 @@ gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		// 'app/libs/MasonJS/dist/mason.min.js',
+		// 'app/libs/mosaic/js/mosaic.js',
+		'app/libs/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
 		'app/libs/photoswipe/dist/photoswipe.js',
 		'app/libs/photoswipe/dist/photoswipe-ui-default.js',
 		'app/libs/smartlid/smartlid.js',

@@ -53,6 +53,15 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
 
 
 
+   $('#basicExample2').justifiedGallery({
+    rowHeight : 200,
+    lastRow : 'nojustify',
+    margins : 3
+});
+
+
+
+
 });
 
 // $(".toggle-mnu").click(function() {
@@ -107,37 +116,55 @@ function photoSwipe() {
     }); 
 }
 
-(function($) {
-    $(document).ready(function() {
-        $(".mason").mason({
-            itemSelector: ".mason__item",
-            ratio: 1.5,
-            sizes: [
-                [1,1],
-                [1,2],
-                [2,1],
-                [2,2]
-            ],
-            // promoted: [
-            //     ['mason__item--promo-v1', 3, 3],
-            //     ['mason__item--promo-v2', 1, 3],
-            //     ['mason__item--promo-v3', 3, 2]
-            // ],
-            columns: [
-                [0,480,1],
-                [480,780,2],
-                [780,1080,3],
-                [1080,1320,4],
-                [1320,1680,5]
-            ],
-            filler: {
-                itemSelector: '.mason__filler',
-                filler_class: 'mason__custom-fill'
-            },
-            layout: 'fluid',
-            gutter: 5
-        }, function() {
-            photoSwipe()
-        });
-    });
-})(jQuery);
+// (function($) {
+//     $(document).ready(function() {
+//         $(".mason").mason({
+//             itemSelector: ".mason__item",
+//             ratio: 1.5,
+//             sizes: [
+//                 [1,1],
+//                 [1,2],
+//                 [2,1],
+//                 [2,2]
+//             ],
+//             // promoted: [
+//             //     ['mason__item--promo-v1', 3, 3],
+//             //     ['mason__item--promo-v2', 1, 3],
+//             //     ['mason__item--promo-v3', 3, 2]
+//             // ],
+//             columns: [
+//                 [0,480,1],
+//                 [480,780,2],
+//                 [780,1080,3],
+//                 [1080,1320,4],
+//                 [1320,1680,5]
+//             ],
+//             filler: {
+//                 itemSelector: '.mason__filler',
+//                 filler_class: 'mason__custom-fill'
+//             },
+//             layout: 'fluid',
+//             gutter: 5
+//         }, function() {
+//             photoSwipe()
+//         });
+//     });
+// })(jQuery);
+
+// $(document).ready(function() {
+//     var test = {size: 1200, columns: 10};
+//     var test2 = {size: 700, columns: 8};
+//     var grid = $("#mosaic-grid").mosaic({
+//         tileModel: '.sizer',
+//         columns: 3,
+//         gutter: 1,
+//         heightFromWidth: true,
+//         breakpoints: [test, test2]
+//     });
+
+//     $(".link").click(function() {
+//         $(".active").removeClass("active");
+//         $(this).addClass("active"); 
+//     });
+// });
+
