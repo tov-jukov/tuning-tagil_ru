@@ -41,8 +41,8 @@ gulp.task('js', function() {
 		// 'app/libs/mosaic/js/mosaic.js',
 		'app/libs/photoswipe/dist/photoswipe.js',
 		'app/libs/photoswipe/dist/photoswipe-ui-default.js',
-		// 'app/libs/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-		'app/libs/jquery.montage/jquery.montage.js',
+		'app/libs/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+		// 'app/libs/jquery.montage/jquery.montage.js',
 		'app/libs/smartlid/smartlid.js',
 		'app/js/common.js', // Always at the end
 		])

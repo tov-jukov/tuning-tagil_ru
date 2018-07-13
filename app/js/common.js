@@ -42,13 +42,14 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
          $("nav ul").slideToggle(500);
     });
 
-
     $(window).resize(function() {
         if (  $(window).width() > 800 ) { 
             $('nav ul').removeAttr('style');
          }
     });
     //end resize
+
+
    // gallery
 
 
@@ -76,47 +77,47 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
 
 // });//end ready
 
-function photoSwipe() {
-    var items = [];
+// function photoSwipe() {
+//     var items = [];
 
-    $('.mason__item').each(function() {
-        var $pic = $(this);
-        var $pswp = $('.pswp')[0];
-        console.log($pic.data('size2'))
+//     $('.mason__item').each(function() {
+//         var $pic = $(this);
+//         var $pswp = $('.pswp')[0];
+//         console.log($pic.data('size2'))
 
-        // Get the details (src, width, height) for each image and save them in an array
-        // $pic.each(function() {
-            var $href   = $(this).data('href'),
-                $size   = $(this).data('dimensions').split('x'),
-                $width  = $size[0],
-                $height = $size[1];
+//         // Get the details (src, width, height) for each image and save them in an array
+//         // $pic.each(function() {
+//             var $href   = $(this).data('href'),
+//                 $size   = $(this).data('dimensions').split('x'),
+//                 $width  = $size[0],
+//                 $height = $size[1];
 
-            var item = {
-                src : $href,
-                w   : $width,
-                h   : $height
-            };
+//             var item = {
+//                 src : $href,
+//                 w   : $width,
+//                 h   : $height
+//             };
 
-            items.push(item);
-        // });
+//             items.push(item);
+//         // });
 
-        // Add a click handler for each image to initialize the PhotoSwipe gallery
-        $pic.on('click', function(event) {
-            event.preventDefault();
+//         // Add a click handler for each image to initialize the PhotoSwipe gallery
+//         $pic.on('click', function(event) {
+//             event.preventDefault();
 
-            var $index = $(this).index();
-            var options = {
-                index: $index,
-                bgOpacity: 0.7,
-                showHideOpacity: true
-            }
+//             var $index = $(this).index();
+//             var options = {
+//                 index: $index,
+//                 bgOpacity: 0.7,
+//                 showHideOpacity: true
+//             }
 
-            // Initialize PhotoSwipe
-            var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
-            lightBox.init();
-        });
-    }); 
-}
+//             // Initialize PhotoSwipe
+//             var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+//             lightBox.init();
+//         });
+//     }); 
+// }
 
 // (function($) {
 //     $(document).ready(function() {
@@ -170,56 +171,31 @@ function photoSwipe() {
 //     });
 // });
 
+$(window).load(function(){    
 
-//     /* 
-//      * just for this demo:
-//      */
-//     $('#showcode').toggle(
-//         function() {
-//             $(this).addClass('up').removeClass('down').next().slideDown();
-//         },
-//         function() {
-//             $(this).addClass('down').removeClass('up').next().slideUp();
-//         }
-//     );
-//     $('#panel').toggle(
-//         function() {
-//             $(this).addClass('show').removeClass('hide');
-//             $('#overlay').stop().animate( { left : - $('#overlay').width() + 20 + 'px' }, 300 );
-//         },
-//         function() {
-//             $(this).addClass('hide').removeClass('show');
-//             $('#overlay').stop().animate( { left : '0px' }, 300 );
-//         }
-//     );
- $(function() {   
-    var $container 	= $('#am-container'),
-        $imgs		= $container.find('img').hide(),
-        totalImgs	= $imgs.length,
-        cnt			= 0;
-    
-    $imgs.each(function(i) {
-        var $img	= $(this);
-        $('<img/>').load(function() {
-            ++cnt;
-            if( cnt === totalImgs ) {
-                $imgs.show();
-                $container.montage({
-                    fillLastRow	: true,
-                    alternateHeight	: true,
-                    alternateHeightRange : {
-                        min	: 90,
-                        max	: 240
-                    },
-                    margin : 5
-                });
-                
-                /* 
-                 * just for this demo:
-                 */
-                // $('#overlay').fadeIn(500);
-            }
-        }).attr('src',$img.attr('src'));
-    });	
-    
+    $(".basicExample2").click(function () {
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        var items = [];
+
+        $(".basicExample2").each(function () {
+            var size = $(this).attr("data-size").split('x');
+            items.push({
+                src: $(this).attr("href"),
+                w: size[0],
+                h: size[1],
+              title: 'Something'
+            });
+
+        });
+
+        var options = {
+            index: $(this).parent().index()
+        };
+        var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+        return false;
+
+    });
+
 });
