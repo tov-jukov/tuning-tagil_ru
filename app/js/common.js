@@ -54,7 +54,7 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
 
 
 
-    $('#tj0').justifiedGallery({
+    $('#jg0').justifiedGallery({
         rowHeight : 200,
         justifyThreshold: 0.1,
         lastRow : 'justify',
