@@ -56,13 +56,21 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
 
     $('#jg0').justifiedGallery({
         rowHeight : 200,
-        justifyThreshold: 0.1,
+        justifyThreshold: 0.3,
         lastRow : 'justify',
         captions: false,
         randomize: false,
         margins : 10,
-        
-        selector:'figure, div:not(.spinner)',
+        waitThumbnailsLoad: false,
+			sizeRangeSuffixes: {
+				'lt100':'_t', 
+				'lt240':'_m', 
+				'lt320':'_n', 
+				'lt500':'', 
+				'lt640':'_z', 
+				'lt1024':'_b'
+			},        
+        selector:'figure, div:not(.spinner)'
     });
 
     // $('#tj0').justifiedGallery().on('jg.complete', function (e) {
