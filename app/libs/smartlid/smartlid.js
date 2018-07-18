@@ -368,8 +368,8 @@
 
         copyright.attr('class', 'copyright-wprapper');
         copyrightLink.attr({
-          href: 'http://smartlanding.biz/smartlid',
-        }).html('SmartLid');
+          href: '',
+        }).html('');
         formBtn.html('Отправить');
 
         view.displayRequestForm(div);

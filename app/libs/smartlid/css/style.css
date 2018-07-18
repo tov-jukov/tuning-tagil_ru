@@ -378,9 +378,9 @@ input:checked ~ .btn-list li:nth-child(3) {
 
 .sl-overlay--close {
   position: absolute;
-  font-size: 24px;
-  right: 10px;
-  top: 0;
+  font-size: 35px;
+  right: 15px;
+  top: 5px;
   text-decoration: none;
 }
 
