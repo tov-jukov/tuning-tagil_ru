@@ -1,487 +1,614 @@
-(function () {
-  // Опции
-  // Подключен ли к сайту fontawesome - иконический шрифт. Если нет, то будут выводиться обычные картинки.
-  // true - подключен, false - не подключен
+// "use strict";
+(function ($) {
+    var defaults = {
+        //******************************* Общие настройки  *******************************
 
-  var fontAwesome = false;
+        //** Включить форму обратного звонка? true|false
+        callForm: true,
 
-  // Путь к картинкам, если не подулючен к сайту fontawesome
-  if (!fontAwesome) {
-    var callFormIcon = '<img src="../libs/smartlid/img/phone.svg" height="16">';
-    var requestFormIcon = '<img src="../libs/smartlid/img/envelope.svg" height="16">';
-    var basketFormIcon = '<img src="../libs/smartlid/img/phone.svg" height="16">';
-  }
+        //** Включить форму c отправкой сообщения? true|false
+        requestForm: true,
 
-  // Подключение формы обратного звонка
-  // true - выводить формы, false - не выводить
-  var callForm = true;
+        // Расположение кнопок: smartlid_left | smartlid_right
+        position: ' smartlid_right',
 
-  // Подключение формы с возможностью отправить сообщение
-  // true - выводить формы, false - не выводить
-  var requestForm = true;
+        //** Отслеживание заполнение формы в целях Яндекс Метрики. 
+        // XXXXXX - код счеткичка в Метрике
+        // SMARTLID - ID цели
 
-  // Подключение корзины к landing page (пока не реализовано)
-  // true - выводить формы, false - не выводить
-  var basketForm = false;
+        counter: function () {
+            yaCounter40976409.reachGoal('SMARTLID');
+        },
 
-  // Внешний вид форм (стилевое оформление) -- 
-  //  'dark-space', 'maya-the-bee'
-  var styleForm = 'dark-space';
+        //** Стиливое оформление формы 'dark-space', вскоре появятся и другие цвета
+        styleForm: ' dark-space',
 
-  // Заголовок формы для заказа обратного звонка
-  var callFormTitle = "Закажите обратный звонок, и наш консультант свяжется с вами";
-  // Путь к иконке формы для заказа обратного звонка
-  var callFormImg = '<img src="../libs/smartlid/img/call.svg">';
+        //** Иконка главной кнопки, которая вызывает другие кнопки
+        navBtnIcon: '<img src="../libs/smartlid/img/line-menu.svg" height="18" width="18" alt="">',
 
-  // Заголовок формы для отправки заявки (сообщения)
-  var requestFormTitle = "Оставьте заявку, и наш консультант свяжется с вами";
-  // Путь к иконке формы для отправки заявки (сообщения)
-  var requestFormImg = '<img src="../libs/smartlid/img/mail.svg">';
+        //** Иконка кнопки, которая вызывает модальное окно с формой обратного звонка
+        callFormBtnIcon: '<img src="../libs/smartlid/img/phone.svg" height="18" width="18" alt="">',
 
-  // Заголовок формы с корзиной покупок (не реализовано)
-  //var basketFormTitle = "Корзина";
+        //** Иконка кнопки, которая вызывает модальное окно с формой отправки сообщения
+        requestFormBtnIcon: '<img src="../libs/smartlid/img/envelope.svg" height="18" width="18" alt="">',
 
-  // placeholder для ввода имени
-  var placeHolderName = "Введите ваше имя";
+        //** Placeholder для полей
+        placeholderName: 'Введите ваше имя',
+        placeholderPhone: 'Введите ваш телефон',
+        placeholderMail: 'Введите ваш email',
+        placeholderText: 'Введите ваше сообщение',
 
-  //Обязательно ли поле с именем для заполнения? true - да, false - нет;
-  var requiredName = true;
+        //** Checkbox согласия с разрешением на обработку персональных данных true|false
+        agreement: true,
 
-  // placeholder для ввода телефона
-  var placeHolderTel = "Введите ваш телефон";
+        //** Должен ли быть отмечен checkbox с разрешением на обработку персональных данных по умолчанию? true|false
+        agreementIsActive: false,
 
-  //Обязательно ли поле с телефоном для заполнения? true - да, false - нет;
-  var requiredTel = true;
-
-  // placeholder для ввода почты
-  var placeHolderMail = "Введите ваш email";
-
-  //Обязательно ли поле с вводом почты для заполнения? true - да, false - нет;
-  var requiredMail = true;
-
-  // placeholder для ввода сообщения
-  var placeHolderText = "Введите сообщение";
-  //Обязательно ли поле с вводом текста/комментарием для заполнения? true - да, false - нет;
-  var requiredText = false;
-
-  // Конец настроек
-
-  var quantityElements = callForm + requestForm + basketForm;
-  var styleOverlay = styleForm + '-overlay';
-  var sourse = document.referrer;
-
-  var view = {
-
-    displayButton: function (div) {
-      $('body').append(div);
-    },
-
-    displayOverlay: function (overlay) {
-      $('body').append(overlay);
-    },
-
-    displayCallForm: function (div) {
-      $('body').append(div);
-    },
-
-    displayRequestForm: function (div) {
-      $('body').append(div);
-    },
-
-    displayAnswerForm: function (data, message, formTitle) {
-      message.html(data);
-      console.log(data);
-      formTitle.css("display", "none");
-      setTimeout(function () {
-        formTitle.css("display", "block");
-        message.html('');
-        console.log(data);
-      }, 3000);
-    }
-  };
-
-  var controller = {
-    sendForm: function () {
-      $('.sl-form').submit(function () {
-        // Получение ID формы
-        var formID = $(this).attr('id');
-        // Добавление решётки к имени ID
-        var formNm = $('#' + formID);
-        var message = $(formNm).find(".msgs");
-        var formTitle = $(formNm).find(".form-title--title");
-        $.ajax({
-          type: "POST",
-          url: 'smartlid/php/mail.php',
-          data: formNm.serialize(),
-          success: function (data) {
-            // Вывод сообщения об успешной отправке или ошибке на стороне клиента
-            view.displayAnswerForm(data, message, formTitle);
-          },
-          error: function (jqXHR, text, error) {
-            // Вывод сообщения об ошибке отправки на стороне сервера
-            $('.msgs').html(error);
-            $('.formTitle').css("display", "none");
-            setTimeout(function () {
-              $('.formTitle').css("display", "block");
-              $('.msgs').html('');
-            }, 3000);
-          },
-          complete: function (data) {
-            $('input').not(':input[type=submit], :input[type=hidden]').val('');
-            $('textarea').val('');
-          }
-        });
-        return false;
-      });
-    },
-    setFormInfo: function () {
-      $(".sl-form--button").click(function () {
-        $("input[name*='formInfo']").val($(this).attr("title"));
-      });
-    },
-
-    setFormReferer: function () {
-      $(".sl-form--button").click(function () {
-        $("input[name*='formReferer']").val(sourse);
-      });
-    }
-  };
-
-  var model = {
-    fa: fontAwesome,
-    cf: callForm,
-    rf: requestForm,
-    rft: requestFormTitle,
-    bf: basketForm,
-    style: styleForm + ' sl-form--wrapper',
+        //** Cсылка на лицензионное соглашение
+        agreementLink: '#',
 
 
-    createButton: function () {
+        //******************************* Настройка формы обратного звонка *******************************
 
-      var div = $('<div>');
-      var input = $('<input>');
-      var label = $('<label>');
-      var ul = $('<ul>');
-      var li = $('<li>');
-      var a = $('<a>');
-      var span = $('<span>');
+        //** Заголовок формы
+        callFormTitle: 'Оставьте ваш номер телефона, и наш консультант свяжется с вами',
 
-      div.append(input).append(label).append(ul);
+        //** Текст кнопки отправляющей форму
+        buttonTextCallForm: 'Отправить',
 
-      div.attr({
-        id: 'smartLidBtn',
-        class: 'smartLidBtn'
-      });
-      input.attr({
-        id: 'toggle-input',
-        class: 'toggle-input',
-        type: 'checkbox'
-      });
+        //** Картинка в модальном окне
+        callFormIcon: '../libs/smartlid/img/call.svg',
 
-      label.attr({
-        for: 'toggle-input'
-      });
-      if (this.fa) {
-        label.attr('class', 'toggle');
-      } else {
-        label.attr('class', 'toggle-img');
-      }
-      span.attr('class', 'rings');
-      label.append(span);
-      span.clone().appendTo(label);
-      span.clone().appendTo(label);
-      ul.attr('class', 'btn-list');
+        //** Включить поле с отправкой файла? true | false
+        callFormAddFile: true,
 
-      for (var i = 1; i <= quantityElements; i++) {
-        var li = $('<li>');
-        var a = $('<a>');
-        ul.append(li);
-        li.append(a);
-        if (this.cf && i == 1) {
-          li.attr('class', 'callForm');
-          a.attr('href', '#sl-overlay-cf');
-          if (this.fa) {
-            a.html('<i class="fa fa-phone" aria-hidden="true"></i>');
-          } else {
 
-            a.attr('class', 'call-form--link');
-            a.html(callFormIcon);
-          }
-          var item = 'sl-overlay-cf';
-          this.createOverlay(item);
-          continue;
+        //******************************* Настройка формы с возможностью отправить сообщение *******************************
+
+        //** Заголовок формы
+        requestFormTitle: 'Оставьте сообщение, и наш консультант свяжется с вами',
+
+        //** Текст кнопки отправляющей форму
+        buttonTextRequestForm: 'Отправить',
+
+        //** Картинка в модальном окне с формой отправки заявки
+        requestFormIcon: '../libs/smartlid/img/mail.svg',
+
+        //** Включить поле с отправкой файла? true | false
+        requestFormAddFile: true,
+
+        //** Включить поле с вводом телефона? true | false
+        requestFormTelInput: true,
+
+        //******************************* Недоступные для визуального редактора настройки *******************************
+
+        //** Сообщение при заполнении не всех обязательных полей
+        attantion: '<p class="smartlid__respond-fail">Внимание! Вы заполнили не все обязательные поля</p>',
+
+        //** Сообщение при ошибке отправки файла
+        failfile: '<p class="smartlid__respond-fail">Ошибка отправки файла, попробуйте еще раз</p>',
+
+        //** Сообщение при успешной отправке сообщения
+        successmsgs: '<p class="smartlid__respond-success">Спасибо за обращение. Сообщение успешно отправлено</p>',
+
+        //** Сообщение при неудачной отправке письма
+        failmsgs: '<p class="smartlid__respond-fail">Сообщение не отправлено, попробуйте еще раз</p>',
+
+        //** Текст ссылки лицензионного соглашения
+        agreementText: 'Я <span class="toggle--on">принимаю</span><span class="toggle--off">не принимаю</span> условия пользовательского соглашения',
+
+        //** Определение источника перехода
+        referrer: document.referrer,
+    };
+    var methods = {
+
+        init: function (options) {
+            var settings = $.extend(defaults, options);
+            methods.setRef();
+            
+            
+            return this.each(function () {
+                $(this).append(methods.showButtons());
+            });
+        },
+
+        setRef: function () {
+            if ((defaults.referrer).length) {
+                var ref = new URL(defaults.referrer);
+                if (location.host !== ref.host) {
+                    localStorage.setItem('userRef', ref.host);
+                }
+            } else {
+                localStorage.setItem('userRef', 'Не удалось определить источник перехода на сайт');
+            }
+        },
+
+        createButtons: function () {
+
+            let smartLid = $('<div>').attr({
+                class: 'smartlid' + defaults.position
+            });
+
+            let smartLidNavButton = $('<button>').attr({
+                class: 'smartlid__nav-button',
+            }).html(defaults.navBtnIcon);
+
+            let smartLidRounds = $('<span>').attr({
+                class: 'smartlid__rings'
+            });
+
+            let smartLidModalButtons = $('<div>').attr({
+                class: 'smartlid__modal-buttons'
+            });
+
+            if (defaults.callForm) {
+                let smartLidCallButton = $('<button>');
+                smartLidCallButton.attr({
+                    class: 'smartlid__call-button',
+                }).html(defaults.callFormBtnIcon);
+                smartLidModalButtons.append(smartLidCallButton);
+
+                smartLidCallButton.click(function () {
+                    methods.showModal(methods.createCallForm().attr('class'));
+                });
+
+                // Для вызова модального окна своей ссылкой
+                $('.smartlid__call-button_custom').click(function () {
+                    methods.showModal(methods.createCallForm().attr('class'));
+                });
+
+            };
+
+            if (defaults.requestForm) {
+                let smartLidRequestButton = $('<button>');
+                smartLidModalButtons.append(smartLidRequestButton);
+                smartLidRequestButton.attr({
+                    class: 'smartlid__request-button',
+                }).html(defaults.requestFormBtnIcon);
+
+                smartLidRequestButton.click(function () {
+                    methods.showModal(methods.createRequestForm().attr('class'));
+                });
+                // Для вызова модального окна своей ссылкой
+                $('.smartlid__request-button_custom').click(function () {
+                    methods.showModal(methods.createRequestForm().attr('class'));
+                });
+            };
+
+            if (defaults.contactForm) {
+                let smartLidContactButton = $('<button>');
+                smartLidModalButtons.append(smartLidContactButton);
+                smartLidContactButton.attr({
+                    class: 'smartlid__contact-button',
+                }).html(defaults.contactAreaBtnIcon);
+            };
+
+            smartLidNavButton.click(function () {
+                smartLidModalButtons.toggleClass("smartlid_open");
+            });
+
+            smartLidRounds.appendTo(smartLidNavButton);
+            smartLidRounds.clone().appendTo(smartLidNavButton);
+            smartLidRounds.clone().appendTo(smartLidNavButton);
+            smartLid.append(smartLidNavButton).append(smartLidModalButtons);
+
+
+            return smartLid;
+        },
+
+        createModal: function (params) {
+            let smartLidModal = $('<div>').attr({
+                class: 'smartlid__modal' + defaults.styleForm,
+            });
+
+            if (params == methods.createCallForm().attr('class')) {
+                setTimeout(function () {
+                    smartLidModal.fadeIn(function () {
+                        $(this).append(methods.createCallForm().addClass('smartlid__form_open').append(methods.closeModal(smartLidModal)));
+                    });
+                }, 500);
+            };
+
+            setTimeout(() => {
+                smartLidModal.addClass('smartlid__modal_open');
+            }, 1000);
+
+            if (params == methods.createRequestForm().attr('class')) {
+                setTimeout(function () {
+                    smartLidModal.fadeIn(function () {
+                        $(this).append(methods.createRequestForm().addClass('smartlid__form_open').append(methods.closeModal(smartLidModal)));
+                    });
+                }, 500);
+            };
+
+            return smartLidModal;
+        },
+
+        closeModal: function (smartLidModal) {
+
+            let smartLidCloseButton = $('<button>').attr({
+                class: 'smartlid__close-button',
+            }).html('×');
+
+            smartLidCloseButton.click(function (event) {
+                event.preventDefault();
+                smartLidModal.fadeOut(function () {
+                    $(this).remove();
+                })
+            });
+
+            $(smartLidModal).mouseup(function (e) {
+                var div = $(".smartlid__form");
+                if (!div.is(e.target) &&
+                    div.has(e.target).length === 0) {
+                    smartLidModal.fadeOut(function () {
+                        $(this).remove();
+                    });
+                };
+            });
+
+            return smartLidCloseButton;
+        },
+
+        autoCloseModal: function (params) {
+
+        },
+
+        createCallForm: function () {
+            let callForm = $('<form>').attr({
+                class: 'smartlid__form smartlid__form_call',
+                method: 'POST',
+                id: 'callForm',
+                autocomplete: 'off',
+                enctype: 'multipart/form-data',
+            });
+
+            let formImages = $('<img>').attr({
+                class: 'smartlid__form-icon',
+                alt: 'Обратный звонок',
+                src: defaults.callFormIcon,
+                width: 100,
+            });
+
+            let formTitle = $('<div>').attr({
+                    class: 'smartlid__form-title'
+                })
+                .append($('<p>').attr({
+                    class: 'smartlid__default-msgs'
+                }).html(defaults.callFormTitle))
+                .append($('<div>').attr({
+                    class: 'smartlid__respond-msgs'
+                }))
+                .append($('<div>').attr({
+                    class: 'smartlid__preloader'
+                }));
+
+            let inpName = $('<input>').attr({
+                class: 'smartlid__input smartlid__input_name',
+                type: 'text',
+                name: 'name',
+                placeholder: defaults.placeholderName,
+            });
+
+            let inpTel = $('<input>').attr({
+                class: 'smartlid__input smartlid__input_tel',
+                type: 'tel',
+                name: 'tel',
+                placeholder: defaults.placeholderPhone,
+            });
+
+            let inpRef = $('<input>').attr({
+                class: 'smartlid__input smartlid__input_ref',
+                type: 'hidden',
+                name: 'ref',
+                value: localStorage.getItem('userRef'),
+            });
+
+
+
+            if (defaults.agreement) {
+                var checkboxWrapper = $('<div>').attr({
+                    class: 'smartlid__checkbox-wrapper'
+                });
+
+                var inpCheckbox = $('<input>').attr({
+                    class: 'smartlid__checkbox smartlid__checkbox_agreement',
+                    type: 'checkbox',
+                    name: 'agreement',
+                    id: 'smartlid__checkbox_agreement',
+                    value: 'Принимаю',
+                    checked: defaults.agreementIsActive,
+                });
+
+                let inputCheckboxLabel = $('<label>').attr({
+                    for: 'smartlid__checkbox_agreement',
+                    class: 'smartlid__label smartlid__label_agreement'
+                });
+
+                let checkboxLink = $('<a>').attr({
+                    class: 'agreement-link',
+                    href: defaults.agreementLink,
+                    target: '_blank'
+
+                }).html(defaults.agreementText);
+
+                checkboxWrapper.append(inpCheckbox).append(inputCheckboxLabel.append(checkboxLink));
+            };
+
+            if (defaults.callFormAddFile) {
+                var fileWrapper = $('<div>').attr({
+                    class: 'smartlid__file-wrapper'
+                });
+                var fileName = $('<input>').attr({
+                    class: 'smartlid__input smartlid__file-name',
+                    placeholder: 'Прикрепить файл',
+                    disabled: 'disabled',
+                });
+                let inputFileLabel = $('<label>').attr({
+                    for: 'smartlid__input_file',
+                    class: 'smartlid__label smartlid__label_file'
+                }).html('Выбрать');
+
+                let inpFile = $('<input>').attr({
+                    class: 'smartlid__input smartlid__input_file',
+                    type: 'file',
+                    name: 'files[]',
+                    id: 'smartlid__input_file'
+                }).change(function () {
+                    fileName.val($(this).val().replace(/.*\\/, ""));
+                });
+                fileWrapper.append(fileName).append(inputFileLabel).append(inpFile);
+            }
+
+            let formButton = $('<button>').attr({
+                class: 'smartlid__form-button',
+                type: 'submit',
+                name: 'sendingForm'
+            }).html(defaults.buttonTextCallForm);
+
+            formButton.click(function (event) {
+                event.preventDefault();
+                if (defaults.agreement) {
+                    if (inpCheckbox.is(":checked")) {
+                        methods.sendMail($(callForm).attr('id'));
+                    } else {
+                        formTitle.find('.smartlid__default-msgs').css('display', 'none');
+                        formTitle.find('.smartlid__respond-msgs').html('<p class="smartlid__respond-fail">Вы не приняли условия пользовательского соглашения</p>');
+                        setTimeout(() => {
+                            formTitle.find('.smartlid__default-msgs').css('display', 'block');
+                            formTitle.find('.smartlid__respond-msgs').html('');
+                        }, 4000);
+                    }
+                } else {
+                    methods.sendMail($(callForm).attr('id'));
+                }
+
+            });
+
+            callForm.append(formImages).append(formTitle).append(inpName).append(inpTel).append(inpRef).append(fileWrapper).append(checkboxWrapper).append(formButton);
+
+            return callForm;
+        },
+
+        createRequestForm: function () {
+            let requestForm = $('<form>').attr({
+                class: 'smartlid__form smartlid__form_request',
+                method: 'POST',
+                id: 'requestForm',
+                autocomplete: 'off',
+                enctype: 'multipart/form-data'
+            });
+
+            let formImages = $('<img>').attr({
+                class: 'smartlid__form-icon',
+                alt: 'Форма обратной связи',
+                src: defaults.requestFormIcon,
+                width: 100,
+            });
+
+            let formTitle = $('<div>').attr({
+                    class: 'smartlid__form-title'
+                })
+                .append($('<p>').attr({
+                    class: 'smartlid__default-msgs'
+                }).html(defaults.requestFormTitle))
+                .append($('<div>').attr({
+                    class: 'smartlid__respond-msgs'
+                }))
+                .append($('<div>').attr({
+                    class: 'smartlid__preloader'
+                }));
+
+            let inpName = $('<input>').attr({
+                class: 'smartlid__input smartlid__input_name',
+                type: 'text',
+                name: 'name',
+                placeholder: defaults.placeholderName,
+            });
+            if (defaults.requestFormTelInput) {
+                var inpTel = $('<input>').attr({
+                    class: 'smartlid__input smartlid__input_tel',
+                    type: 'tel',
+                    name: 'tel',
+                    placeholder: defaults.placeholderPhone,
+                });
+            }
+
+
+            let inpMail = $('<input>').attr({
+                class: 'smartlid__input smartlid__input_mail',
+                type: 'email',
+                name: 'email',
+                placeholder: defaults.placeholderMail,
+            });
+
+            let inpText = $('<textarea>').attr({
+                class: 'smartlid__input smartlid__input_text',
+                placeholder: defaults.placeholderText,
+                name: 'text'
+            });
+
+            let inpRef = $('<input>').attr({
+                class: 'smartlid__input smartlid__input_ref',
+                type: 'hidden',
+                name: 'ref',
+                value: localStorage.getItem('userRef'),
+            });
+
+
+            if (defaults.agreement) {
+                var checkboxWrapper = $('<div>').attr({
+                    class: 'smartlid__checkbox-wrapper'
+                });
+
+                var inpCheckbox = $('<input>').attr({
+                    class: 'smartlid__checkbox smartlid__checkbox_agreement',
+                    type: 'checkbox',
+                    name: 'agreement',
+                    value: 'Принимаю',
+                    id: 'smartlid__checkbox_agreement'
+                });
+
+                let inputCheckboxLabel = $('<label>').attr({
+                    for: 'smartlid__checkbox_agreement',
+                    class: 'smartlid__label smartlid__label_agreement'
+                });
+
+                let checkboxLink = $('<a>').attr({
+                    class: 'agreement-link',
+                    href: defaults.agreementLink,
+                    target: '_blank'
+
+                }).html(defaults.agreementText);
+
+                checkboxWrapper.append(inpCheckbox).append(inputCheckboxLabel.append(checkboxLink));
+            };
+
+            if (defaults.requestFormAddFile) {
+                var fileWrapper = $('<div>').attr({
+                    class: 'smartlid__file-wrapper'
+                });
+                var fileName = $('<input>').attr({
+                    class: 'smartlid__input smartlid__file-name',
+                    placeholder: 'Прикрепить файл',
+                    disabled: 'disabled',
+                });
+                let inputFileLabel = $('<label>').attr({
+                    for: 'smartlid__input_file',
+                    class: 'smartlid__label smartlid__label_file'
+                }).html('Выбрать');
+
+                let inpFile = $('<input>').attr({
+                    class: 'smartlid__input smartlid__input_file',
+                    type: 'file',
+                    name: 'files[]',
+                    id: 'smartlid__input_file'
+                }).change(function () {
+                    fileName.val($(this).val().replace(/.*\\/, ""));
+                });
+                fileWrapper.append(fileName).append(inputFileLabel).append(inpFile);
+            }
+
+
+            let formButton = $('<button>').attr({
+                class: 'smartlid__form-button',
+                type: 'submit',
+                name: 'sendingForm'
+            }).html(defaults.buttonTextRequestForm);
+
+            formButton.click(function (event) {
+                event.preventDefault();
+                if (defaults.agreement) {
+                    if (inpCheckbox.is(":checked")) {
+                        methods.sendMail($(requestForm).attr('id'));
+                    } else {
+                        formTitle.find('.smartlid__default-msgs').css('display', 'none');
+                        formTitle.find('.smartlid__respond-msgs').html('<p class="smartlid__respond-fail">Вы не приняли условия пользовательского соглашения</p>');
+                        setTimeout(() => {
+                            formTitle.find('.smartlid__default-msgs').css('display', 'block');
+                            formTitle.find('.smartlid__respond-msgs').html('');
+                        }, 4000);
+                    }
+                } else {
+                    methods.sendMail($(requestForm).attr('id'));
+                }
+
+            });
+
+            requestForm.append(formImages).append(formTitle).append(inpName).append(inpTel).append(inpMail).append(inpRef).append(fileWrapper).append(inpText).append(checkboxWrapper).append(formButton);
+
+            return requestForm;
+        },
+
+        sendMail: function (formid) {
+            var formId = "#" + formid;
+            var fd = new FormData(document.querySelector(formId));
+            $.ajax({
+                url: "../libs/smartlid/php/smartlid.php",
+                type: "POST",
+                data: fd,
+                processData: false,
+                contentType: false,
+                beforeSend: function () {
+
+                    $(formId).find('.smartlid__preloader').css('display', 'block');
+                    $(formId).find('.smartlid__default-msgs').css('display', 'none');
+                    $(formId).find('.smartlid__form-button').prop('disabled', true);
+                    $(formId).find('.smartlid__respond-msgs').html('Отправка письма');
+                },
+                success: function (data) {
+                    $(formId).find('.smartlid__preloader').css('display', 'none');
+                    switch (data) {
+                        case 'attantion':
+                            $(formId).find('.smartlid__respond-msgs').html('').append(defaults.attantion);
+                            break;
+                        case 'successmsgs':
+                            $(formId).find('.smartlid__respond-msgs').html('').append(defaults.successmsgs);
+                            break;
+                        case 'failmsgs':
+                            $(formId).find('.smartlid__respond-msgs').html('').append(defaults.failmsgs);
+                            break;
+                        case 'failfile':
+                            $(formId).find('.smartlid__respond-msgs').html('').append(defaults.failfile);
+                            break;
+                    }
+
+                    setTimeout(() => {
+                        $(formId).find('.smartlid__default-msgs').css('display', 'block');
+                        $(formId).find('.smartlid__respond-msgs').html('');
+                        $(formId).find('.smartlid__form-button').prop("disabled", false);
+
+                    }, 4000);
+
+                },
+                complete: function (data) {
+                    if (data.responseText == 'successmsgs') {
+                        $(formId).find($('input').not(':input[type=hidden]')).val('');
+                        $(formId).find($('textarea').val(''));
+                    }
+                    defaults.counter();
+                },
+
+            });
+        },
+
+        showModal: function (formClass) {
+
+            return $('body').append(methods.createModal(formClass));
+        },
+
+        showButtons: function () {
+
+            return methods.createButtons();
+        },
+    };
+    $.fn.smartLid = function (method) {
+        if (methods[method]) {
+            return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+        } else if (typeof method === 'object' || !method) {
+            return methods.init.apply(this, arguments);
+        } else {
+            $.error('Метод ' + method + ' не найден');
         }
-        if ((this.rf && i == 2 && this.cf) || (this.rf && this.cf == false && i == 1)) {
-          li.attr('class', 'requestForm');
-          a.attr('href', '#sl-overlay-rf');
-          if (this.fa) {
-            a.html('<i class="fa fa-envelope-o" aria-hidden="true"></i>');
-          } else {
-            a.html(requestFormIcon);
-            a.attr('class', 'call-form--link');
-          };
-          var item = 'sl-overlay-rf';
-          this.createOverlay(item);
-          continue;
-        }
-        if ((this.bf && i == 3 && this.rf && this.cf) || (this.bf && this.rf == false && this.cf == false && i == 1) || (this.bf && (this.cf == false || this.rf == false) && i == 2)) {
-          li.attr('class', 'basketForm');
-          a.attr('href', '#sl-overlay-bf');
-          if (this.fa) {
-            a.html('<i class="fa fa-shopping-basket" aria-hidden="true"></i>');
-          } else {
-            a.html(basketFormIcon);
-            a.attr('class', 'call-form--link');
-          }
-          var item = 'sl-overlay-bf';
-          this.createOverlay(item);
-          break;
-        }
-      }
-      view.displayButton(div);
-    },
-
-    createOverlay: function (item) {
-      var overlay = $('<div>').appendTo('body');
-      overlay.attr({
-        id: item,
-        class: 'sl-overlay',
-      });
-
-      overlay.addClass(styleOverlay);
-
-
-
-      switch (item) {
-      case 'sl-overlay-cf':
-        overlay.append(this.createCallForm());
-        break;
-      case 'sl-overlay-rf':
-        overlay.append(this.createRequestForm());
-        break;
-      case 'sl-overlay-bf':
-        overlay.append(this.createBasketForm());
-        break;
-      }
-
-      view.displayOverlay(overlay);
-
-    },
-
-    createRequestForm: function () {
-      if (this.rf) {
-        var div = $('<div>');
-        var p = $('<p>');
-        var form = $('<form>');
-        var formTitle = $('<div>');
-        var inpName = $('<input>');
-        var inpMail = $('<input>');
-        var inpText = $('<textarea>');
-        var formInfo = $('<input>');
-        var formReferer = $('<input>');
-        var formBtn = $('<button>');
-        var formTitleIcon = $('<div>');
-        var formTitleText = $('<div>');
-        var a = $('<a>');
-        var msgs = $('<div>');
-        var copyright = $('<p>');
-        var copyrightLink = $('<a>');
-
-        div.append(form);
-        form.append(formTitle);
-        form.append(msgs);
-        formTitle.append(formTitleIcon);
-        formTitle.append(formTitleText);
-        formTitleText.append(p);
-        p.html(requestFormTitle);
-        p.attr('class', 'form-title--title');
-
-        msgs.attr('class', 'msgs');
-
-        form.append(inpName).append(inpMail).append(inpText).append(formInfo).append(formReferer).append(formBtn).append(a);
-        div.append(copyright);
-        copyright.append(copyrightLink);
-
-
-        a.attr({
-          class: 'sl-overlay--close',
-          href: '#modal-close'
-        }).html('×');
-
-        div.attr('class', this.style);
-        form.attr({
-          method: 'POST',
-          id: 'secondForm',
-          class: 'sl-form',
-          autocomplete: 'off'
-        });
-
-        formTitleIcon.attr('class', 'form-title--icon').html(requestFormImg);
-        formTitleText.attr('class', 'form-title--text');
-        inpName.attr({
-          type: 'text',
-          name: 'uname',
-          class: 'sl-form--input',
-          placeholder: placeHolderName,
-        });
-
-        if (requiredName) {
-          inpName.attr('required', 'required');
-        }
-
-        inpMail.attr({
-          type: 'email',
-          name: 'uemail',
-          class: 'sl-form--input',
-          placeholder: placeHolderMail,
-
-        });
-        if (requiredMail) {
-          inpMail.attr('required', 'required');
-        }
-        inpText.attr({
-          type: 'text',
-          name: 'utext',
-          class: 'sl-form--input',
-          placeholder: placeHolderText
-        });
-        if (requiredText) {
-          inpText.attr('required', 'required');
-        }
-
-
-        formInfo.attr({
-          type: 'hidden',
-          name: 'formInfo'
-        });
-
-        formReferer.attr({
-          type: 'hidden',
-          name: 'formReferer'
-        });
-
-        formBtn.attr({
-          class: 'sl-form--button',
-          title: 'Заявка с сайта',
-          type: 'submit'
-        });
-
-        copyright.attr('class', 'copyright-wprapper');
-        copyrightLink.attr({
-          href: '',
-        }).html('');
-        formBtn.html('Отправить');
-
-        view.displayRequestForm(div);
-        controller.setFormInfo();
-        controller.setFormReferer();
-        controller.sendForm();
-        return div;
-      };
-    },
-
-    createCallForm: function () {
-      if (this.cf) {
-        var div = $('<div>');
-        var p = $('<p>');
-        var form = $('<form>');
-        var formTitle = $('<div>');
-        var inpName = $('<input>');
-        var inpTell = $('<input>');
-        var formInfo = $('<input>');
-        var formReferer = $('<input>');
-        var formBtn = $('<button>');
-        var formTitleIcon = $('<div>');
-        var formTitleText = $('<div>');
-        var a = $('<a>');
-        var msgs = $('<div>');
-        var copyright = $('<p>');
-        var copyrightLink = $('<a>');
-
-        div.append(form).append(copyright);
-        div.attr('class', this.style);
-        form.append(formTitle).append(msgs).append(inpName).append(inpTell).append(formInfo).append(formReferer).append(formBtn).append(a);
-        formTitle.append(formTitleIcon).append(formTitleText);
-        formTitleText.append(p);
-        p.html(callFormTitle).attr('class', 'form-title--title');
-        msgs.attr('class', 'msgs');
-
-
-
-        copyright.append(copyrightLink);
-
-        a.attr({
-          class: 'sl-overlay--close',
-          href: '#modal-close'
-        }).html('×');
-
-
-        form.attr({
-          method: 'POST',
-          id: 'firstForm',
-          class: 'sl-form',
-          class: 'sl-form',
-          autocomplete: 'off'
-        });
-
-        formTitleIcon.attr({
-          class: 'form-title--icon'
-        }).html(callFormImg);
-        formTitleText.attr('class', 'form-title--text');
-
-        inpName.attr({
-          type: 'text',
-          name: 'uname',
-          class: 'sl-form--input',
-          placeholder: placeHolderName
-        });
-
-        if (requiredName) {
-          inpName.attr('required', 'required');
-        }
-        inpTell.attr({
-          type: 'tel',
-          name: 'uphone',
-          class: 'sl-form--input',
-          pattern: '^[ 0-9]+$',
-          placeholder: placeHolderTel
-        });
-
-        if (requiredTel) {
-          inpTell.attr('required', 'required');
-        }
-
-        formInfo.attr({
-          type: 'hidden',
-          name: 'formInfo'
-        });
-
-        formReferer.attr({
-          type: 'hidden',
-          name: 'formReferer'
-        });
-
-        formBtn.attr({
-          class: 'sl-form--button',
-          title: 'Заказали обратный звонок',
-          type: 'submit'
-        });
-
-        copyright.attr('class', 'copyright-wprapper');
-        copyrightLink.attr({
-          href: '',
-        }).html('');
-
-        formBtn.html("Отправить");
-
-        view.displayCallForm(div);
-        controller.setFormInfo();
-        controller.setFormReferer();
-        controller.sendForm();
-        return div;
-      };
-    }
-  };
-  model.createButton();
-})();
-
+    };
+}(jQuery));

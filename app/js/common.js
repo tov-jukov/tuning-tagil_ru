@@ -24,6 +24,19 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
     */
   });
 
+
+  $('body').smartLid({
+        
+
+    //Настройки
+    requestForm: true,
+    placeholderName: 'Введите ваше имя',
+    callFormAddFile: true,
+    requestFormAddFile: true,
+
+
+  });
+
 // ----]
 
     // $('.menu-trigger').click(function() {
@@ -50,9 +63,7 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
     //end resize
 
 
-   // gallery
-
-
+// gallery justifiedGallery (сетка галереи)
 
     $('#jg0').justifiedGallery({
         rowHeight : 200,
@@ -65,11 +76,6 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
         selector:'figure, div:not(.spinner)'
     });
 
-    // $('#tj0').justifiedGallery().on('jg.complete', function (e) {
-    //     photoSwipe();
-    // });
-
-
     // sizeRangeSuffixes: {
     //     100 : '_t', // used with images which are less than 100px on the longest side
     //     240 : '_m', // used with images which are between 100px and 240px on the longest side
@@ -79,13 +85,9 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
     //     1024 : '_b' // used which images that are more than 640px on the longest side
     // },
 
-
-
-
 });
 
-//------------------
-
+// gallery PhotoSwipe (параметры берутся из html)
 
 $( document ).ready(function() {
     var items = []; // array of slide objects that will be passed to PhotoSwipe()
@@ -152,26 +154,6 @@ $( document ).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //-----------------
 
 // $(".toggle-mnu").click(function() {
@@ -184,99 +166,6 @@ $( document ).ready(function() {
 
 // });//end ready
 
-// function photoSwipe() {
-//     var items = [];
-
-//     $('.mason__item').each(function() {
-//         var $pic = $(this);
-//         var $pswp = $('.pswp')[0];
-//         console.log($pic.data('size2'))
-
-//         // Get the details (src, width, height) for each image and save them in an array
-//         // $pic.each(function() {
-//             var $href   = $(this).data('href'),
-//                 $size   = $(this).data('dimensions').split('x'),
-//                 $width  = $size[0],
-//                 $height = $size[1];
-
-//             var item = {
-//                 src : $href,
-//                 w   : $width,
-//                 h   : $height
-//             };
-
-//             items.push(item);
-//         // });
-
-//         // Add a click handler for each image to initialize the PhotoSwipe gallery
-//         $pic.on('click', function(event) {
-//             event.preventDefault();
-
-//             var $index = $(this).index();
-//             var options = {
-//                 index: $index,
-//                 bgOpacity: 0.7,
-//                 showHideOpacity: true
-//             }
-
-//             // Initialize PhotoSwipe
-//             var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
-//             lightBox.init();
-//         });
-//     }); 
-// }
-
-// (function($) {
-//     $(document).ready(function() {
-//         $(".mason").mason({
-//             itemSelector: ".mason__item",
-//             ratio: 1.5,
-//             sizes: [
-//                 [1,1],
-//                 [1,2],
-//                 [2,1],
-//                 [2,2]
-//             ],
-//             // promoted: [
-//             //     ['mason__item--promo-v1', 3, 3],
-//             //     ['mason__item--promo-v2', 1, 3],
-//             //     ['mason__item--promo-v3', 3, 2]
-//             // ],
-//             columns: [
-//                 [0,480,1],
-//                 [480,780,2],
-//                 [780,1080,3],
-//                 [1080,1320,4],
-//                 [1320,1680,5]
-//             ],
-//             filler: {
-//                 itemSelector: '.mason__filler',
-//                 filler_class: 'mason__custom-fill'
-//             },
-//             layout: 'fluid',
-//             gutter: 5
-//         }, function() {
-//             photoSwipe()
-//         });
-//     });
-// })(jQuery);
-
-// $(document).ready(function() {
-//     var test = {size: 1200, columns: 10};
-//     var test2 = {size: 700, columns: 8};
-//     var grid = $("#mosaic-grid").mosaic({
-//         tileModel: '.sizer',
-//         columns: 3,
-//         gutter: 1,
-//         heightFromWidth: true,
-//         breakpoints: [test, test2]
-//     });
-
-//     $(".link").click(function() {
-//         $(".active").removeClass("active");
-//         $(this).addClass("active"); 
-//     });
-// });
 
 $(window).load(function(){    
 
