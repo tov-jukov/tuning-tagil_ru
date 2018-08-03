@@ -7,7 +7,7 @@
 
     // ** Пример для SMTP-YANDEX.
     const HOST = 'ssl://smtp.yandex.ru';
-    const LOGIN = 'tov-jukof';
+    const LOGIN = 'tov-jukof@ya.ru';
     const PASS = '2201_2201';
     const PORT = 465;
 
@@ -39,4 +39,4 @@
     $telIsRequired = true;
     $emailIsRequired = true;
     // $textIsRequired = false;
-    
+    ?>
