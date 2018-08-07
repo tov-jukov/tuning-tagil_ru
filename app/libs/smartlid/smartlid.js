@@ -24,13 +24,13 @@
         styleForm: ' dark-space',
 
         //** Иконка главной кнопки, которая вызывает другие кнопки
-        navBtnIcon: '<img src="./smartlid/img/line-menu.svg" height="18" width="18" alt="">',
+        navBtnIcon: '<img src="../libs/smartlid/img/line-menu.svg" height="18" width="18" alt="">',
 
         //** Иконка кнопки, которая вызывает модальное окно с формой обратного звонка
-        callFormBtnIcon: '<img src="./smartlid/img/phone.svg" height="18" width="18" alt="">',
+        callFormBtnIcon: '<img src="../libs/smartlid/img/phone.svg" height="18" width="18" alt="">',
 
         //** Иконка кнопки, которая вызывает модальное окно с формой отправки сообщения
-        requestFormBtnIcon: '<img src="./smartlid/img/envelope.svg" height="18" width="18" alt="">',
+        requestFormBtnIcon: '<img src="../libs/smartlid/img/envelope.svg" height="18" width="18" alt="">',
 
         //** Placeholder для полей
         placeholderName: 'Введите ваше имя',
@@ -57,7 +57,7 @@
         buttonTextCallForm: 'Отправить',
 
         //** Картинка в модальном окне
-        callFormIcon: './smartlid/img/call.svg',
+        callFormIcon: '../libs/smartlid/img/call.svg',
 
         //** Включить поле с отправкой файла? true | false
         callFormAddFile: false,
@@ -72,7 +72,7 @@
         buttonTextRequestForm: 'Отправить',
 
         //** Картинка в модальном окне с формой отправки заявки
-        requestFormIcon: './smartlid/img/mail.svg',
+        requestFormIcon: '../libs/smartlid/img/mail.svg',
 
         //** Включить поле с отправкой файла? true | false
         requestFormAddFile: true,
