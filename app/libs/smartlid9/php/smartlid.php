@@ -114,3 +114,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else{
     header ("Location: /"); // главная страница вашего лендинга
 }
+
+$mail = new PHPMailer();
+$mail->isMAIL(); 
+$mail->CharSet = "UTF-8";
+$mail->setFrom('tov-jukof@ya.ru', 'Интернет магазин site'); 
+$subject = 'Новинки недели сайта';
+$text    = 'Это письмо было послано Вам системой автоматической рассылки сайта site.com<br>'.
+           'Если Вы хотите отписаться от данной рассылки, пройдите по этой ссылке';
+
+$mail->Subject = $subject;
+$mail->Body    = $text;
+
+$mail->addAddress('tov-jukof@ya.ru', 'st');
+
+if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Ошибка:  ' . $mail->ErrorInfo;
+} else {
+    echo '<br>Удачно';
+}
+
+$mail->clearAddresses();
+$mail->clearCustomHeaders();
+$mail->clearAttachments();
+$mail->clearReplyTos();
+
+?>
