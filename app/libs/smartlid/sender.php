@@ -12,8 +12,8 @@ function html($data) {
 
 $errors   = [];
 $messages = [];
- $SENDER = 'tov-jukof';
- $PASS = '2201_2201';
+ $SENDER = 'm-style-nt';
+ $PASS = 'vcnbkmgfhjkm';
 
 $defaultConfig = [
     'defaultFrom' => $SENDER,
@@ -34,11 +34,62 @@ $configValue = function ($key, $default = NULL) use ($config) {
 };
 
 $disableSmtp    = param('disableSmtp', false);
-$messageFrom    = param('from'       , 'tov-jukof@yandex.ru');//''
-$messageTo      = param('to'         , '79826546532@ya.ru');
+$messageFrom    = param('from'       , 'm-style-nt@yandex.ru');//''
+$messageTo      = param('to'         , 'fablk@mail.ru');
 //$messageReplyTo = param('reply-to'   , '');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    if (isset($_POST['name']) ) {
+        if($nameIsRequired && empty($_POST['name'])) {
+            echo 'attantion';
+            die;
+        } else {
+            if (!empty($_POST['name'])) {
+                $name = "<b>Имя: </b>" . strip_tags($_POST['name']) . "<br>";
+            }
+            
+        }
+    }
+
+    if (isset($_POST['tel']) ) {
+        if($telIsRequired && empty($_POST['tel'])) {
+            echo 'attantion';
+            die;
+        } else {
+            if (!empty($_POST['tel'])) {
+                $tel = "<b>Телефон: </b> " . strip_tags($_POST['tel']) . "<br>";
+            }
+        }
+    }
+
+    if (isset($_POST['email']) ) {
+        if($emailIsRequired && empty($_POST['email'])) {
+            echo 'attantion';
+            die;
+        } else {
+            if (!empty($_POST['email'])) {
+                $email = "<b>Почта: </b> " . strip_tags($_POST['email']) . "<br>";
+            }
+        } 
+    }
+    
+    if (isset($_POST['agreement'])) {
+        $agreement = "<br><b>Даю согласие на обработку персональных данных</b>";
+    }  
+        
+    
+    
+    if (isset($_POST['text'])) {
+        if (!empty($_POST['text'])) {
+            $text = "<b>Сообщение: </b> " . strip_tags($_POST['text']) . "<br>";
+        }
+    }
+
+    
+}
 $messageSubject = param('subject'    , 'Заявка с сайта');
-$messageText    = param('text'       , '<p>Дорогой друг,</p><p>Спешу поделиться радостным известием!</p>');
+$messageText    = param('text'       , '<p>Дорогой друг,</p><p>Спешу поделиться радостным известием!</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'. $agreement);
 
 if ($disableSmtp) {
     unset($config['transports']['smtp']);
@@ -77,11 +128,11 @@ if (true) {
             $_FILES['attachment']['type']
         );
     }*/
-    echo '\nsend1';
+    
     if (Mailer()->sendMessage($message)) {
     echo 'Сообщение успешно отправлено.';
 } else {
     echo 'Во время отправки возникли какие-то ошибки, проверьте логи для большей информации.';
 }
-    echo '\nsend2';
+ 
 }
