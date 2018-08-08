@@ -7,7 +7,7 @@
         callForm: true,
 
         //** Включить форму c отправкой сообщения? true|false
-        requestForm: true,
+        requestForm: false,
 
         // Расположение кнопок: smartlid_left | smartlid_right
         position: ' smartlid_right',
@@ -17,7 +17,7 @@
         // SMARTLID - ID цели
 
         counter: function () {
-            yaCounter40976409.reachGoal('SMARTLID');
+            // yaCounter40976409.reachGoal('SMARTLID');
         },
 
         //** Стиливое оформление формы 'dark-space', вскоре появятся и другие цвета
@@ -75,7 +75,7 @@
         requestFormIcon: '../libs/smartlid/img/mail.svg',
 
         //** Включить поле с отправкой файла? true | false
-        requestFormAddFile: true,
+        requestFormAddFile: false,
 
         //** Включить поле с вводом телефона? true | false
         requestFormTelInput: true,
@@ -544,7 +544,7 @@
             var formId = "#" + formid;
             var fd = new FormData(document.querySelector(formId));
             $.ajax({
-                url: "./smartlid/php/smartlid.php",
+                url: "/libs/ApMailer/send_mail.php",
                 type: "POST",
                 data: fd,
                 processData: false,
