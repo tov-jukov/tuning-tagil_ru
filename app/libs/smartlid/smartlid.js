@@ -7,7 +7,7 @@
         callForm: true,
 
         //** Включить форму c отправкой сообщения? true|false
-        requestForm: false,
+        requestForm: true,
 
         // Расположение кнопок: smartlid_left | smartlid_right
         position: ' smartlid_right',
@@ -61,7 +61,7 @@
 
         //** Включить поле с отправкой файла? true | false
         callFormAddFile: false,
-
+        
 
         //******************************* Настройка формы с возможностью отправить сообщение *******************************
 
@@ -358,6 +358,7 @@
                     fileName.val($(this).val().replace(/.*\\/, ""));
                 });
                 fileWrapper.append(fileName).append(inputFileLabel).append(inpFile);
+                fileWrapper.hide();
             }
 
             let formButton = $('<button>').attr({
@@ -507,6 +508,7 @@
                     fileName.val($(this).val().replace(/.*\\/, ""));
                 });
                 fileWrapper.append(fileName).append(inputFileLabel).append(inpFile);
+                fileWrapper.hide();
             }
 
 
@@ -544,7 +546,7 @@
             var formId = "#" + formid;
             var fd = new FormData(document.querySelector(formId));
             $.ajax({
-                url: "/libs/ApMailer/send_mail.php",
+                url: "/libs/smartlid/sender.php",
                 type: "POST",
                 data: fd,
                 processData: false,
