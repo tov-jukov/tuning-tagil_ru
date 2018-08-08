@@ -36,14 +36,14 @@ $configValue = function ($key, $default = NULL) use ($config) {
 $disableSmtp    = param('disableSmtp', false);
 $messageFrom    = param('from'       , 'tov-jukof@yandex.ru');//''
 $messageTo      = param('to'         , '79826546532@ya.ru');
-//$messageReplyTo = param('reply-to'   , 'fablk@mail.ru');
+//$messageReplyTo = param('reply-to'   , '');
 $messageSubject = param('subject'    , 'Заявка с сайта');
 $messageText    = param('text'       , '<p>Дорогой друг,</p><p>Спешу поделиться радостным известием!</p>');
 
 if ($disableSmtp) {
     unset($config['transports']['smtp']);
 }
-echo '\n0send';
+
 if (true) {
     Mailer()->init($config);
     
