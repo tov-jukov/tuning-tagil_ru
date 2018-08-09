@@ -31,8 +31,9 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
     //Настройки
     requestForm: true,
     placeholderName: 'Введите ваше имя',
-    callFormAddFile: true,
-    requestFormAddFile: true,
+    callFormAddFile: false,
+    requestFormAddFile: false
+    
 
 
   });

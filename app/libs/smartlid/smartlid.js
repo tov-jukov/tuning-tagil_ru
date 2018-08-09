@@ -61,7 +61,7 @@
 
         //** Включить поле с отправкой файла? true | false
         callFormAddFile: false,
-        
+
 
         //******************************* Настройка формы с возможностью отправить сообщение *******************************
 
@@ -100,13 +100,14 @@
         //** Определение источника перехода
         referrer: document.referrer,
     };
+
     var methods = {
 
         init: function (options) {
             var settings = $.extend(defaults, options);
             methods.setRef();
-            
-            
+
+
             return this.each(function () {
                 $(this).append(methods.showButtons());
             });
@@ -191,7 +192,6 @@
             smartLidRounds.clone().appendTo(smartLidNavButton);
             smartLidRounds.clone().appendTo(smartLidNavButton);
             smartLid.append(smartLidNavButton).append(smartLidModalButtons);
-
 
             return smartLid;
         },
@@ -358,7 +358,7 @@
                     fileName.val($(this).val().replace(/.*\\/, ""));
                 });
                 fileWrapper.append(fileName).append(inputFileLabel).append(inpFile);
-                fileWrapper.hide();
+                // fileWrapper.hide();
             }
 
             let formButton = $('<button>').attr({
@@ -383,7 +383,6 @@
                 } else {
                     methods.sendMail($(callForm).attr('id'));
                 }
-
             });
 
             callForm.append(formImages).append(formTitle).append(inpName).append(inpTel).append(inpRef).append(fileWrapper).append(checkboxWrapper).append(formButton);
@@ -435,7 +434,6 @@
                 });
             }
 
-
             let inpMail = $('<input>').attr({
                 class: 'smartlid__input smartlid__input_mail',
                 type: 'email',
@@ -455,7 +453,6 @@
                 name: 'ref',
                 value: localStorage.getItem('userRef'),
             });
-
 
             if (defaults.agreement) {
                 var checkboxWrapper = $('<div>').attr({
@@ -508,9 +505,8 @@
                     fileName.val($(this).val().replace(/.*\\/, ""));
                 });
                 fileWrapper.append(fileName).append(inputFileLabel).append(inpFile);
-                fileWrapper.hide();
+                // fileWrapper.hide();
             }
-
 
             let formButton = $('<button>').attr({
                 class: 'smartlid__form-button',
@@ -545,6 +541,7 @@
         sendMail: function (formid) {
             var formId = "#" + formid;
             var fd = new FormData(document.querySelector(formId));
+
             $.ajax({
                 url: "/libs/smartlid/sender.php",
                 type: "POST",
@@ -604,6 +601,7 @@
             return methods.createButtons();
         },
     };
+    
     $.fn.smartLid = function (method) {
         if (methods[method]) {
             return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
