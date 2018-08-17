@@ -1,6 +1,5 @@
                             <div class="row">
                             <div class="col-12">
-
                             
                             <!-- block -->
                             <!-- justified-gallery -->
@@ -8,8 +7,6 @@
                             <div id="jg0" class="justified-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
                                 <!-- (figure[itemprop=associatedMedia itemscope="" itemtype=https://schema.org/ImageObject]>(a[href="../assets/work/04/audi-a7-$$.jpg" itemprop=contentUrl data-size=1000x660 data-index=0]>img[src="../assets/work/04/audi-a7-$$.jpg" height="240" width="360" itemprop="thumbnail" alt=""])+figcaption[itemprop="caption description"])*7 -->
-
-
 
                             </div>
 
