@@ -12,8 +12,8 @@ function html($data) {
 
 $errors   = [];
 $messages = [];
- $SENDER = 'm-style-nt';
- $PASS = 'vcnbkmgfhjkm';
+$SENDER = 'm-style-nt';
+$PASS = 'vcnbkmgfhjkm';
 
 $defaultConfig = [
     'defaultFrom' => $SENDER,
@@ -26,6 +26,7 @@ $defaultConfig = [
 ];
 
 //'file' => ['file', 'dir'  => 'mails'],
+
 $config = array_replace_recursive($defaultConfig, param('config', []));
 
 $configValue = function ($key, $default = NULL) use ($config) {
@@ -37,59 +38,79 @@ $disableSmtp    = param('disableSmtp', false);
 $messageFrom    = param('from'       , 'm-style-nt@yandex.ru');//''
 $messageTo      = param('to'         , 'm-style-nt@yandex.ru');
 //$messageReplyTo = param('reply-to'   , '');
+$file = 'logFile.txt';
+//Добавим разделитель, чтобы мы смогли отличить каждую запись
+$text = '=======================\n';
+$text .= print_r('Вместо текста сюда можно прописать переменную!');
+$text .= '\n';
+$fOpen = fopen($file,'a'); //Открываем файл или создаём если его нет
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+fwrite($fOpen, $_SERVER["REQUEST_METHOD"]); //Записываем
+fwrite($fOpen, $_POST['name']); //Записываем
+fwrite($fOpen, $_POST['tel']); //Записываем
+
+
+$name = "<b>Имя: </b>" . strip_tags($_POST['name']) . "<br>";
+$tel = "<b>Телефон: </b> " . strip_tags($_POST['tel']) . "<br>";
+$email = "<b>Почта: </b> " . strip_tags($_POST['email']) . "<br>";
+$agreement = "<br><b>Даю согласие на обработку персональных данных</b>";
+$text = "<b>Сообщение: </b> " . strip_tags($_POST['text']) . "<br>";
+
+
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    if (isset($_POST['name']) ) {
-        if($nameIsRequired && empty($_POST['name'])) {
-            echo 'attantion';
-            die;
-        } else {
-            if (!empty($_POST['name'])) {
-                $name = "<b>Имя: </b>" . strip_tags($_POST['name']) . "<br>";
-            }
+//     if (isset($_POST['name']) ) {
+//         if( empty($_POST['name'])) {
+//             echo 'attantion';
+//             die;
+//         } else {
+//             if (!empty($_POST['name'])) {
+//                 $name = "<b>Имя: </b>" . strip_tags($_POST['name']) . "<br>";
+//             }
             
-        }
-    }
+//         }
+//     }
 
-    if (isset($_POST['tel']) ) {
-        if($telIsRequired && empty($_POST['tel'])) {
-            echo 'attantion';
-            die;
-        } else {
-            if (!empty($_POST['tel'])) {
-                $tel = "<b>Телефон: </b> " . strip_tags($_POST['tel']) . "<br>";
-            }
-        }
-    }
+//     if (isset($_POST['tel']) ) {
+//         if( empty($_POST['tel'])) {
+//             echo 'attantion';
+//             die;
+//         } else {
+//             if (!empty($_POST['tel'])) {
+//                 $tel = "<b>Телефон: </b> " . strip_tags($_POST['tel']) . "<br>";
+//             }
+//         }
+//     }
 
-    if (isset($_POST['email']) ) {
-        if($emailIsRequired && empty($_POST['email'])) {
-            echo 'attantion';
-            die;
-        } else {
-            if (!empty($_POST['email'])) {
-                $email = "<b>Почта: </b> " . strip_tags($_POST['email']) . "<br>";
-            }
-        } 
-    }
+//     if (isset($_POST['email']) ) {
+//         if( empty($_POST['email'])) {
+//             echo 'attantion';
+//             die;
+//         } else {
+//             if (!empty($_POST['email'])) {
+//                 $email = "<b>Почта: </b> " . strip_tags($_POST['email']) . "<br>";
+//             }
+//         } 
+//     }
     
-    if (isset($_POST['agreement'])) {
-        $agreement = "<br><b>Даю согласие на обработку персональных данных</b>";
-    }  
+//     if (isset($_POST['agreement'])) {
+//         $agreement = "<br><b>Даю согласие на обработку персональных данных</b>";
+//     }  
         
     
     
-    if (isset($_POST['text'])) {
-        if (!empty($_POST['text'])) {
-            $text = "<b>Сообщение: </b> " . strip_tags($_POST['text']) . "<br>";
-        }
-    }
+//     if (isset($_POST['text'])) {
+//         if (!empty($_POST['text'])) {
+//             $text = "<b>Сообщение: </b> " . strip_tags($_POST['text']) . "<br>";
+//         }
+//     }
 
-    
-}
-$messageSubject = param('subject'    , 'Заявка с сайта');
-$messageText    = param('text'       , '<p>Дорогой друг,</p><p>Спешу поделиться радостным известием!</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'. $agreement);
+// }
+
+fclose($fOpen);
+$messageSubject = param('subject' , 'Заявка с сайта');
+$messageText    = param('text'    , '<p>Дорогой друг,</p><p>Спешу поделиться радостным известием!</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'.$text.'<br>'. $agreement);
 
 if ($disableSmtp) {
     unset($config['transports']['smtp']);
