@@ -35,7 +35,7 @@ $configValue = function ($key, $default = NULL) use ($config) {
 
 $disableSmtp    = param('disableSmtp', false);
 $messageFrom    = param('from'       , 'm-style-nt@yandex.ru');//''
-$messageTo      = param('to'         , 'fablk@mail.ru');
+$messageTo      = param('to'         , 'm-style-nt@yandex.ru');
 //$messageReplyTo = param('reply-to'   , '');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
