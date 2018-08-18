@@ -77,6 +77,17 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
         selector:'figure, div:not(.spinner)'
     });
 
+    $('#jg1').justifiedGallery({
+        rowHeight : 200,
+        justifyThreshold: 0.75,
+        lastRow : 'justify',
+        captions: false,
+        randomize: false,
+        margins : 10,
+        waitThumbnailsLoad: false,
+        selector:'figure, div:not(.spinner)'
+    });
+
     // sizeRangeSuffixes: {
     //     100 : '_t', // used with images which are less than 100px on the longest side
     //     240 : '_m', // used with images which are between 100px and 240px on the longest side
@@ -168,71 +179,3 @@ $( document ).ready(function() {
 // });//end ready
 
 
-$(window).load(function(){    
-
-    $(".basicExample2").click(function () {
-
-        var pswpElement = document.querySelectorAll('.pswp')[0];
-        var items = [];
-
-        $(".basicExample2").each(function () {
-            var size = $(this).attr("data-size").split('x');
-            items.push({
-                src: $(this).attr("href"),
-                w: size[0],
-                h: size[1],
-              title: 'Something'
-            });
-
-        });
-
-        var options = {
-            index: $(this).parent().index()
-        };
-        var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-        return false;
-
-    });
-
-});
-
-$('.picture').each( function() {
-    var $pic     = $(this),
-        getItems = function() {
-            var items = [];
-            $pic.find('a').each(function() {
-                var $href   = $(this).attr('href'),
-                    $size   = $(this).data('size').split('x'),
-                    $width  = $size[0],
-                    $height = $size[1];
- 
-                var item = {
-                    src : $href,
-                    w   : $width,
-                    h   : $height
-                }
- 
-                items.push(item);
-            });
-            return items;
-        }
- 
-    var items = getItems();
-});
-
-var $pswp = $('.pswp')[0];
-$pic.on('click', 'figure', function(event) {
-    event.preventDefault();
-     
-    var $index = $(this).index();
-    var options = {
-        index: $index,
-        bgOpacity: 0.7,
-        showHideOpacity: true
-    }
-     
-    // Initialize PhotoSwipe
-    var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
-    lightBox.init();
-});
