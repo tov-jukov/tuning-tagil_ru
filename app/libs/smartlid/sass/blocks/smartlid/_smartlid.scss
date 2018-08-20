@@ -78,6 +78,10 @@
                             animation-name: smartlidRings;
                             animation-iteration-count: infinite;
                             z-index: -1;
+                            &:focus
+                                {
+                                    background-color: blue;
+                                }
                         }
                         &__rings:nth-child(2) {
                             animation-name: smartlidRings2;

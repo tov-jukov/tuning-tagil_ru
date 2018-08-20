@@ -5,10 +5,10 @@
   &__call-button,
   &__request-button,
   &__contact-button {
-    background: #263238;
+    background: $btn;
   }
   // Цвет расплывающихся кругов вокруг основной кнопки
   &__rings {
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(50, 14, 14, 0.5);
   }
 }
