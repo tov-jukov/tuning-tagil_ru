@@ -45,18 +45,15 @@ $text .= print_r('Вместо текста сюда можно прописат
 $text .= '\n';
 $fOpen = fopen($file,'a'); //Открываем файл или создаём если его нет
 
-
 fwrite($fOpen, $_SERVER["REQUEST_METHOD"]); //Записываем
 fwrite($fOpen, $_POST['name']); //Записываем
 fwrite($fOpen, $_POST['tel']); //Записываем
 
-
 $name = "<b>Имя: </b>" . strip_tags($_POST['name']) . "<br>";
 $tel = "<b>Телефон: </b> " . strip_tags($_POST['tel']) . "<br>";
 $email = "<b>Почта: </b> " . strip_tags($_POST['email']) . "<br>";
-$agreement = "<br><b>Даю согласие на обработку персональных данных</b>";
 $text = "<b>Сообщение: </b> " . strip_tags($_POST['text']) . "<br>";
-
+$agreement = "<br>Отправитель дал согласие на обработку персональных данных</b>";
 
 // if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
@@ -109,6 +106,7 @@ $text = "<b>Сообщение: </b> " . strip_tags($_POST['text']) . "<br>";
 // }
 
 fclose($fOpen);
+
 $messageSubject = param('subject' , 'Заявка с сайта');
 $messageText    = param('text'    , '<p>Дорогой друг,</p><p>Спешу поделиться радостным известием!</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'.$text.'<br>'. $agreement);
 

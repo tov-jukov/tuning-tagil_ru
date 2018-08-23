@@ -4,7 +4,7 @@ $(function() {
 // прелоадер
 $(".preloader").fadeOut("slow");
 
-// плавный переход по ссылкам [----
+// [---- плавный переход по ссылкам _начало_
 
 $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--close)').on('click', function(event) {
     // отменяем стандартное действие
@@ -24,17 +24,18 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
     */
   });
 
+  // _конец_ плавный переход по ссылкам ---]
 
+
+ // настройка параметров формы обратного звонка  
   $('body').smartLid({
-        
 
     //Настройки
-    requestForm: true,
+    callForm: true,
+    requestForm: false,
     placeholderName: 'Введите ваше имя',
     callFormAddFile: false,
     requestFormAddFile: false
-    
-
 
   });
 
@@ -51,6 +52,7 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
     //         }
     // });//end resize
 
+  // обработчик выпадающего меню для мобильной версии
     $(".menu-trigger").click(function(){
         //console.log("click");
          $("nav ul").slideToggle(500);

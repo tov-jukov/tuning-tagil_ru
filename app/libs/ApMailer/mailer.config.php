@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'defaultFrom' => 'mymail@example.org',
+    'defaultFrom' => 'm-style-nt@yandex.ru',
 //  'onError'     => function($error, $message, $transport) { myErrorLog($error); },
 //  'afterSend'   => function($text, $message, $layer) { myMailLog($text); },
     'transports'  => [
