@@ -80,12 +80,12 @@ $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--clos
     });
 
     $('#jg1').justifiedGallery({
-        rowHeight : 200,
+        rowHeight : 300,
         justifyThreshold: 0.75,
         lastRow : 'justify',
         captions: false,
         randomize: false,
-        margins : 10,
+        margins : 30,
         waitThumbnailsLoad: false,
         selector:'figure, div:not(.spinner)',
         sizeRangeSuffixes: {
