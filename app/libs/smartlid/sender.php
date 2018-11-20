@@ -40,6 +40,7 @@ $messageTo      = param('to'         , 'm-style-nt@yandex.ru');
 //$messageReplyTo = param('reply-to'   , '');
 $file = 'logFile.txt';
 //Добавим разделитель, чтобы мы смогли отличить каждую запись
+/* temp file log - 1
 $text = '=======================\n';
 $text .= print_r('Вместо текста сюда можно прописать переменную!');
 $text .= '\n';
@@ -48,11 +49,17 @@ $fOpen = fopen($file,'a'); //Открываем файл или создаём �
 fwrite($fOpen, $_SERVER["REQUEST_METHOD"]); //Записываем
 fwrite($fOpen, $_POST['name']); //Записываем
 fwrite($fOpen, $_POST['tel']); //Записываем
+*/
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $name = "<b>Имя: </b>" . strip_tags($_POST['name']) . "<br>";
 $tel = "<b>Телефон: </b> " . strip_tags($_POST['tel']) . "<br>";
 $email = "<b>Почта: </b> " . strip_tags($_POST['email']) . "<br>";
 $text = "<b>Сообщение: </b> " . strip_tags($_POST['text']) . "<br>";
+}
+echo '<pre>';
+var_dump($_POST)
+echo '</pre>';
 $agreement = "<br>Отправитель дал согласие на обработку персональных данных</b>";
 
 // if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -104,9 +111,9 @@ $agreement = "<br>Отправитель дал согласие на обраб
 //     }
 
 // }
-
+/* temp file log - 2
 fclose($fOpen);
-
+*/
 $messageSubject = param('subject' , 'Заявка с сайта');
 $messageText    = param('text'    , '<p>Дорогой друг,</p><p>Спешу поделиться радостным известием!</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'.$text.'<br>'. $agreement);
 
