@@ -35,7 +35,8 @@ $configValue = function ($key, $default = NULL) use ($config) {
 };
 
 $disableSmtp    = param('disableSmtp', false);
-$messageFrom    = param('from'       , 'm-style-nt@yandex.ru');//''
+$messageFrom    = param('from'       , 'm-style-nt@yandex.ru');
+//''
 $messageTo      = param('to'         , 'm-style-nt@yandex.ru');
 //$messageReplyTo = param('reply-to'   , '');
 $file = 'logFile.txt';
