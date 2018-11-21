@@ -1,7 +1,7 @@
 <?php
 
 require_once "SendMailSmtpClass.php"; // подключаем класс
-  
+
 $mailSMTP = new SendMailSmtpClass('m-style-nt@yandex.ru', 'vcnbkmgfhjkm', 'ssl://smtp.yandex.ru', 465, "UTF-8");
 // $mailSMTP = new SendMailSmtpClass('zhenikipatov@yandex.ru', '', 'ssl://smtp.yandex.ru', 465, "windows-1251");
 // $mailSMTP = new SendMailSmtpClass('monitor.test@mail.ru', '***', 'ssl://smtp.mail.ru', 465, "UTF-8");
@@ -17,9 +17,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email =  isset($_POST['email']) ? "<b>Почта: </b> " . strip_tags($_POST['email']) . "<br>" : "";
     $text = isset($_POST['text']) ? "<b>Сообщение: </b> " . strip_tags($_POST['text']) . "<br>" : "";
 }
-$agreement = "<br>Отправитель дал согласие на обработку персональных данных</b>";
+$agreement = "<b>Дополнительно:</b> <br>Отправитель дал согласие на обработку персональных данных</b>";
 $messageSubject = param('subject' , 'Заявка с сайта');
-$messageText    = param('text'    , '<p>Дорогой друг,</p><p>Спешу поделиться радостным известием!</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'.$text.'<br>'. $agreement);
+$messageText    = param('text'    , '<p>Заявка на обратный звонок:</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'.$text.'<br>'. $agreement);
 
 // от кого
 $from = array(
