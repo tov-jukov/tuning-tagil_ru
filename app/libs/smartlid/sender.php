@@ -17,9 +17,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email =  isset($_POST['email']) ? "<b>Почта: </b> " . strip_tags($_POST['email']) . "<br>" : "";
     $text = isset($_POST['text']) ? "<b>Сообщение: </b> " . strip_tags($_POST['text']) . "<br>" : "";
 }
-$agreement = "<b>Дополнительно:</b> <br>Отправитель дал согласие на обработку персональных данных</b>";
-$messageSubject = param('subject' , 'Заявка с сайта');
-$messageText    = param('text'    , '<p>Заявка на обратный звонок:</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'.$text.'<br>'. $agreement);
+
+$agreement = "<b>Дополнительно:</b> Отправитель дал согласие на обработку персональных данных</b>";
+$messageSubject = 'Заявка с сайта';
+
+//  = param('subject' , 'Заявка с сайта');
+$messageText    = '<p>Заявка на обратный звонок:</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'.$text.'<br>'. $agreement;
+
+//param('text'    , '<p>Заявка на обратный звонок:</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'.$text.'<br>'. $agreement);
 
 // от кого
 $from = array(

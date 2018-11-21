@@ -563,7 +563,6 @@
                             break;
                         case 'successmsgs':
                             $(formId).find('.smartlid__respond-msgs').html('').append(defaults.successmsgs);
-                            setTimeout($(formId).closeModal(), 1000);
                             break;
                         case 'failmsgs':
                             $(formId).find('.smartlid__respond-msgs').html('').append(defaults.failmsgs);
