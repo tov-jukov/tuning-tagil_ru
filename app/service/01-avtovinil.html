@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
@@ -48,7 +48,40 @@
 <body class="inner">
     <div class="wrap-page">
         <div class="preloader"></div>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function(d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter20677315 = new Ya.Metrika2({
+                            id: 20677315,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true,
+                            webvisor: true,
+                            trackHash: true
+                        });
+                    } catch (e) {}
+                });
 
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function() {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks2");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/20677315" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
         <header>
             <div class="top-line">
                 <div class="container">
@@ -165,22 +198,17 @@
                     <div class="row">
                         <div class="col">
                             <!-- <div class="work-descr"></div> -->
-                            <p class="work-descr">Автомобиль – это воплощение характера ее владельца. И почти каждый автолюбитель мечтает, чтобы
-                                его второе «я» не выглядело серо и невыразительно на фоне других, а, наоборот, привлекало
-                                внимание и вызывало восхищенные возгласы. Одним из распространенных вариантов для этого является
-                                ламинация автомобиля виниловыми пленками , варианты цветов которых способны удовлетворить
-                                самые изысканные вкусы.
+                            <p class="work-descr">Автомобиль – это воплощение характера ее владельца. И почти каждый автолюбитель мечтает, чтобы его второе «я» не выглядело серо и невыразительно на фоне других, а, наоборот, привлекало внимание и вызывало восхищенные возгласы.
+                                Одним из распространенных вариантов для этого является ламинация автомобиля виниловыми пленками , варианты цветов которых способны удовлетворить самые изысканные вкусы.
                                 <br>
-                                <br> Плёнка для автомобилей имеет ряд серьезных преимуществ перед другими вариантами изменения
-                                экстерьера:
+                                <br> Плёнка для автомобилей имеет ряд серьезных преимуществ перед другими вариантами изменения экстерьера:
                                 <br> - разнообразие видов и цветов;
                                 <br> - невысокая стоимость;
                                 <br> - возможность оперативно избавиться от винилового покрытия в случае необходимости;
                                 <br> - долговечность;
                                 <br> - надежность.
                                 <br>
-                                <br> Наша компания работает с пленками таких мировых лидеров,как AVERY, KPMF, HEXIS и мы всегда
-                                готовы на любые" безумные" проекты ))).
+                                <br> Наша компания работает с пленками таких мировых лидеров,как AVERY, KPMF, HEXIS и мы всегда готовы на любые" безумные" проекты ))).
                             </p>
                             <!-- </div> -->
                         </div>
@@ -279,29 +307,35 @@
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="social text-left">
-                                <ul>
-                                    <li>
-                                        <a href="https://vk.com/m_style_nt">
-                                            <i class="fab fa-vk"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com/groups/m.style.nt.ru/">
-                                            <i class="fab fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/tuningtagil/">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fab fa-google-plus-square"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                                    <div class="social text-center">
+                                        <ul>
+                                            <li class="align-middle">
+                                                <a href="https://vk.com/m_style_nt">
+                                                    <i class="fab fa-vk"></i>
+                                                </a>
+                                            </li>
+                                            <li class="align-middle">
+                                                <a href="https://www.facebook.com/groups/m.style.nt.ru/">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="align-middle">
+                                                <a href="https://www.instagram.com/tuningtagil/">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="align-middle">
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-square"></i>
+                                                </a>
+                                            </li>
+                                            <li class="align-baseline">
+                                                <!-- Yandex.Metrika informer -->
+                                                <a href="https://metrika.yandex.ru/stat/?id=20677315&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/20677315/3_0_000000FF_000000FF_1_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+                                                        class="ym-advanced-informer" data-cid="20677315" data-lang="ru" /></a>
+                                                <!-- /Yandex.Metrika informer -->
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -402,8 +436,8 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <p class="text-center copyleft-ms">2012-2018 © ЦЕНТР АВТОМОБИЛЬНОГО ТЮНИНГА М-стиль | НИЖНИЙ
-                            ТАГИЛ</p>
+                        <p class="text-center copyleft-ms">2012-2018 © ЦЕНТР АВТОМОБИЛЬНОГО ТЮНИНГА М-стиль | НИЖНИЙ ТАГИЛ
+                        </p>
                     </div>
                     <div class="col-12">
                         <p class="text-center copyleft">2018 @ Разработка сайта: <a href="https://vk.com/tov_jukov">Алексей
