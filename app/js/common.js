@@ -26,17 +26,14 @@ $(function() {
 
     // _конец_ плавный переход по ссылкам ---]
 
-
     // настройка параметров формы обратного звонка  
     $("body").smartLid({
-
         //Настройки
         callForm: true,
         requestForm: false,
-        placeholderName: "Введите ваше имя",
+        placeholderName: 'Введите ваше имя',
         callFormAddFile: false,
         requestFormAddFile: false
-
     });
 
     // ----]
@@ -106,7 +103,7 @@ $(function() {
     //     100 : '_t', // used with images which are less than 100px on the longest side
     //     240 : '_m', // used with images which are between 100px and 240px on the longest side
     //     320 : '_n', // ...
-    //     500 : '',
+    //     500 : '_y',
     //     640 : '_z',
     //     1024 : '_b' // used which images that are more than 640px on the longest side
     // },
@@ -152,8 +149,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
                 w: parseInt(size[0], 10),
                 h: parseInt(size[1], 10)
             };
-
-
 
             if (figureEl.children.length > 1) {
                 // <figcaption> content
