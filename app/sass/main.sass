@@ -625,12 +625,28 @@ section, footer
 		// bottom: 0
 		// height: 122px
 		// background-color: red
-		background: rgba(0, 0, 0, 0.2)
+		background: rgba(0, 0, 0, 0.1)
 		// padding-top: 30px
 		// width: 100%
 	
 	.fc-bg-txt
-		padding-bottom: 40px
+		padding-bottom: 70px
+		min-height: 350px
+
+	.snow-bg
+		background-image: url(../assets/service/26-predpuskovoj-podogrevatel-dvigatelya/snow-bg-g.jpg)
+		min-height: 400px
+
+
+	.boxShadow8,.boxShadow9
+		// width: 80%
+		// max-width: 550px
+		margin: $gutter auto
+		padding: $gutter*1.2
+		box-shadow: 0 0 10px 5px rgba(0, 0, 0, .28)
+	.boxShadow9
+		width: 80%
+		max-width: 550px
 
 	.bg-txt
 		span
@@ -643,8 +659,10 @@ section, footer
 		width: 60px
 
 	.profit
+		margin-top: 30px
+		margin-bottom: 0
 		.card
-			margin-bottom: $gutter*2
+			margin-bottom: $gutter
 			border: none
 			.card-text
 				color: #000
@@ -660,7 +678,9 @@ section, footer
 				.card-block
 					display: table-cell
 					vertical-align: middle
-
+		img
+			height: 60px
+			width: 60px
 
 	.kontakty-img
 		width: 100%
@@ -701,6 +721,21 @@ section, footer
 	.button-red
 		font-weight: 700
 		white-space: nowrap
+
+	.slogan
+		margin-top: $gutter
+		font-size: 36px
+		font-family: oswald , sans-serif
+		text-transform: uppercase
+		line-height: $gutter*1.5
+		vertical-align: middle
+		text-align: center
+		text-decoration: none
+		color: $accent
+		span
+			white-space: nowrap
+		b
+			color: #000
 	
 	.logo-p
 		text-align: center
