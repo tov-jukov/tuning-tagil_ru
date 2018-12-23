@@ -81,7 +81,9 @@
 			line-height: 45px
 
 
-	// .one-work-inner
+
+			// text-align: center
+	
 	// 	h2
 	// 		color: red
 	// 		// &:after
@@ -95,6 +97,13 @@
 
 	// .one
 	// 	background-color: #000
+
+	h2,h3
+		font-size: 28px
+		line-height: 40px
+		span
+			white-space: normal 
+
 	.top-line
 		padding: $gutter/4 0 $gutter/4
 		.logo
@@ -180,6 +189,8 @@
 		.button-red
 			font-size: 28px
 			line-height: 40px
+		.logo-left-right
+			text-align: center
 
 	footer
 		font-family: oswald-exlight , sans-serif
@@ -230,6 +241,11 @@
 // ≤576px
 +media-breakpoint-up(sm)
 
+	.one-work-inner
+		.logo-left-right
+			text-align: left
+		.logo-right-left
+			text-align: right
 // ≤768px
 +media-breakpoint-up(md)
 

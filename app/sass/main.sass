@@ -76,11 +76,26 @@ body
 .tmp-blue
 	background: blue
 
+.tmp-orange
+	background: orange
+
 h2
 	text-transform: uppercase
 	font-size: 32px
 	color: #000
 	margin-bottom: $gutter
+
+h3
+	text-transform: uppercase
+	font-size: 30px
+	color: #000
+	margin-bottom: $gutter
+
+h2,h3
+	span
+		white-space: nowrap 
+
+
 
 .top-line
 	padding: $gutter/2 0 0
@@ -382,106 +397,106 @@ section, footer
 				z-index: 250
 
 // карточки
+.two
+	.card
+		margin-bottom: $gutter*2
+		border: none
+		.card-text
+			color: #000
+			font-size: 26px
+			text-transform: uppercase
+			line-height: .5rem
+			min-height: 100px
+		&-top-head
+			// background-color: #f00
+			height: $gutter*2.6
+			width: 100%
+			display: table
+			.card-block
+				display: table-cell
+				vertical-align: middle
 
-.card
-	margin-bottom: $gutter*2
-	border: none
-	.card-text
-		color: #000
-		font-size: 26px
-		text-transform: uppercase
-		line-height: .5rem
-		min-height: 100px
-	&-top-head
-		// background-color: #f00
-		height: $gutter*2.6
-		width: 100%
-		display: table
-		.card-block
-			display: table-cell
-			vertical-align: middle
+	.card-hover
+		opacity: 0
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		color: white
+		background-color: rgba(170, 7, 76, .9)
+		overflow: hidden
+		border-radius: 10px
+		&.fade-in
+			transition: opacity 150ms
+		
+		&.zoom-in
+			transform: scale(0)
+			transition: opacity 300ms, transform 0s 300ms
+		
+		&.slide-down
+			height: 0
+			transition: opacity 300ms, height 0s 300ms
+		
+		&-content 
+			padding: 1.5rem
 
-.card-hover
-	opacity: 0
-	position: absolute
-	top: 0
-	bottom: 0
-	right: 0
-	left: 0
-	color: white
-	background-color: rgba(170, 7, 76, .9)
-	overflow: hidden
-	border-radius: 10px
-	&.fade-in
-		transition: opacity 150ms
-	
-	&.zoom-in
-		transform: scale(0)
-		transition: opacity 300ms, transform 0s 300ms
-	
-	&.slide-down
-		height: 0
-		transition: opacity 300ms, height 0s 300ms
-	
-	&-content 
-		padding: 1.5rem
+	.has-card-hover:hover .card-hover.fade-in
+		opacity: 1
 
-.has-card-hover:hover .card-hover.fade-in
-	opacity: 1
+	.has-card-hover:hover .card-hover.zoom-in
+		opacity: 1
+		transition: transform 500ms
+		transform: scale(1)
 
-.has-card-hover:hover .card-hover.zoom-in
-	opacity: 1
-	transition: transform 500ms
-	transform: scale(1)
+	.has-card-hover:hover .card-hover.slide-down
+		opacity: 1
+		height: 100%
+		transition: height 300ms
 
-.has-card-hover:hover .card-hover.slide-down
-	opacity: 1
-	height: 100%
-	transition: height 300ms
+	.has-card-hover 
+		position: relative
+		cursor: pointer
 
-.has-card-hover 
-	position: relative
-	cursor: pointer
+	.card-img-with-frame
+		padding: 1rem
+		background: white
+		&.card-img-top 
+			padding-bottom: 10px
+		
+		&.card-img-bottom 
+			padding-top: 0
+		
 
-.card-img-with-frame
-	padding: 1rem
-	background: white
-	&.card-img-top 
-		padding-bottom: 10px
-	
-	&.card-img-bottom 
-		padding-top: 0
-	
+	.card-with-transparent-card-block
+		background: transparent
+		border-color: transparent
+		.card-img-top, .card-img-bottom 
+			border: 1px solid rgba(0, 0, 0, .125)
+		
+		.card-img-with-frame.card-img-top 
+			padding-bottom: 1rem
+		
+		.card-img-with-frame.card-img-bottom 
+			padding-top: 1rem
+		
 
-.card-with-transparent-card-block
-	background: transparent
-	border-color: transparent
-	.card-img-top, .card-img-bottom 
-		border: 1px solid rgba(0, 0, 0, .125)
-	
-	.card-img-with-frame.card-img-top 
-		padding-bottom: 1rem
-	
-	.card-img-with-frame.card-img-bottom 
-		padding-top: 1rem
-	
+	.crd-img
+		img
+			-webkit-transition: all 0.4s linear 0s
+			-moz-transition: all 0.4s linear 0s
+			-o-transition: all 0.4s linear 0s
+			transition: all 0.4s linear 0s
+			z-index: 220
 
-.crd-img
-	img
-		-webkit-transition: all 0.4s linear 0s
-		-moz-transition: all 0.4s linear 0s
-		-o-transition: all 0.4s linear 0s
-		transition: all 0.4s linear 0s
-		z-index: 220
-
-.crd-img:hover
-	img
-		-webkit-transform: scale(1.1)
-		-moz-transform: scale(1.1)
-		-ms-transform: scale(1.1)
-		-o-transform: scale(1.1)
-		transform: scale(1.1)
-		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3)
+	.crd-img:hover
+		img
+			-webkit-transform: scale(1.1)
+			-moz-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			-o-transform: scale(1.1)
+			transform: scale(1.1)
+			box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3)
 
 // ====
 
@@ -604,6 +619,48 @@ section, footer
 		padding-bottom: 5px
 		a
 			color: #000
+	
+	.fc-bg, .fc-bg-txt
+		// position: absolute
+		// bottom: 0
+		// height: 122px
+		// background-color: red
+		background: rgba(0, 0, 0, 0.2)
+		// padding-top: 30px
+		// width: 100%
+	
+	.fc-bg-txt
+		padding-bottom: 40px
+
+	.bg-txt
+		span
+			color: $accent
+			font-weight: bolder
+
+	.icon-service
+		display: inline-block
+		height: 60px
+		width: 60px
+
+	.profit
+		.card
+			margin-bottom: $gutter*2
+			border: none
+			.card-text
+				color: #000
+				font-size: 26px
+				text-transform: uppercase
+				line-height: .5rem
+				min-height: 100px
+			&-top-head
+				// background-color: #f00
+				height: $gutter*2.6
+				width: 100%
+				display: table
+				.card-block
+					display: table-cell
+					vertical-align: middle
+
 
 	.kontakty-img
 		width: 100%
