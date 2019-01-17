@@ -12,7 +12,7 @@ function html($data) {
 
 $errors   = [];
 $messages = [];
- $SENDER = 'fablk';//$SENDER = 'tov_jukov@mail.ru';
+ $SENDER = '0k';//$SENDER = 't@mail.ru';
 
  $PASS = 'yandexiv325401iv';//'vjqgfhjkm';
 $defaultConfig = [
@@ -34,8 +34,8 @@ $configValue = function ($key, $default = NULL) use ($config) {
 };
 
 $disableSmtp    = param('disableSmtp', false);
-$messageFrom    = param('from'       , 'fablk@yandex.ru');//''
-$messageTo      = param('to'         , 'fablk@mail.ru');
+$messageFrom    = param('from'       , 'k@yandex.ru');//''
+$messageTo      = param('to'         , 'k@mail.ru');
 //$messageReplyTo = param('reply-to'   , 'fablk@mail.ru');
 $messageSubject = param('subject'    , 'Re: очень важная новость');
 $messageText    = param('text'       , '<p>Дорогой друг,</p><p>Спешу поделиться радостным известием!</p>');

@@ -604,6 +604,9 @@ section, footer
 		padding-bottom: 20px
 		font-family: oswald, sans-serif
 		text-transform: uppercase
+	.dealer
+		span
+			white-space: nowrap
 
 	.work-descr
 		font-size: 19px
@@ -639,7 +642,6 @@ section, footer
 		background-image: url(../assets/service/26-predpuskovoj-podogrevatel-dvigatelya/snow-bg-g.jpg)
 		min-height: 400px
 
-
 	.boxShadow8,.boxShadow9
 		// width: 80%
 		// max-width: 550px
@@ -661,7 +663,7 @@ section, footer
 		width: 60px
 
 	.profit
-		margin-top: 0
+		margin-top: 0px
 		margin-bottom: 0
 		&-card
 			min-height: 230px
@@ -733,46 +735,89 @@ section, footer
 		.profitBox:hover p 
 			color: #000 
 	.zakaz
+		margin-top: -45px
 		font-size: 20px
 		text-transform: uppercase
 		min-height: 400px
 		// background: red
 		.zz-bg
-			background: #0059ab
-		.zzc, .zzl, .zzr, .zz0
-			min-height: 400px
-
-		.zz0
-			background-image: url(/assets/service/26-predpuskovoj-podogrevatel-dvigatelya/bg-center.jpg)
+			text-align: center
+			background-image: url(/assets/service/predpuskovoj-podogrevatel-dvigatelya/car.jpg)
 			background-position: center center
-			background-size: auto 100%
+			background-size: auto 60%
 			background-repeat: no-repeat
-		.zzc
-			background-image: url(/assets/service/26-predpuskovoj-podogrevatel-dvigatelya/bg-center.jpg)
-			background-position: center center
-			background-size: auto 100%
-			background-repeat: no-repeat
-		.zzl
-			background-image: url(/assets/service/26-predpuskovoj-podogrevatel-dvigatelya/bg-left-b.png)
-			background-position: left center
-		.zzr
-			background-image: url(/assets/service/26-predpuskovoj-podogrevatel-dvigatelya/bg-right-b.png)
-			background-position: right center
+		.ui-item
+			width: 285px
+			// height: 380px
+			padding-bottom: 30px
+			margin: 40px auto
+			border-radius: 30px
+			position: relative
+			text-align: center
+			padding-top: 65px
+			box-shadow: 4px 4px 0px 1px rgba(0,0,0,0.08)
+			-webkit-transition: all 0.5s ease
+			-moz-transition: all 0.5s ease
+			-o-transition: all 0.5s ease
+			-ms-transition: all 0.5s ease
+			transition: all 0.5s ease
+			&:hover
+				border-radius: 15px
+			img
+				width: 100px
+				margin: 0px auto
+				position: absolute
+				top: -40px
+				left: 50%
+				margin-left: -50px
+			p
+				line-height: 20px
+				font-size: 18px
+				font-family: oswald, sans-serif
+				color: #000
+				span
+					text-decoration: line-through
+					color: $accent
+			.button-red
+				font-size: 20px
+				display: block
+				border-radius: 6px
+				margin: 0 20px 0
+		.bg-item 
+			background-color: #51d466 
+			opacity: 0.85
 
 	.bonus
 		.bonus-line
 			font-size: 25px
+			font-family: oswald, sans-serif
+			text-transform: uppercase
 			i
 				display: inline-block
-				// font-size: 40px
 				padding-right: 20px
 		li
 			list-style: none
-
-		.grand
-			display: block
-			width: 350px
+		.garant
+			position: relative
 			height: 260px
+			overflow: hidden
+		.garant-slogan
+			position: absolute
+			height: 260px
+			color: #000
+		.garant-stamp
+			position: absolute
+			height: 100%
+			width: 100%
+			margin: 20px
+			overflow: hidden
+			background: url(../img/stamp.png) no-repeat
+			background-size: 280px
+			opacity: .65
+			background-position: 80% bottom
+			background-origin: padding-box
+			background-clip: content-box
+			padding: 5px
 
 	.kontakty-img
 		width: 100%
@@ -836,17 +881,17 @@ section, footer
 			height: 72px
 			width: auto
 
-	.banner-pp
-		height: 835px
-		width: auto
-		position: relative
-		background: url(../assets/service/26-predpuskovoj-podogrevatel-dvigatelya/pp-banner.jpg)
-		// background-color: green
-		.ttt
-			position: absolute
-			display: block
-			top: 10%
-	
+// .banner-pp
+// 	height: 835px
+// 	width: auto
+// 	position: relative
+// 	background: url(../assets/service/26-predpuskovoj-podogrevatel-dvigatelya/pp-banner.jpg)
+// 	// background-color: green
+// 	.ttt
+// 		position: absolute
+// 		display: block
+// 		top: 10%
+
 		
 // .wrapper
 // 	padding: 0px
