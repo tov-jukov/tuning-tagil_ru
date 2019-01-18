@@ -305,7 +305,6 @@
             });
 
 
-
             if (defaults.agreement) {
                 var checkboxWrapper = $('<div>').attr({
                     class: 'smartlid__checkbox-wrapper'
