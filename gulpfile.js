@@ -10,7 +10,8 @@ var gulp         = require('gulp'),
     rename       = require('gulp-rename'),
     autoprefixer = require('gulp-autoprefixer'),
     notify       = require('gulp-notify'),
-    rsync        = require('gulp-rsync');
+    rsync        = require('gulp-rsync'),
+    sourcemaps   = require('gulp-sourcemaps');
 
 gulp.task('browser-sync', function() {
     browserSync({
@@ -26,8 +27,10 @@ gulp.task('browser-sync', function() {
 
 gulp.task('styles', function() {
     return gulp.src('app/' + syntax + '/**/*.' + syntax + '')
+    // .pipe(sourcemaps.init()) //инициализируем soucemap
         .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
         .pipe(rename({ suffix: '.min', prefix: '' }))
+        // .pipe(sourcemaps.write('.'))
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(cleancss({ level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
         .pipe(gulp.dest('app/css'))
