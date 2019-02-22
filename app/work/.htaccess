@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^work/(.*)$ / [R=301,L]
