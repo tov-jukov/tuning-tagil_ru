@@ -1,11 +1,9 @@
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
-# Redirect 301 work/index.(html|php|htm)$ https://xn----8sbhcvevjb1cf2l.xn--p1ai
-# Redirect 301 service/index.(html|php|htm)$ https://xn----8sbhcvevjb1cf2l.xn--p1ai
 
-Redirect 301 ^work/index.(html|php|htm)$ https://xn----8sbhcvevjb1cf2l.xn--p1ai/index.html
-Redirect 301 ^service/index.(html|php|htm)$ https://xn----8sbhcvevjb1cf2l.xn--p1ai/index.html
+RewriteRule ^work/(index\.(htm(l)?|php))?$ https://xn----8sbhcvevjb1cf2l.xn--p1ai/work.html [L,R=301]
+RewriteRule ^service/(index\.(htm(l)?|php))?$ https://xn----8sbhcvevjb1cf2l.xn--p1ai/index.html#two [L,R=301,NE]
 
 </IfModule>
 
