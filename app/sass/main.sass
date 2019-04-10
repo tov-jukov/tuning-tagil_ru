@@ -179,7 +179,7 @@ h2,h3
 	// width: 8em
 	// height: 68px
 	font-size: 40px
-	font-family: oswald , sans-serif
+	font-family: $default-font
 	text-transform: uppercase
 	line-height: 50px
 	line-height: 2.5em
@@ -194,13 +194,13 @@ h2,h3
 	border-radius: 5px
 	// box-shadow: 0 0 0 60px rgba(0, 0, 0, 0) inset, 0.1em 0.1em 0.2em #800
 	// background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17)
-	background-color: $red
+	background-color: $btn
 	transition: all .15s ease
 	&:active
 		top: .04em
 		// left: .04em
 		// box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.05) inset
-		box-shadow: 0 2px 0 darken($red, 20)
+		box-shadow: 0 2px 0 darken($btn, 20)
 		transform: translateY(2px)
 
 //===
@@ -585,7 +585,7 @@ section, footer
 	.work-bg
 		height: 250px
 		width: 100%
-		background-color: red
+		background-color: $red
 
 .one-work-inner
 	background-color: #fff
@@ -598,7 +598,7 @@ section, footer
 		text-align: center
 		line-height: 30px
 		padding-bottom: 20px
-		font-family: oswald, sans-serif
+		font-family: $default-font
 		text-transform: uppercase
 	.dealer
 		span
@@ -611,7 +611,7 @@ section, footer
 	.work-descr
 		font-size: 19px
 		line-height: 28px
-		font-family: Tahoma, sans-serif
+		font-family: $content-font
 		span
 			font-weight: bold
 	.work-descr-list
@@ -627,7 +627,7 @@ section, footer
 		margin-right: 4px
 
 	.kontakty
-		font-family: oswald, sans-serif
+		font-family: $default-font
 		color: #000
 		font-size: 20px
 		padding-left: 10px
@@ -686,7 +686,6 @@ section, footer
 			position: absolute
 			height: 100%
 			width: 100%
-			// background-color: red
 			-webkit-box-orient: vertical
 			-webkit-box-direction: normal
 			-webkit-flex-direction: column
@@ -696,18 +695,9 @@ section, footer
 			-ms-flex-wrap: nowrap
 			flex-wrap: nowrap
 			background-color: rgba(74, 61, 45, 0.42)
-			// background: rgba(0, 0, 0, 0.2)
 			background-image: url(../img/pattern4x4.png)
-		// background-image: url(../assets/service/farkop/farkop-bg.jpg)
-		// // background-position: 50% 0px
-		// text-align: center
-		// // background-image: url(/assets/service/predpuskovoj-podogrevatel-dvigatelya/car.jpg)
-		// background-position: center center
-		// background-repeat: no-repeat
-		// background-size: auto auto
-		// background-repeat: no-repeat
 		h2
-			color: white
+			color: #fff
 		.farkop-bg-text
 			font-family: oswald , sans-serif
 			position: absolute
@@ -773,7 +763,7 @@ section, footer
 			position: relative
 			text-align: center
 			padding-top: 65px
-			box-shadow: 4px 4px 0px 1px rgba(0,0,0,0.08)
+			box-shadow: 4px 4px 0px 1px rgba($bg-item-zakaz-farkop,0.6)
 			-webkit-transition: all 0.5s ease
 			-moz-transition: all 0.5s ease
 			-o-transition: all 0.5s ease
@@ -791,7 +781,7 @@ section, footer
 			p
 				line-height: 20px
 				font-size: 18px
-				font-family: oswald, sans-serif
+				font-family: $default-font
 				color: #000
 			h3
 				font-size: 16px
@@ -803,7 +793,7 @@ section, footer
 				height: 250px
 				li
 					text-align: left
-					font-family: oswald , sans-serif
+					font-family: $default-font
 					font-size: 18px
 					line-height: 20px
 					margin-bottom: 20px
@@ -818,8 +808,22 @@ section, footer
 				border-radius: 6px
 				margin: 0 20px 0
 		.bg-item 
-			background-color: $bg-item-zakaz
+			background-color: $bg-item-zakaz-farkop
 			opacity: 0.85
+
+	.vopros
+		button
+			 padding: 5px 10px
+			 margin: 0 10px
+			 border: none
+			 height: 30px
+			 display: block
+			 a
+				 position: absolute
+				 display: inline-block
+				 font-size: 10px
+				 line-height: 12px
+				 background-color: green
 
 	.profit
 		margin-top: 0px
@@ -844,7 +848,7 @@ section, footer
 					display: table-cell
 					vertical-align: middle
 		&-head
-			font-family: oswald, sans-serif
+			font-family: $default-font
 			font-size: 20px
 			line-height: 20px
 			color: #000
@@ -877,7 +881,7 @@ section, footer
 				transition: all 0.5s ease-in-out 
 			.profit-content 
 				h4 
-					font-family: oswald, sans-serif
+					font-family: $default-font
 					font-size: 20px
 					line-height: 20px
 					color: #000
@@ -936,7 +940,7 @@ section, footer
 			p
 				line-height: 20px
 				font-size: 18px
-				font-family: oswald, sans-serif
+				font-family: $default-font
 				color: #000
 				span
 					text-decoration: line-through
@@ -955,7 +959,7 @@ section, footer
 			display: inline-block
 			font-size: 25px
 			line-height: 40px
-			font-family: oswald, sans-serif
+			font-family: $default-font
 			text-transform: uppercase
 			padding-bottom: $gutter/4
 		.garant
@@ -1041,7 +1045,7 @@ section, footer
 	.slogan
 		margin-top: $gutter
 		font-size: 36px
-		font-family: oswald , sans-serif
+		font-family: $default-font
 		text-transform: uppercase
 		line-height: $gutter*1.5
 		vertical-align: middle
