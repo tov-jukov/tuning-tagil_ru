@@ -812,6 +812,16 @@ section, footer
 			opacity: 0.85
 
 	.vopros
+		height: 220px
+		//background-color: #434343
+		// color: #fff
+		color: #000
+		font-family: $default-font
+		p
+			font-size: 50px
+			text-transform: uppercase
+			line-height: 55px
+			font-weight: bold
 		button
 			 padding: 5px 10px
 			 margin: 0 10px
@@ -962,45 +972,46 @@ section, footer
 			font-family: $default-font
 			text-transform: uppercase
 			padding-bottom: $gutter/4
-		.garant
+	.garant
+		position: relative
+		height: 280px
+		overflow: hidden
+	.garant-slogan
+		position: absolute
+		height: 100%
+		width: 100%
+		ul
+			list-style: none
+			padding-left: 0
+		li
 			position: relative
-			height: 280px
-			overflow: hidden
-		.garant-slogan
+			padding-left: 45px
+		li:before
+			content: ''
+			width: 25px
+			height: 25px
+			// background-color: red
 			position: absolute
-			height: 100%
-			width: 100%
-			ul
-				list-style: none
-				padding-left: 0
-			li
-				position: relative
-				padding-left: 45px
-			li:before
-				content: ''
-				width: 25px
-				height: 25px
-				// background-color: red
-				position: absolute
-				background-image: url('https://тюнинг-тагил.рф/img/check.png')
-				background-size: cover
-				background-position: center
-				left: 0
-				top: 50%
-				transform: translateY(-50%)
-		.garant-stamp
-			position: absolute
-			height: 100%
-			width: 100%
-			// margin: 10px
-			overflow: hidden
-			background: url(../img/stamp.png) no-repeat
-			background-size: 280px
-			opacity: .45
-			background-position: 70% bottom
-			background-origin: padding-box
-			background-clip: content-box
-			padding: 5px
+			// background-image: url('https://тюнинг-тагил.рф/img/check.png')
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfjARUNJjd1GPjpAAABbElEQVQ4y8XUu0oDQRSA4X8XDBoVtEkRG0UhKBbaRjRYiIWFIIgW2lqIrY2XB/AFkkJSip1voJI8gFoGL8UmiOkERQRzORZx3dvs7mihs9WemY8zZ3b2wH8NA4Akm8zQHbmyzS1FLH94miqi9RwAMMw+k53MQ1yRokWZeyQicz91dmmR4YI0byxRggLCO3OaZY7z9LWLF7JQQzj6MRUEC5oIq7+gwg0IwrIGzfDooVVGdbGSerHJDof0xG7YYqQz4WCDPIJQpk8nqxsbHH9Pn5OMz+rGC54lNo+kDp7gI8BjqLvmFR8vx1Hvaft58JgSFJlV43Bun/ApwlYYVnPn49Td2AxciDPWaXgiNeZ5UF07UxHz8lCqxm4eQcGkBSQUfI1XKuR8NAE0nddqaDPoCkTGEIRFJ5DXbkMDXCI802sHDNJck6JNKaYBDpIjBWxTcIensDRbb4M9N7Sb/gZZ12+oGm3uOKGiUd4fjE9OGx7yRmifRwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wMS0yMVQxMjozODo1NSswMTowMKymqG8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDEtMjFUMTI6Mzg6NTUrMDE6MDDd+xDTAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==')
+			background-size: cover
+			background-position: center
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+	.garant-stamp
+		position: absolute
+		height: 100%
+		width: 100%
+		// margin: 10px
+		overflow: hidden
+		background: url(../img/stamp.png) no-repeat
+		background-size: 280px
+		opacity: .45
+		background-position: 70% bottom
+		background-origin: padding-box
+		background-clip: content-box
+		padding: 5px
 
 	.kontakty-img
 		width: 100%
