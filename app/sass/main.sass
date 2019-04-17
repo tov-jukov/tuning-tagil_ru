@@ -97,6 +97,8 @@ h3
 h2,h3
 	span
 		white-space: nowrap 
+	p
+		font-size: 0.6em
 
 .top-line
 	padding: $gutter/2 0 0
@@ -105,16 +107,12 @@ h2,h3
 		img
 			height: 80px
 			width: auto
-
 	i
 		font-size: 21px
-
 	.phone
 		font-size: 22px
 		margin-top: 32px
 		ul
-			// text-align: left
-			// margin: 0
 			padding: 0
 			text-align: center
 			li
@@ -174,8 +172,9 @@ h2,h3
 				&:hover
 					text-decoration: none
 
-// button
-
+//================================================
+//  Кнопки                           =============
+//================================================
 .button-red
 	position: relative
 	display: inline
@@ -206,8 +205,9 @@ h2,h3
 		box-shadow: 0 2px 0 darken($btn, 20)
 		transform: translateY(2px)
 
-//===
-// блок меню, с адаптивом на мобилку
+//================================================
+// блок меню, с адаптивом на мобилку =============
+//================================================
 
 .smm
 	// background-color: $red
@@ -250,20 +250,17 @@ h2,h3
 			background-image: radial-gradient(ellipse 120px 25px at center center, rgb(249, 73, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%)
 			background-image: -ms-radial-gradient(center center, 120px 25px, rgb(249, 73, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%)
 
-// ===
-
+//================================================
+// Секция                            =============
+//================================================
 section, footer
 	padding: $gutter 0
 
 // ==
 
 .one
-	// height: 720px
 	height: $bg-vh
-	// background-color: red
 	padding: 0 0
-	// display: block
-
 	.w-background-video
 		position: relative
 		overflow: hidden
@@ -281,7 +278,6 @@ section, footer
 			min-width: 100%
 			min-height: 100%
 			z-index: -1
-		
 		.next
 			// text-align: center
 			position: absolute
@@ -478,7 +474,6 @@ section, footer
 		
 		.card-img-with-frame.card-img-bottom 
 			padding-top: 1rem
-		
 
 	.crd-img
 		img
@@ -487,7 +482,6 @@ section, footer
 			-o-transition: all 0.4s linear 0s
 			transition: all 0.4s linear 0s
 			z-index: 220
-
 	.crd-img:hover
 		img
 			-webkit-transform: scale(1.1)
@@ -507,7 +501,6 @@ section, footer
 	box-shadow: 0 5px 10px rgba(39, 36, 39, .1)
 	// background-color: red
 
-
 	.three-head
 		position: relative
 		box-shadow: 0 5px 10px rgba(39, 36, 39, .2)
@@ -525,7 +518,6 @@ section, footer
 		margin: 0
 		// background-color: green
 		
-
 	.as
 		position: absolute
 		bottom: 0
@@ -547,17 +539,6 @@ section, footer
 
 		// z-index: 1000
 		strong
-			// &:nth-of-type(2)
-			// background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAADsElEQVRYR82Yy2sTQRzH55fZxO6KgkI9qCiolCp4KCIi6EGEehF8RsHHfyC2iFYqJo1NK9oKKtKT4ElBjQ9UPHlV8YHag6AFxWcRBaVqm41NZsfvxDRu0pjuC9OBIbuT3+Oz8/zNj1iFImUiIkyxkTGJSishMhs1UknWQ9uwZOwjMfmMsdB1roduECVGy+1QeUMuHd8EoB60L/Lg1IvKK/g7qBld1+zKRTApozxnNh5FQ5sX63510Is9mv7yEFFKKFtFsGw63oPuPeDXgR99BRc2kgeLYBi+KLrzsh+jwenKKIb1ChUm+msYnhuccV+WBrnOF1DOjO9kUp73ZSpoZWK7KZeOpWB3a9C2fdq7qsDewsh8D4YwV/8uHg/61VTeKbAMJKa4MPzBkmxLmPgnwcQ96M1zoetUdFSBqS93Wj5zslaQ3v1OKYyOxJpCxO7i0XBqwKmcOzCiXZreecFuHB+2A+8lbU6dV5NzA/aT60P1RGd+lRvMpmMnsVO3BgE0ZsMxGE6Ffm50NVVyLjMdDcKyBmoCBqf3NCO5qtw5NujpIi1SWJ/NtQJ7A7AFdudypGN2jll3iNiSIKGULcdDqYQ5s+aS0T04BiHSh1sko1NBQ7kGwzzbh3l2cgxEmol5Qop+vM8IGs5Vj8H5e6zMBvvKzA7H11FI3s53aIDFLRjmuGxFr522M4h0rA279PEAudzNsYLjb1yEFtO0I1+KQ4qJJszYRbxvCwrOdY8VHN/ienIDVmPxOMO2YVgZ8UBKttQGp8LkN6iu7w9ewVRYcYAbyRMl20fm8EJh0SO0zUT9AurNmp68nzNjpyC/101vegaDE4EAc7M2teum3SEO9uXoya0a8T7SE+/Vf+qiI8zGO3hc4xTOD5jyMWIxtjZiJB9O5FD+bK8XXHsMOUexn18wxfPVkrw5MjXxdCK4QpikhlqbSDYIMBXHfpfMWh/Wu1Vs9s9SGFI1vOpmX7UEA/bHRQaLtC2ka3248mOES4tatcLMncNXbJ8ISv2vwH7gd5oTYScyRPI5k3RWSOt+OCteszptlhC0Gr2qLrJOt41RQpA3gKXc4MTpf5TJX0Ym6fVtsl54J2eKYGhhPtuD4VSH76X/OIequKJtmtGZsqWhYr142V9LOAQpvWGjM5+fK0nc4TxTYfKe2sBRH9dftIxL3I3BIFe2BcfuMRd7jt/vUKnOdpUTsxsal4NVf+YXRMaK4gH5WLYMdQ5q2C9BQT+LX3WhecKIrvO6UKpScvg3A6mDJPlK4cQAAAAASUVORK5CYII=)
-			// background-repeat: no-repeat
-			// background-position: left 50%
-			// padding: 12px 0 12px 47px
-			// color: white
-			// font-size: 1.25em
-			// font-weight: 700
-			// text-transform: uppercase
-			// margin-right: 35px
-			// &:nth-of-type(1)
 			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAADvklEQVRYR81YTWgTQRSet7Np3U17EMH/H/xBW9FD0YtQRDx5ESqaehBFPSiKWgS1VJM0JEGlXjz4gwUPgh60alH04E0RvKn1ZIs/KFTFm9Y225rsjt/EJm5+rJvdTe3CQLLz3ve+fTPvzZtHrMwjRKzGNMwWxgQGrYPIXIyacrIu3g0LxgaJiZeMKb1cU+4RxX4W41Dxi0wqugWEuvB+mQujblTewl67qifv2pXzxIQI8YzRcBovTrhB96oDL3apWv9Joh5TYuWJpVPRLrj3uFcDXvQluYCeaM8Tw/KF4M5bXkD90xUhLOttGt/o7wA83z9wT0ifuMaXUMaI7mBCXPcE5bcysZ2USUV6gLvNb2yPeHcksQ8AWeQRyG/1j5LYKFBr3SAjivuEoIucK49ZLeEDPxMbm7PYMq2NTGEHhWCr3eBC56ckhiit+LGIRFSZpp5B1rbKaWfzYqqxE3Jhe1pyaskVMSS/o1xPnHdixDQiYXgu4UTWLlMxMSzfC0VLriX8cGIM6UixRjOvsOSrnMjnZComxoh2q1r8mt2ImYocwXoeVBgbReq5woPJy/b5jBHZi8+4WlVinPEFpMcGc0bKnhpCbFaDyQc5GWGEF5uC3leXmNav5g5aaQjeuAJv7CsyekHVE4fzxMS+gGnMKiltJiJa8VJy7WsNUXc6B2qmwm2CUUEgkGD7eTDRnSc2HJttKuaXqnrMsnhTTV2s7483skWl3HPbMRAQ4gbXBvbYvZo2TjWTUJ5WlRiiMcK1RLLYiBjqmMHqa8eQ14aL59Ij0dPIZx1VJQaXvFG1xIoK0oUKj8rqZWFViUlwYdGmQF38kRNDOFlaIXfTiaynBDuu/ARRt+FfxpDxyTIiz+Hlpn/JFs9XHJX5TU9sfUBLTLihMyPRzYzE/UpJSXnXxKD6jGvx5r/tNRxFaiZlvsL8ykkmlv2uVlWPy0Kz5DFHwgcE0SU3pDx6LGtyEPV5Y3GKED86Z5rc6sf89P9FTHrtIrx2yE4AkSijUEaj68fDHsvbFEwQDu34Q/kGZ+cu5P+C6sMNO0lsCIr1bpTzOsS+g10LWUoQUSjvp7onPFlap1ORAVSkyz0C+a2evYxM0evbVL3wTs0Wwbel2W6P24PW7431G+930ra1oSLn8OdYdYw5Q8WZfy6gx7P9uYLGnWk0yBK5IFk6g/RDCjd67XVbSeMuB41bz1ZUXGfxfzJbnR2yJ2b/vJIerJzMBsSoFcIP9GPZGox5GAE//AIMeZH5hPEcd9RePk3pKdcc/gV8UpwkI5L2fAAAAABJRU5ErkJggg==)
 			background-repeat: no-repeat
 			background-position: left 50%
@@ -751,11 +732,10 @@ section, footer
 			// background-image: url(../img/grid.png)
 			background-repeat: repeat
 	.zakaz-farkop
-		background-color: red
 		background: url(../assets/service/farkop/polyagonal-web-design.jpg) no-repeat
 		background-size: cover
 		overflow: hidden
-		box-shadow: 4px 4px 4px -1px rgba(0,0,0,0.2)
+		box-shadow: 3px 3px 3px -1px rgba(0,0,0,0.2)
 		.ui-item
 			width: 285px
 			// min-height: 550px
@@ -820,10 +800,10 @@ section, footer
 		// text-align: center
 		padding: 10px 0 10px
 		position: relative
-		min-height: 100px
+		min-height: 160px
 		.vopros-box
 			font-family: $default-font
-			height: 200px
+			height: 240px
 			display: table-cell
 			vertical-align: middle
 			p
@@ -838,7 +818,6 @@ section, footer
 					color: $accent
 					font-weight: 700
 					font-size: 18px
-
 				li
 					position: relative
 					text-transform: uppercase
@@ -857,11 +836,6 @@ section, footer
 					left: 0
 					top: 50%
 					transform: translateY(-50%)
-			// button
-			// 	border: none
-			// 	height: 50px
-			// 	display: block
-			// 	position: relative
 			.button-red
 				font-size: 20px
 				line-height: 35px
@@ -903,41 +877,80 @@ section, footer
 					box-shadow: 0 2px 0 darken($btn, 20)
 					transform: translateY(2px)
 
-			button7
-				background-color: $accent
-				// font-size: 20px
-				// line-height: 35px
-				border: none
-				display: inline-block
-				text-align: center
-				border-radius: 6px
-				margin: 0 10px 0
-				padding: 10px
-				outline: none
-				text-transform: uppercase
-				transition-duration: 0.4s
-				&:hover
-					background-color: green
-					//  darken($accent,80%)
-					cursor: pointer
-				a
-					// padding: 10px
-					font-size: 30px
-					line-height: 30px
-					// background-color: blue
-
 	.garant-farkop
-		min-height: 380px
+		height: 480px
+		// background: url(../assets/service/farkop/garant-bg.jpg) no-repeat
+		// background-size: cover
+		// overflow: hidden
+		// box-shadow: 3px 3px 3px -1px rgba(0,0,0,0.1)
+		// margin-bottom: 20px
+		.garant
+			position: relative
+			// height: 360px
+			// overflow: hidden
+		.garant-slogan
+			position: absolute
+			height: 100%
+			width: 100%
+			ul
+				list-style: none
+				padding-left: 0
+			li
+				position: relative
+				padding-left: 45px
+			li:before
+				content: ''
+				width: 25px
+				height: 25px
+				position: absolute
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfjARUNJjd1GPjpAAABbElEQVQ4y8XUu0oDQRSA4X8XDBoVtEkRG0UhKBbaRjRYiIWFIIgW2lqIrY2XB/AFkkJSip1voJI8gFoGL8UmiOkERQRzORZx3dvs7mihs9WemY8zZ3b2wH8NA4Akm8zQHbmyzS1FLH94miqi9RwAMMw+k53MQ1yRokWZeyQicz91dmmR4YI0byxRggLCO3OaZY7z9LWLF7JQQzj6MRUEC5oIq7+gwg0IwrIGzfDooVVGdbGSerHJDof0xG7YYqQz4WCDPIJQpk8nqxsbHH9Pn5OMz+rGC54lNo+kDp7gI8BjqLvmFR8vx1Hvaft58JgSFJlV43Bun/ApwlYYVnPn49Td2AxciDPWaXgiNeZ5UF07UxHz8lCqxm4eQcGkBSQUfI1XKuR8NAE0nddqaDPoCkTGEIRFJ5DXbkMDXCI802sHDNJck6JNKaYBDpIjBWxTcIensDRbb4M9N7Sb/gZZ12+oGm3uOKGiUd4fjE9OGx7yRmifRwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wMS0yMVQxMjozODo1NSswMTowMKymqG8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDEtMjFUMTI6Mzg6NTUrMDE6MDDd+xDTAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==')
+				background-size: cover
+				background-position: center
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+		.garant-stamp
+			position: absolute
+			height: 100%
+			width: 100%
+			// margin: 10px
+			overflow: hidden
+			background: url(../img/stamp.png) no-repeat
+			background-size: 280px
+			opacity: .45
+			background-position: 70% bottom
+			background-origin: padding-box
+			background-clip: content-box
+			padding: 5px
+
 		.bonus-line
 			font-size: 25px
 			text-transform: uppercase
 			font-family: $default-font
-			line-height: 24px
+			line-height: 28px
+			padding-bottom: 4px
 			span
 				display: inline-block
-				font-size: 20px
-				padding-bottom: 20px
+				font-size: 18px
+				line-height: 20px
+				padding-bottom: 18px
+				padding-top: 8px
+				color: #6a6a6a
 
+	.choice
+		// margin-top: 20px
+		min-height: 580px
+		background: url(../assets/service/farkop/choice-bg.jpg) left no-repeat
+		background-color: #fff
+		// opacity: .55
+		background-size: cover
+		overflow: hidden
+		box-shadow: 4px 4px 4px -1px rgba(0,0,0,0.2)
+		.choice-box
+			// opacity: 100%
+			width: 100%
+			height: 580px
+			background: red
 
 	.profit
 		margin-top: 0px
@@ -1078,8 +1091,8 @@ section, footer
 			padding-bottom: $gutter/4
 	.garant
 		position: relative
-		height: 280px
-		overflow: hidden
+		min-height: 220px
+		// overflow: hidden
 	.garant-slogan
 		position: absolute
 		height: 100%
