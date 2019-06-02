@@ -732,6 +732,7 @@ section, footer
 			background-image: url(../assets/service/farkop/farkop-bg.jpg)
 			// background-image: url(../img/grid.png)
 			background-repeat: repeat
+
 	.zakaz-farkop
 		background: url(../assets/service/farkop/polyagonal-web-design.jpg) no-repeat
 		background-size: cover
@@ -797,6 +798,14 @@ section, footer
 			background-color: $bg-item-zakaz-farkop
 			opacity: 0.85
 
+	.gallery-dovodchik
+		min-height: 300px
+		background-color: black
+		h2
+			color: #fff
+			span
+				color: $accent
+
 	.zakaz-dovodchik
 		background: url(../assets/service/dovodchiki/dovodchiki-one-bg.jpg) no-repeat
 		background-size: cover
@@ -805,15 +814,15 @@ section, footer
 		span
 			color: $accent
 		.ui-item
-			width: 285px
+			width: 265px
 			// min-height: 550px
 			// height: 600px
-			padding-bottom: 30px
-			margin: 40px auto
+			padding-bottom: 20px
+			margin: 16px auto
 			border-radius: 30px
 			position: relative
 			text-align: center
-			padding-top: 65px
+			padding-top: 50px
 			box-shadow: 4px 4px 0px 1px rgba($bg-item-zakaz-farkop,0.6)
 			-webkit-transition: all 0.5s ease
 			-moz-transition: all 0.5s ease
@@ -822,46 +831,65 @@ section, footer
 			transition: all 0.5s ease
 			&:hover
 				border-radius: 15px
-			img
-				width: 162px
+			.cars-logo
+				width: 95px
 				margin: 0px auto
 				position: absolute
-				top: -65px
+				top: 10px
 				left: 44%
-				margin-left: -56px
+				margin-left: 45px
+				// background-color: red
+			.cars
+				// width: 95px
+				margin: 0px auto
+				margin-top: -35px;
+			.cars-name
+				font-size: 32px
+				line-height: 36px
+				margin: 16px 0px
 			p
 				line-height: 20px
 				font-size: 18px
 				font-family: $default-font
 				color: #000
-			h3
-				font-size: 16px
-				padding: 5px
-				span
-					color: red
-			ul
-				padding: 0 24px 30px
-				height: 250px
-				li
-					text-align: left
-					font-family: $default-font
+			.ui-item-wrap
+				height: 216px
+				.cars-doors
+					position: absolute
 					font-size: 18px
-					line-height: 20px
-					margin-bottom: 20px
-					list-style: none
-					span
-						text-decoration: line-through
-						color: $accent
+					margin: 12px 0
+					left: 20px
+					line-height: 30px
+					text-transform: uppercase
+				ul
+					padding: 20px 25px 20px
+					width: 190px
+					margin-left: auto
+					margin-bottom: -8px
+					li
+						text-align: left
+						font-family: $default-font
+						font-size: 22px
+						line-height: 14px
+						margin-bottom: 16px
+						list-style: none
+						position: relative
+						margin-right: 40px
+						span
+							font-size: 20px
+							position: absolute
+							right: -8px
+							top: 26px
 			.button-red
 				font-size: 20px
 				line-height: 35px
 				display: block
 				border-radius: 6px
-				margin: 0 20px 0
+				margin: 0 25px 0
 		.bg-item 
 			background-color: $bg-item-zakaz-farkop
 			opacity: 0.85
-			
+	
 	.vopros
 		// background: orange
 		color: #000
