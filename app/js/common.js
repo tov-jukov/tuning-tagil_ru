@@ -101,7 +101,7 @@ $(function() {
     });
 
     $('#jg3').justifiedGallery({
-        rowHeight: 80,
+        rowHeight: 120,
         justifyThreshold: 0.75,
         lastRow: 'center',
         captions: false,
