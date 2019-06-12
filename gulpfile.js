@@ -45,7 +45,8 @@ gulp.task('js', function() {
             'app/libs/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
             // 'app/libs/jquery.montage/jquery.montage.js',
             'app/libs/smartlid/smartlid.js',
-            'app/js/common.js', // Always at the end
+            // 'app/libs/jquery-accordion/js/jquery.accordion.js',
+            'app/js/common.js' // Always at the end
         ])
         .pipe(concat('scripts.min.js'))
         // .pipe(uglify()) // Mifify js (opt.)
