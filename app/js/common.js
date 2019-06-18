@@ -101,12 +101,12 @@ $(function () {
     });
 
     $('#jg3').justifiedGallery({
-        rowHeight: 120,
-        justifyThreshold: 0.75,
-        lastRow: 'center',
+        rowHeight: 130,
+        justifyThreshold: 0.90,
+        lastRow: 'hide',
         captions: false,
         randomize: false,
-        margins: 8,
+        margins: 30,
         waitThumbnailsLoad: false,
         selector: 'figure, div:not(.spinner)'
         //, imagesAnimationDuration : 1
@@ -134,7 +134,7 @@ $(function () {
             
             $header.text(function () {
                 //change text based on condition
-                return $content.is(":visible") ? "Свернуть" : "Модельный ряд Audi";
+                return $content.is(":visible") ? "Свернуть" : "Показать все Audi";
             });
         });
     });
@@ -148,10 +148,11 @@ $(function () {
         $content.slideToggle(500, function () {
             //execute this after slideToggle is done
             //change text of header based on visibility of content div
-            
+            // console.log($header);
+            // $header.css({'margin-top':'40px', 'margin-bottom': '40px'});
             $header.text(function () {
                 //change text based on condition
-                return $content.is(":visible") ? "Свернуть" : "Модельный ряд BMW";
+                return $content.is(":visible") ? "Свернуть" : "Показать все BMW";
             });
         });
     });
@@ -168,7 +169,7 @@ $(function () {
             
             $header.text(function () {
                 //change text based on condition
-                return $content.is(":visible") ? "Свернуть" : "Модельный ряд Mercedes-Benz";
+                return $content.is(":visible") ? "Свернуть" : "Показать все Mercedes-Benz";
             });
         });
     });
@@ -185,7 +186,7 @@ $(function () {
             
             $header.text(function () {
                 //change text based on condition
-                return $content.is(":visible") ? "Свернуть" : "Модельный ряд Toyota";
+                return $content.is(":visible") ? "Свернуть" : "Показать все Toyota";
             });
         });
     });
@@ -202,7 +203,7 @@ $(function () {
             
             $header.text(function () {
                 //change text based on condition
-                return $content.is(":visible") ? "Свернуть" : "Модельный ряд Lexus";
+                return $content.is(":visible") ? "Свернуть" : "Показать все Lexus";
             });
         });
     });
