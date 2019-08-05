@@ -1,5 +1,4 @@
 User-agent: *
 Disallow:
 Disallow: /libs
-Disallow: /js
 Sitemap: https://xn----8sbhcvevjb1cf2l.xn--p1ai/sitemap.xml
