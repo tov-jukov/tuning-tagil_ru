@@ -1,411 +1,372 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
-<!-- www.check-domains.com sitemap generator -->
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/</loc>
-   <lastmod>2019-02-21T11:39:25+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>1.0000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/</loc>
+  <lastmod>2019-08-05T04:21:36+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work.html</loc>
-   <lastmod>2019-02-21T11:39:26+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work.html</loc>
+  <lastmod>2019-08-05T04:21:38+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/o-kompanii.html</loc>
-   <lastmod>2019-02-21T11:39:25+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/o-kompanii.html</loc>
+  <lastmod>2019-08-05T04:21:37+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/sertifikaty.html</loc>
-   <lastmod>2019-01-22T05:13:21+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/sertifikaty.html</loc>
+  <lastmod>2019-08-05T04:48:09+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/otzyvy.html</loc>
-   <lastmod>2019-02-21T11:39:26+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/otzyvy.html</loc>
+  <lastmod>2019-08-05T04:21:37+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/kontakty.html</loc>
-   <lastmod>2019-02-21T11:39:25+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/kontakty.html</loc>
+  <lastmod>2019-08-05T04:48:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/predpuskovoj-podogrevatel-dvigatelya.html</loc>
-   <lastmod>2019-02-21T11:41:13+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/predpuskovoj-podogrevatel-dvigatelya.html</loc>
+  <lastmod>2019-08-05T04:34:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/tonirovka-dva-stekla.html</loc>
-   <lastmod>2019-02-21T11:41:27+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/tonirovka-dva-stekla.html</loc>
+  <lastmod>2019-08-05T04:35:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/vosstanovlenie-i-remont-kozhi.html</loc>
-   <lastmod>2019-02-25T12:13:58+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/vosstanovlenie-i-remont-kozhi.html</loc>
+  <lastmod>2019-08-05T04:36:49+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/avtovinil.html</loc>
-   <lastmod>2019-02-21T11:40:41+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/avtovinil.html</loc>
+  <lastmod>2019-08-05T04:34:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/avtozvuk.html</loc>
-   <lastmod>2019-02-21T11:40:55+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/avtozvuk.html</loc>
+  <lastmod>2019-08-05T04:34:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/antigraviinaia-zashchita.html</loc>
-   <lastmod>2019-02-21T11:40:35+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/antigraviinaia-zashchita.html</loc>
+  <lastmod>2019-08-05T04:34:15+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/ofisy-na-kolesakh.html</loc>
-   <lastmod>2019-02-21T11:41:02+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/ofisy-na-kolesakh.html</loc>
+  <lastmod>2019-08-05T04:34:45+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/pokrasska-supportov.html</loc>
-   <lastmod>2019-02-21T11:41:03+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/pokrasska-supportov.html</loc>
+  <lastmod>2019-08-05T04:34:46+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/poshiv-salona-kozhei.html</loc>
-   <lastmod>2019-02-21T11:41:07+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/poshiv-salona-kozhei.html</loc>
+  <lastmod>2019-08-05T04:34:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/aerodinamicheskie-obvesy.html</loc>
-   <lastmod>2019-02-21T11:40:31+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/aerodinamicheskie-obvesy.html</loc>
+  <lastmod>2019-08-05T04:34:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/tiuning-i-nastroika-optiki.html</loc>
-   <lastmod>2019-02-21T11:41:22+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/tiuning-i-nastroika-optiki.html</loc>
+  <lastmod>2019-08-05T04:34:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/index.html</loc>
-   <lastmod>2019-02-21T11:39:25+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.8000</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/farkops.html</loc>
+  <lastmod>2019-08-05T04:34:18+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/50.html</loc>
-   <lastmod>2019-02-28T05:19:06+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/dovodchiki.html</loc>
+  <lastmod>2019-08-05T04:34:17+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/49.html</loc>
-   <lastmod>2019-02-28T05:19:05+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/index.html</loc>
+  <lastmod>2019-08-05T04:21:36+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/48.html</loc>
-   <lastmod>2019-02-28T05:19:04+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/53.html</loc>
+  <lastmod>2019-08-05T04:32:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/47.html</loc>
-   <lastmod>2019-02-28T05:19:02+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/52.html</loc>
+  <lastmod>2019-08-05T04:32:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/01.html</loc>
-   <lastmod>2019-02-28T05:18:27+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/51.html</loc>
+  <lastmod>2019-08-05T04:32:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/02.html</loc>
-   <lastmod>2019-02-28T05:18:27+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/50.html</loc>
+  <lastmod>2019-08-05T04:32:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/03.html</loc>
-   <lastmod>2019-02-28T05:18:28+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/49.html</loc>
+  <lastmod>2019-08-05T04:32:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/04.html</loc>
-   <lastmod>2019-02-28T05:18:29+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/48.html</loc>
+  <lastmod>2019-08-05T04:32:46+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/05.html</loc>
-   <lastmod>2019-02-28T05:18:30+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/47.html</loc>
+  <lastmod>2019-08-05T04:32:46+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/06.html</loc>
-   <lastmod>2019-02-28T05:18:30+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/01.html</loc>
+  <lastmod>2019-08-05T04:32:24+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/07.html</loc>
-   <lastmod>2019-02-28T05:18:31+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/02.html</loc>
+  <lastmod>2019-08-05T04:32:24+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/08.html</loc>
-   <lastmod>2019-02-28T05:18:31+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/03.html</loc>
+  <lastmod>2019-08-05T04:32:25+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/09.html</loc>
-   <lastmod>2019-02-28T05:18:32+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/04.html</loc>
+  <lastmod>2019-08-05T04:32:25+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/10.html</loc>
-   <lastmod>2019-02-28T05:18:32+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/05.html</loc>
+  <lastmod>2019-08-05T04:32:26+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/11.html</loc>
-   <lastmod>2019-02-28T05:18:32+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/06.html</loc>
+  <lastmod>2019-08-05T04:32:26+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/12.html</loc>
-   <lastmod>2019-02-28T05:18:33+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/07.html</loc>
+  <lastmod>2019-08-05T04:32:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/13.html</loc>
-   <lastmod>2019-02-28T05:18:33+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/08.html</loc>
+  <lastmod>2019-08-05T04:32:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/14.html</loc>
-   <lastmod>2019-02-28T05:18:34+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/09.html</loc>
+  <lastmod>2019-08-05T04:32:28+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/15.html</loc>
-   <lastmod>2019-02-28T05:18:34+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/10.html</loc>
+  <lastmod>2019-08-05T04:32:28+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/16.html</loc>
-   <lastmod>2019-02-28T05:18:35+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/11.html</loc>
+  <lastmod>2019-08-05T04:32:29+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/18.html</loc>
-   <lastmod>2019-02-28T05:18:35+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/12.html</loc>
+  <lastmod>2019-08-05T04:32:29+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/19.html</loc>
-   <lastmod>2019-02-28T05:18:36+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/13.html</loc>
+  <lastmod>2019-08-05T04:32:30+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/20.html</loc>
-   <lastmod>2019-02-28T05:18:37+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/14.html</loc>
+  <lastmod>2019-08-05T04:32:30+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/21.html</loc>
-   <lastmod>2019-02-28T05:18:37+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/15.html</loc>
+  <lastmod>2019-08-05T04:32:31+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/22.html</loc>
-   <lastmod>2019-02-28T05:18:37+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/16.html</loc>
+  <lastmod>2019-08-05T04:32:31+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/23.html</loc>
-   <lastmod>2019-02-28T05:18:38+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/18.html</loc>
+  <lastmod>2019-08-05T04:32:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/24.html</loc>
-   <lastmod>2019-02-28T05:18:38+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/19.html</loc>
+  <lastmod>2019-08-05T04:32:33+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/25.html</loc>
-   <lastmod>2019-02-28T05:18:40+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/20.html</loc>
+  <lastmod>2019-08-05T04:32:33+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/26.html</loc>
-   <lastmod>2019-02-28T05:18:41+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/21.html</loc>
+  <lastmod>2019-08-05T04:32:34+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/27.html</loc>
-   <lastmod>2019-02-28T05:18:41+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/22.html</loc>
+  <lastmod>2019-08-05T04:32:34+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/28.html</loc>
-   <lastmod>2019-02-28T05:18:42+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/23.html</loc>
+  <lastmod>2019-08-05T04:32:35+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/29.html</loc>
-   <lastmod>2019-02-28T05:18:42+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/24.html</loc>
+  <lastmod>2019-08-05T04:32:35+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/30.html</loc>
-   <lastmod>2019-02-28T05:18:43+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/25.html</loc>
+  <lastmod>2019-08-05T04:32:36+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/31.html</loc>
-   <lastmod>2019-02-28T05:18:43+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/26.html</loc>
+  <lastmod>2019-08-05T04:32:36+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/32.html</loc>
-   <lastmod>2019-02-28T05:18:44+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/27.html</loc>
+  <lastmod>2019-08-05T04:32:36+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/33.html</loc>
-   <lastmod>2019-02-28T05:18:44+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/28.html</loc>
+  <lastmod>2019-08-05T04:32:37+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/34.html</loc>
-   <lastmod>2019-02-28T05:18:45+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/29.html</loc>
+  <lastmod>2019-08-05T04:32:37+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/35.html</loc>
-   <lastmod>2019-02-28T05:18:46+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/30.html</loc>
+  <lastmod>2019-08-05T04:32:38+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/36.html</loc>
-   <lastmod>2019-02-28T05:18:47+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/31.html</loc>
+  <lastmod>2019-08-05T04:32:38+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/37.html</loc>
-   <lastmod>2019-02-28T05:18:47+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/32.html</loc>
+  <lastmod>2019-08-05T04:32:39+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/38.html</loc>
-   <lastmod>2019-02-28T05:18:48+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/33.html</loc>
+  <lastmod>2019-08-05T04:32:39+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/39.html</loc>
-   <lastmod>2019-02-28T05:18:50+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/34.html</loc>
+  <lastmod>2019-08-05T04:32:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/40.html</loc>
-   <lastmod>2019-02-28T05:18:52+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/35.html</loc>
+  <lastmod>2019-08-05T04:32:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/41.html</loc>
-   <lastmod>2019-02-28T05:18:54+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/36.html</loc>
+  <lastmod>2019-08-05T04:32:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/42.html</loc>
-   <lastmod>2019-02-28T05:18:55+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/37.html</loc>
+  <lastmod>2019-08-05T04:32:41+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/43.html</loc>
-   <lastmod>2019-02-28T05:18:56+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/38.html</loc>
+  <lastmod>2019-08-05T04:32:42+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/44.html</loc>
-   <lastmod>2019-02-28T05:18:58+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/39.html</loc>
+  <lastmod>2019-08-05T04:32:42+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/45.html</loc>
-   <lastmod>2019-02-28T05:18:59+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/40.html</loc>
+  <lastmod>2019-08-05T04:32:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-   <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/46.html</loc>
-   <lastmod>2019-02-28T05:19:00+00:00</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.6400</priority>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/41.html</loc>
+  <lastmod>2019-08-05T04:32:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/42.html</loc>
+  <lastmod>2019-08-05T04:32:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/43.html</loc>
+  <lastmod>2019-08-05T04:32:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/44.html</loc>
+  <lastmod>2019-08-05T04:32:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/45.html</loc>
+  <lastmod>2019-08-05T04:32:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/46.html</loc>
+  <lastmod>2019-08-05T04:32:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
