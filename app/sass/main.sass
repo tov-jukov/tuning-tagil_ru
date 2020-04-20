@@ -1017,7 +1017,7 @@ section, footer
 	.profit-farkop
 		height: 160px
 		text-align: center
-		margin-bottom: 45px
+		// margin-bottom: 45px
 		button
 			position: relative
 			display: inline
@@ -1050,7 +1050,7 @@ section, footer
 				transform: translateY(2px)
 
 	.garant-farkop
-		height: 420px
+		height: 460px
 		// background: url(../assets/service/farkop/garant-bg.jpg) no-repeat
 		// background-size: cover
 		// overflow: hidden
@@ -1111,6 +1111,36 @@ section, footer
 			li
 				position: relative
 				padding-left: 45px
+		button
+			position: relative
+			display: inline
+			border: none
+			// width: 8em
+			// height: 68px
+			font-size: 40px
+			font-family: $default-font
+			text-transform: uppercase
+			// line-height: 32px
+			line-height: 1.2em
+			vertical-align: middle
+			text-align: center
+			text-decoration: none
+			text-shadow: 0 -1px 1px #777
+			color: #fff
+			outline: none
+			padding: 10px 18px 10px 18px
+			// border: 2px solid #F64C2B
+			border-radius: 5px
+			// box-shadow: 0 0 0 60px rgba(0, 0, 0, 0) inset, 0.1em 0.1em 0.2em #800
+			// background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17)
+			background-color: $btn
+			transition: all .15s ease
+			&:active
+				top: .04em
+				// left: .04em
+				// box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.05) inset
+				box-shadow: 0 2px 0 darken($btn, 20)
+				transform: translateY(2px)
 
 	.choice
 		// margin-top: 20px
@@ -1572,12 +1602,13 @@ section, footer
 			.profit-content
 				margin: auto 20px
 				width: 100%
+				// height: 152px
 				h4
 					text-transform: uppercase
 					font-family: $default-font
 					font-size: 18px
 .ixsound-three
-	height: 800px
+	min-height: 300px
 	background: url(../assets/service/ixsound/three-wrap.jpg) no-repeat
 	// opacity: 0.8
 	background-color: #000
@@ -1587,6 +1618,7 @@ section, footer
 	background-position: center center
 	background-repeat: no-repeat
 	background-size: cover
+	padding-bottom: $gutter*2
 	h2
 		color: #fff
 	.video-responsive
