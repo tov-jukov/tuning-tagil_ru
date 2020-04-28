@@ -1,813 +1,392 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-   <url>
-      <loc>http://тюнинг-тагил.рф/</loc>
-      <lastmod>2019-09-07</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/index.html</loc>
-      <lastmod>2019-09-07</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/farkops.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/dovodchiki.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/tiuning-i-nastroika-optiki.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/poshiv-salona-kozhei.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/aerodinamicheskie-obvesy.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work.html</loc>
-      <lastmod>2019-10-09</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/o-kompanii.html</loc>
-      <lastmod>2019-08-29</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/sertifikaty.html</loc>
-      <lastmod>2019-08-29</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/otzyvy.html</loc>
-      <lastmod>2019-10-09</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/kontakty.html</loc>
-      <lastmod>2019-08-29</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/predpuskovoj-podogrevatel-dvigatelya.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/tonirovka-dva-stekla.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/vosstanovlenie-i-remont-kozhi.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/avtovinil.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/avtozvuk.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/antigraviinaia-zashchita.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/ofisy-na-kolesakh.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/service/pokrasska-supportov.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/45.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/46.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/43.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/44.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/42.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/39.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/41.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/40.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/37.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/38.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/54.html</loc>
-      <lastmod>2019-09-07</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/53.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/52.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/50.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/51.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/49.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/48.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/47.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/01.html</loc>
-      <lastmod>2019-09-23</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/02.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/03.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/04.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/05.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/06.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/07.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/08.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/09.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/10.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/11.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/13.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/12.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/14.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/15.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/16.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/18.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/19.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/20.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/21.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/22.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/24.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/23.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/25.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/26.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/27.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/28.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/29.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/30.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/31.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/32.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/33.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/34.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/35.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://тюнинг-тагил.рф/work/36.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/39.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/08.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/42.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/predpuskovoj-podogrevatel-dvigatelya.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/45.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/41.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/tonirovka-dva-stekla.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/14.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/54.html</loc>
-      <lastmod>2019-09-07</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/pokrasska-supportov.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/36.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/44.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/47.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/avtozvuk.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/02.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/49.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/kontakty.html</loc>
-      <lastmod>2019-08-29</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/50.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/04.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/46.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/35.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/29.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/avtovinil.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/18.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/ofisy-na-kolesakh.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/32.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/21.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/antigraviinaia-zashchita.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/19.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/13.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/sertifikaty.html</loc>
-      <lastmod>2019-08-29</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/otzyvy.html</loc>
-      <lastmod>2019-10-09</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/poshiv-salona-kozhei.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/11.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/31.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/06.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/25.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/12.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/vosstanovlenie-i-remont-kozhi.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/23.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work.html</loc>
-      <lastmod>2019-10-09</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/03.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/33.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/09.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/28.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/24.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/40.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/07.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/30.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/16.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/26.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/27.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/43.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/10.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/01.html</loc>
-      <lastmod>2019-09-23</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/o-kompanii.html</loc>
-      <lastmod>2019-08-29</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/service/aerodinamicheskie-obvesy.html</loc>
-      <lastmod>2019-09-06</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/37.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/15.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/05.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/20.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://тюнинг-тагил.рф/work/34.html</loc>
-      <lastmod>2019-09-04</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
-   </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/</loc>
+  <lastmod>2020-04-20T10:52:36+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work.html</loc>
+  <lastmod>2019-12-18T08:59:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/o-kompanii.html</loc>
+  <lastmod>2019-11-28T07:25:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/sertifikaty.html</loc>
+  <lastmod>2019-11-28T07:25:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/otzyvy.html</loc>
+  <lastmod>2019-11-28T07:25:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/kontakty.html</loc>
+  <lastmod>2019-11-28T07:25:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/predpuskovoj-podogrevatel-dvigatelya.html</loc>
+  <lastmod>2019-11-28T06:01:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/tonirovka-dva-stekla.html</loc>
+  <lastmod>2019-11-28T06:02:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/vosstanovlenie-i-remont-kozhi.html</loc>
+  <lastmod>2019-11-28T06:02:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/avtovinil.html</loc>
+  <lastmod>2019-11-28T06:01:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/avtozvuk.html</loc>
+  <lastmod>2019-11-28T06:01:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/antigraviinaia-zashchita.html</loc>
+  <lastmod>2020-03-23T07:42:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/ofisy-na-kolesakh.html</loc>
+  <lastmod>2019-11-28T06:01:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/pokrasska-supportov.html</loc>
+  <lastmod>2019-11-28T06:01:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/poshiv-salona-kozhei.html</loc>
+  <lastmod>2019-11-28T06:01:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/aerodinamicheskie-obvesy.html</loc>
+  <lastmod>2019-11-28T06:01:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/tiuning-i-nastroika-optiki.html</loc>
+  <lastmod>2019-11-28T06:02:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/farkops.html</loc>
+  <lastmod>2019-11-28T06:01:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/dovodchiki.html</loc>
+  <lastmod>2019-11-28T06:01:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/service/ixsound.html</loc>
+  <lastmod>2020-04-20T12:07:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/index.html</loc>
+  <lastmod>2020-04-20T10:52:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/56.html</loc>
+  <lastmod>2019-12-18T09:02:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/55.html</loc>
+  <lastmod>2019-11-28T07:31:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/54.html</loc>
+  <lastmod>2019-11-28T07:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/53.html</loc>
+  <lastmod>2019-11-28T07:31:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/52.html</loc>
+  <lastmod>2019-11-28T07:31:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/51.html</loc>
+  <lastmod>2019-11-28T07:31:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/50.html</loc>
+  <lastmod>2019-11-28T07:31:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/49.html</loc>
+  <lastmod>2019-11-28T07:31:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/48.html</loc>
+  <lastmod>2019-11-28T07:31:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/47.html</loc>
+  <lastmod>2019-11-28T07:31:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/01.html</loc>
+  <lastmod>2019-11-28T07:30:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/02.html</loc>
+  <lastmod>2019-11-28T07:30:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/03.html</loc>
+  <lastmod>2019-11-28T07:30:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/04.html</loc>
+  <lastmod>2019-11-28T07:30:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/05.html</loc>
+  <lastmod>2019-11-28T07:30:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/06.html</loc>
+  <lastmod>2019-11-28T07:30:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/07.html</loc>
+  <lastmod>2019-11-28T07:30:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/08.html</loc>
+  <lastmod>2019-11-28T07:30:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/09.html</loc>
+  <lastmod>2019-11-28T07:30:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/10.html</loc>
+  <lastmod>2019-11-28T07:30:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/11.html</loc>
+  <lastmod>2019-11-28T07:30:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/12.html</loc>
+  <lastmod>2019-11-28T07:30:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/13.html</loc>
+  <lastmod>2019-11-28T07:30:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/14.html</loc>
+  <lastmod>2019-11-28T07:30:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/15.html</loc>
+  <lastmod>2019-11-28T07:30:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/16.html</loc>
+  <lastmod>2019-11-28T07:30:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/18.html</loc>
+  <lastmod>2019-11-28T07:30:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/19.html</loc>
+  <lastmod>2019-11-28T07:30:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/20.html</loc>
+  <lastmod>2019-11-28T07:30:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/21.html</loc>
+  <lastmod>2019-11-28T07:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/22.html</loc>
+  <lastmod>2019-11-28T07:30:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/23.html</loc>
+  <lastmod>2019-11-28T07:30:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/24.html</loc>
+  <lastmod>2019-11-28T07:30:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/25.html</loc>
+  <lastmod>2019-11-28T07:30:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/26.html</loc>
+  <lastmod>2019-11-28T07:30:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/27.html</loc>
+  <lastmod>2019-11-28T07:30:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/28.html</loc>
+  <lastmod>2019-11-28T07:30:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/29.html</loc>
+  <lastmod>2019-11-28T07:30:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/30.html</loc>
+  <lastmod>2019-11-28T07:30:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/31.html</loc>
+  <lastmod>2019-11-28T07:30:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/32.html</loc>
+  <lastmod>2019-11-28T07:30:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/33.html</loc>
+  <lastmod>2019-11-28T07:30:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/34.html</loc>
+  <lastmod>2019-11-28T07:30:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/35.html</loc>
+  <lastmod>2019-11-28T07:30:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/36.html</loc>
+  <lastmod>2019-11-28T07:30:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/37.html</loc>
+  <lastmod>2019-11-28T07:30:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/38.html</loc>
+  <lastmod>2019-11-28T07:30:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/39.html</loc>
+  <lastmod>2019-11-28T07:30:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/40.html</loc>
+  <lastmod>2019-11-28T07:30:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/41.html</loc>
+  <lastmod>2019-11-28T07:30:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/42.html</loc>
+  <lastmod>2019-11-28T07:30:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/43.html</loc>
+  <lastmod>2019-11-28T07:30:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/44.html</loc>
+  <lastmod>2019-11-28T07:31:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/45.html</loc>
+  <lastmod>2019-11-28T07:31:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xn----8sbhcvevjb1cf2l.xn--p1ai/work/46.html</loc>
+  <lastmod>2019-11-28T07:31:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
