@@ -43,8 +43,8 @@ $result =  $mailSMTP->send($to, $messageSubject, $messageText , $from);
 // $result =  $mailSMTP->send('Кому письмо', 'Тема письма', 'Текст письма', 'Отправитель письма');
 
 if($result === true){
-    echo 'Сообщение успешно отправлено.';
+    echo 'successmsgs';
 }
 else{
-    echo 'Во время отправки возникли какие-то ошибки, проверьте логи для большей информации.' . $result;
+    echo 'failmsgs';
 }
