@@ -562,12 +562,13 @@
                             break;
                         case 'successmsgs':
                             $(formId).find('.smartlid__respond-msgs').html('').append(defaults.successmsgs);
+                            setTimeout(() => {  }, 5000);
+                            var smartLidModal = $('.smartlid__modal');
+                            smartLidModal.fadeOut(function () {
+                                    $(this).remove();
+                                }); 
 
-                            console.log("1");
-                            console.log(formid);
-                            var div = $(".smartlid__form");
-                            var smartLidModal = $(formId);
-                            
+
                             break;
                         case 'failmsgs':
                             $(formId).find('.smartlid__respond-msgs').html('').append(defaults.failmsgs);
@@ -575,10 +576,6 @@
                         case 'failfile':
                             $(formId).find('.smartlid__respond-msgs').html('').append(defaults.failfile);
                             break;
-                        default:
-                            console.log("1");
-                            console.log(data);
-                        break;
                     }
 
                     setTimeout(() => {
@@ -595,6 +592,7 @@
                         $(formId).find($('textarea').val(''));
                     }
                     defaults.counter();
+
                 },
 
             });
