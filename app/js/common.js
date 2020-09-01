@@ -3,8 +3,10 @@ $(function () {
 
     // прелоадер
     $(".preloader").fadeOut("slow");
+    
 
-    // [---- плавный переход по ссылкам _начало_
+
+        // [---- плавный переход по ссылкам _начало_
 
     $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--close)').on('click', function (event) {
         // отменяем стандартное действие
@@ -33,7 +35,8 @@ $(function () {
         requestForm: false,
         placeholderName: 'Введите ваше имя',
         callFormAddFile: false,
-        requestFormAddFile: false
+        requestFormAddFile: false,
+        isSmartlidVisible: 'smartlid_hidden'
     });
 
     // ----]
@@ -445,4 +448,67 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 
 
+// ====
 
+var arrgetbtn = [];
+arrgetbtn.push({
+    "title": "Telegram",
+    "icon": "fwidgethelp-telegram_v2",
+    "link": "https://tttttt.me/m_style",
+    "target": "_blank",
+    "color": "#FFFFFF",
+    "background": "#27A5E7"
+});
+arrgetbtn.push({
+    "title": "Whatsapp",
+    "icon": "fwidgethelp-whatsapp",
+    "link": "https://getbtn.com/whatsapp/79041710333",
+    "target": "_blank",
+    "color": "#FFFFFF",
+    "background": "#5EC758"
+});
+arrgetbtn.push({
+    "title": "Viber",
+    "icon": "fwidgethelp-viber",
+    "link": "https://getbtn.com/viber/79041710333",
+    "target": "_blank",
+    "color": "#FFFFFF",
+    "background": "#8456A7"
+});
+arrgetbtn.push({
+    "title": "VKontakte",
+    "icon": "fwidgethelp-vk",
+    "link": "https://vk.me/m_style_nt",
+    "target": "_blank",
+    "color": "#FFFFFF",
+    "background": "#507299"
+});
+arrgetbtn.push({
+    "title": "Facebook",
+    "icon": "fwidgethelp-facebook",
+    "link": "https://www.messenger.com/t/100005180100588",
+    "target": "_blank",
+    "color": "#FFFFFF",
+    "background": "#3B5998"
+});
+var WidGetButtonOptions = {
+    id: "bc98e622ba68a2a34dab2ec22bb1a928",
+    iconopen: "fwidgethelp-commenting-o",
+    maintitle: "Обратная связь",
+    mainbackground: "#e31e24",
+    maincolor: "hsv(0, 0%, 100%)",
+    pulse: "widgethelp_pulse",
+    fasize: "2",
+    direction: "top",
+    position: "rightbottom",
+    arrbtn: arrgetbtn
+};
+(function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.async = true;
+    script.src = "https://getbtn.com/widget/index.php?id=" + WidGetButtonOptions.id;
+    document.getElementsByTagName("head")[0].appendChild(script);
+})();
+
+// ====
