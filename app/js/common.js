@@ -454,7 +454,7 @@ var arrgetbtn = [];
 arrgetbtn.push({
     "title": "Telegram",
     "icon": "fwidgethelp-telegram_v2",
-    "link": "https://tttttt.me/m_style",
+    "link": "https://t.me/WailertM",
     "target": "_blank",
     "color": "#FFFFFF",
     "background": "#27A5E7"
@@ -462,7 +462,7 @@ arrgetbtn.push({
 arrgetbtn.push({
     "title": "Whatsapp",
     "icon": "fwidgethelp-whatsapp",
-    "link": "https://getbtn.com/whatsapp/79041710333",
+    "link": "https://wa.me/79041710333?text=",
     "target": "_blank",
     "color": "#FFFFFF",
     "background": "#5EC758"
@@ -470,7 +470,7 @@ arrgetbtn.push({
 arrgetbtn.push({
     "title": "Viber",
     "icon": "fwidgethelp-viber",
-    "link": "https://getbtn.com/viber/79041710333",
+    "link": "viber://chat?number=%2B79041710333",
     "target": "_blank",
     "color": "#FFFFFF",
     "background": "#8456A7"
