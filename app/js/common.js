@@ -491,6 +491,14 @@ arrgetbtn.push({
     "color": "#FFFFFF",
     "background": "#3B5998"
 });
+arrgetbtn.push({
+    "title": "Instagram",
+    "icon": "fwidgethelp-instagram",
+    "link": "https://instagram.com/tuningtagil",
+    "target": "_blank",
+    "color": "#FFFFFF",
+    "background": "#FF0066"
+});
 var WidGetButtonOptions = {
     id: "bc98e622ba68a2a34dab2ec22bb1a928",
     iconopen: "fwidgethelp-commenting-o",
@@ -498,7 +506,7 @@ var WidGetButtonOptions = {
     mainbackground: "#e31e24",
     maincolor: "hsv(0, 0%, 100%)",
     pulse: "widgethelp_pulse",
-    fasize: "2",
+    fasize: "1.32",
     direction: "top",
     position: "rightbottom",
     arrbtn: arrgetbtn
