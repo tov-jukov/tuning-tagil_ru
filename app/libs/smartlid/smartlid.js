@@ -540,6 +540,8 @@
         sendMail: function (formid) {
             var formId = "#" + formid;
             var fd = new FormData(document.querySelector(formId));
+            fd.set("href",window.location.href);
+            fd.set("title",document.title);
 
             $.ajax({
                 url: "/libs/smartlid/sender.php",
