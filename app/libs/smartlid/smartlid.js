@@ -12,7 +12,7 @@
         // Расположение кнопок: smartlid_left | smartlid_right
         position: ' smartlid_right',
 
-        //** Отслеживание заполнение формы в целях Яндекс Метрики. 
+        //** Отслеживание заполнение формы в целях Яндекс Метрики.
         // XXXXXX - код счеткичка в Метрике
         // SMARTLID - ID цели
 
@@ -564,11 +564,11 @@
                             break;
                         case 'successmsgs':
                             $(formId).find('.smartlid__respond-msgs').html('').append(defaults.successmsgs);
-                            setTimeout(() => {  }, 5000);
+                            setTimeout(() => {  }, 8000);
                             var smartLidModal = $('.smartlid__modal');
                             smartLidModal.fadeOut(function () {
                                     $(this).remove();
-                                }); 
+                                });
 
 
                             break;
@@ -610,7 +610,7 @@
             return methods.createButtons();
         },
     };
-    
+
     $.fn.smartLid = function (method) {
         if (methods[method]) {
             return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
