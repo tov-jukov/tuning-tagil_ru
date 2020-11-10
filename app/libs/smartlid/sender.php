@@ -48,8 +48,6 @@ else
 $agreement = "<b>Дополнительно:</b> Отправитель дал согласие на обработку персональных данных</b>";
 $messageSubject = 'Заявка с сайта';
 
-
-
 //param('text'    , '<p>Заявка на обратный звонок:</p>'.$name.'</br>'.$tel.'</br>'.$email.'</br>'.$text.'<br>'. $agreement);
 
 // от кого
@@ -63,9 +61,8 @@ $to = 'm-style-nt@yandex.ru';
 // добавляем файлы
 //$mailSMTP->addFile("test.jpg");
 
-
 // отправляем письмо
-$result =  $mailSMTP->send($to, $messageSubject, $messageText , $from); 
+$result =  $mailSMTP->send($to, $messageSubject, $messageText , $from);
 // $result =  $mailSMTP->send('Кому письмо', 'Тема письма', 'Текст письма', 'Отправитель письма');
 
 if($result === true){
