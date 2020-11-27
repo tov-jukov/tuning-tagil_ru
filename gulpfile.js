@@ -43,6 +43,8 @@ gulp.task('js', function() {
             'app/libs/photoswipe/dist/photoswipe.js',
             'app/libs/photoswipe/dist/photoswipe-ui-default.js',
             'app/libs/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+            'app/libs/twentytwenty/js/jquery.event.move.js',
+            'app/libs/twentytwenty/js/jquery.twentytwenty.js',
             // 'app/libs/jquery.montage/jquery.montage.js',
             'app/libs/smartlid/smartlid.js',
             // 'app/libs/jquery-accordion/js/jquery.accordion.js',
@@ -82,5 +84,5 @@ gulp.task('watch', function() {
         gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel ('js'));
         gulp.watch('app/*.html', browserSync.reload)
     });
-    
+
     gulp.task('default', gulp.parallel('watch', 'styles', 'js', 'browser-sync') );

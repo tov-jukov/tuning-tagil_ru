@@ -3,10 +3,10 @@ $(function () {
 
     // прелоадер
     $(".preloader").fadeOut("slow");
-    
 
 
-        // [---- плавный переход по ссылкам _начало_
+
+    // [---- плавный переход по ссылкам _начало_
 
     $('a[href^="#"]:not(.menu-trigger,.button-red,.call-form--link,.sl-overlay--close)').on('click', function (event) {
         // отменяем стандартное действие
@@ -19,7 +19,9 @@ $(function () {
          * dn - определяем положение блока на странице
          */
 
-        $('html, body').animate({ scrollTop: dn }, 1000);
+        $('html, body').animate({
+            scrollTop: dn
+        }, 1000);
 
         /*
          * 1000 скорость перехода в миллисекундах
@@ -28,7 +30,7 @@ $(function () {
 
     // _конец_ плавный переход по ссылкам ---]
 
-    // настройка параметров формы обратного звонка  
+    // настройка параметров формы обратного звонка
     $("body").smartLid({
         //Настройки
         callForm: true,
@@ -46,8 +48,8 @@ $(function () {
     // console.log("нажали")
     // });//end slide toggle
 
-    // $(window).resize(function() {		
-    //         if (  $(window).width() > 500 ) {			
+    // $(window).resize(function() {
+    //         if (  $(window).width() > 500 ) {
     //             $('nav ul').removeAttr('style');
     //         }
     // });//end resize
@@ -65,6 +67,14 @@ $(function () {
     });
     //end resize
 
+
+    // слайдер две картинки начало
+
+    $(function () {
+        $(".twentytwenty-container").twentytwenty();
+    });
+
+    //  слайдер две картинки конец
 
     // gallery justifiedGallery (сетка галереи)
 
@@ -134,7 +144,7 @@ $(function () {
         $content.slideToggle(500, function () {
             //execute this after slideToggle is done
             //change text of header based on visibility of content div
-            
+
             $header.text(function () {
                 //change text based on condition
                 return $content.is(":visible") ? "Свернуть" : "Показать все Audi";
@@ -169,7 +179,7 @@ $(function () {
         $content.slideToggle(500, function () {
             //execute this after slideToggle is done
             //change text of header based on visibility of content div
-            
+
             $header.text(function () {
                 //change text based on condition
                 return $content.is(":visible") ? "Свернуть" : "Показать все Mercedes-Benz";
@@ -186,7 +196,7 @@ $(function () {
         $content.slideToggle(500, function () {
             //execute this after slideToggle is done
             //change text of header based on visibility of content div
-            
+
             $header.text(function () {
                 //change text based on condition
                 return $content.is(":visible") ? "Свернуть" : "Показать все Toyota";
@@ -203,7 +213,7 @@ $(function () {
         $content.slideToggle(500, function () {
             //execute this after slideToggle is done
             //change text of header based on visibility of content div
-            
+
             $header.text(function () {
                 //change text based on condition
                 return $content.is(":visible") ? "Свернуть" : "Показать все Lexus";
@@ -227,7 +237,7 @@ $(document).ready(function () {
 
 var initPhotoSwipeFromDOM = function (gallerySelector) {
 
-    // parse slide data (url, title, size ...) from DOM elements 
+    // parse slide data (url, title, size ...) from DOM elements
     // (children of gallerySelector)
     var parseThumbnailElements = function (el) {
         var thumbElements = el.childNodes,
@@ -242,7 +252,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
             figureEl = thumbElements[i]; // <figure> element
 
-            // include only element nodes 
+            // include only element nodes
             if (figureEl.nodeType !== 1) {
                 continue;
             }
@@ -373,7 +383,11 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
                     pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
                     rect = thumbnail.getBoundingClientRect();
 
-                return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+                return {
+                    x: rect.left,
+                    y: rect.top + pageYScroll,
+                    w: rect.width
+                };
             }
 
         };
@@ -381,7 +395,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
         // PhotoSwipe opened from URL
         if (fromURL) {
             if (options.galleryPIDs) {
-                // parse real index when custom PIDs are used 
+                // parse real index when custom PIDs are used
                 // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
                 for (var j = 0; j < items.length; j++) {
                     if (items[j].pid == index) {
