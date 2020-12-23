@@ -21,7 +21,7 @@ gulp.task('browser-sync', function() {
         open: false,
         // online: false, // Work Offline Without Internet Connection
         // port: 9000,
-        tunnel: true, tunnel: "tuning-tagil", // Demonstration page: http://projectname.localtunnel.me
+        // tunnel: true, tunnel: "tuning-tagil", // Demonstration page: http://projectname.localtunnel.me
     })
 });
 
