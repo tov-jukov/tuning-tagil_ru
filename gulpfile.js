@@ -38,7 +38,7 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
     return gulp.src([
             'app/libs/jquery/dist/jquery.min.js',
-            'app/libs/html5shiv/dist/html5shiv.min.js',
+            // 'app/libs/html5shiv/dist/html5shiv.min.js',
             // 'app/libs/MasonJS/dist/mason.min.js',
             // 'app/libs/mosaic/js/mosaic.js',
             'app/libs/photoswipe/dist/photoswipe.js',
