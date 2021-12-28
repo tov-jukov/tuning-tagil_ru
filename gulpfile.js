@@ -1,89 +1,150 @@
-var syntax = 'sass'; // Syntax: sass or scss;
+let preprocessor = 'sass', // Preprocessor (sass, less, styl); 'sass' also work with the Scss syntax in blocks/ folder.
+		fileswatch   = 'html,htm,txt,json,md,woff2' // List of files extensions for watching & hard reload
 
-var gulp         = require('gulp'),
-    gutil        = require('gulp-util'),
-    sass         = require('gulp-sass'),
-    browserSync  = require('browser-sync'),
-    concat       = require('gulp-concat'),
-    uglify       = require('gulp-uglify'),
-    cleancss     = require('gulp-clean-css'),
-    rename       = require('gulp-rename'),
-    autoprefixer = require('gulp-autoprefixer'),
-    notify       = require('gulp-notify'),
-    rsync        = require('gulp-rsync');
+import pkg from 'gulp'
+const { gulp, src, dest, parallel, series, watch } = pkg
 
-gulp.task('browser-sync', function() {
-    browserSync({
-        server: {
-            baseDir: 'app'
-        },
-        notify: false,
-        open: false,
-        // online: false, // Work Offline Without Internet Connection
-        // port: 9000,
-        // tunnel: true, tunnel: "tuning-tagil", // Demonstration page: http://projectname.localtunnel.me
-    })
-});
+import browserSync   from 'browser-sync'
+import bssi          from 'browsersync-ssi'
+import ssi           from 'ssi'
+import webpackStream from 'webpack-stream'
+import webpack       from 'webpack'
+import TerserPlugin  from 'terser-webpack-plugin'
+import gulpSass      from 'gulp-sass'
+import dartSass      from 'sass'
+import sassglob      from 'gulp-sass-glob'
+const  sass          = gulpSass(dartSass)
+import less          from 'gulp-less'
+import lessglob      from 'gulp-less-glob'
+import styl          from 'gulp-stylus'
+import stylglob      from 'gulp-noop'
+import postCss       from 'gulp-postcss'
+import cssnano       from 'cssnano'
+import autoprefixer  from 'autoprefixer'
+import imagemin      from 'gulp-imagemin'
+import changed       from 'gulp-changed'
+import concat        from 'gulp-concat'
+import rsync         from 'gulp-rsync'
+import del           from 'del'
 
-gulp.task('styles', function() {
-    return gulp.src('app/' + syntax + '/**/*.' + syntax + '')
-        .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
-        .pipe(rename({ suffix: '.min', prefix: '' }))
-        .pipe(autoprefixer(['last 20 versions'])) //15
-        .pipe(cleancss({ level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-        .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.stream())
-});
+function browsersync() {
+	browserSync.init({
+		server: {
+			baseDir: 'app/',
+			middleware: bssi({ baseDir: 'app/', ext: '.html' })
+		},
+		ghostMode: { clicks: false },
+		notify: false,
+		online: true,
+		// tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
+	})
+}
 
-gulp.task('js', function() {
-    return gulp.src([
-            'app/libs/jquery/dist/jquery.min.js',
-            // 'app/libs/html5shiv/dist/html5shiv.min.js',
-            // 'app/libs/MasonJS/dist/mason.min.js',
-            // 'app/libs/mosaic/js/mosaic.js',
-            'app/libs/photoswipe/dist/photoswipe.js',
-            'app/libs/photoswipe/dist/photoswipe-ui-default.js',
-            'app/libs/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-            'app/libs/twentytwenty/js/jquery.event.move.js',
-            'app/libs/twentytwenty/js/jquery.twentytwenty.js',
-            // 'app/libs/jquery.montage/jquery.montage.js',
-            'app/libs/smartlid/smartlid.js',
-            // 'app/libs/jquery-accordion/js/jquery.accordion.js',
-            'app/js/common.js' // Always at the end
-        ])
-        .pipe(concat('scripts.min.js'))
-        // .pipe(uglify()) // Mifify js (opt.)
-        .pipe(gulp.dest('app/js'))
-        .pipe(browserSync.reload({ stream: true }))
-});
+function scripts() {
+	return src(['app/js/*.js', '!app/js/*.min.js'])
+		.pipe(webpackStream({
+			mode: 'production',
+			performance: { hints: false },
+			plugins: [
+				new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery', 'window.jQuery': 'jquery' }), // jQuery (npm i jquery)
+			],
+			module: {
+				rules: [
+					{
+						test: /\.m?js$/,
+						exclude: /(node_modules)/,
+						use: {
+							loader: 'babel-loader',
+							options: {
+								presets: ['@babel/preset-env'],
+								plugins: ['babel-plugin-root-import']
+							}
+						}
+					}
+				]
+			},
+			optimization: {
+				minimize: true,
+				minimizer: [
+					new TerserPlugin({
+						terserOptions: { format: { comments: false } },
+						extractComments: false
+					})
+				]
+			},
+		}, webpack)).on('error', function handleError() {
+			this.emit('end')
+		})
+		.pipe(concat('app.min.js'))
+		.pipe(dest('app/js'))
+		.pipe(browserSync.stream())
+}
 
-gulp.task('rsync', function() {
-    return gulp.src('app/**')
-        .pipe(rsync({
-            root: 'app/',
-            hostname: 'username@yousite.com',
-            destination: 'yousite/public_html/',
-            // include: ['*.htaccess'], // Includes files to deploy
-            exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
-            recursive: true,
-            archive: true,
-            silent: false,
-            compress: true
-        }))
-});
+function styles() {
+	return src([`app/styles/${preprocessor}/*.*`, `!app/styles/${preprocessor}/_*.*`])
+		.pipe(eval(`${preprocessor}glob`)())
+		.pipe(eval(preprocessor)({ 'include css': true }))
+		.pipe(postCss([
+			autoprefixer({ grid: 'autoplace' }),
+			cssnano({ preset: ['default', { discardComments: { removeAll: true } }] })
+		]))
+		.pipe(concat('app.min.css'))
+		.pipe(dest('app/css'))
+		.pipe(browserSync.stream())
+}
 
-// gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
-//     gulp.watch('app/' + syntax + '/**/*.' + syntax + '', ['styles']);
-//     gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-//     gulp.watch('app/*.html', browserSync.reload)
-// });
+function images() {
+	return src(['app/images/src/**/*'])
+		.pipe(changed('app/images/dist'))
+		.pipe(imagemin())
+		.pipe(dest('app/images/dist'))
+		.pipe(browserSync.stream())
+}
 
-// gulp.task('default', ['watch']);
+function buildcopy() {
+	return src([
+		'{app/js,app/css}/*.min.*',
+		'app/images/**/*.*',
+		'!app/images/src/**/*',
+		'app/fonts/**/*'
+	], { base: 'app/' })
+	.pipe(dest('dist'))
+}
 
-gulp.task('watch', function() {
-        gulp.watch('app/' + syntax + '/**/*.' + syntax + '', gulp.parallel ('styles'));
-        gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel ('js'));
-        gulp.watch('app/*.html', browserSync.reload)
-    });
+async function buildhtml() {
+	let includes = new ssi('app/', 'dist/', '/**/*.html')
+	includes.compile()
+	del('dist/parts', { force: true })
+}
 
-    gulp.task('default', gulp.parallel('watch', 'styles', 'js', 'browser-sync') );
+async function cleandist() {
+	del('dist/**/*', { force: true })
+}
+
+function deploy() {
+	return src('dist/')
+		.pipe(rsync({
+			root: 'dist/',
+			hostname: 'username@yousite.com',
+			destination: 'yousite/public_html/',
+			// clean: true, // Mirror copy with file deletion
+			include: [/* '*.htaccess' */], // Included files to deploy,
+			exclude: [ '**/Thumbs.db', '**/*.DS_Store' ],
+			recursive: true,
+			archive: true,
+			silent: false,
+			compress: true
+		}))
+}
+
+function startwatch() {
+	watch(`app/styles/${preprocessor}/**/*`, { usePolling: true }, styles)
+	watch(['app/js/**/*.js', '!app/js/**/*.min.js'], { usePolling: true }, scripts)
+	watch('app/images/src/**/*', { usePolling: true }, images)
+	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload)
+}
+
+export { scripts, styles, images, deploy }
+export let assets = series(scripts, styles, images)
+export let build = series(cleandist, images, scripts, styles, buildcopy, buildhtml)
+export default series(scripts, styles, images, parallel(browsersync, startwatch))

@@ -1,9 +1,6 @@
-/node_modules/
-/dist/
-/.vscode/
+/**/node_modules/
 /.git/
-/app/css/
-/**/_backstage
-/**/package-lock.json
 /**/Thumbs.db
 /**/*.DS_Store
+/**/package-lock.json
+/**/debug.log

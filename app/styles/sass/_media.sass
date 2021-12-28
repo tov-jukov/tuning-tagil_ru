@@ -1,0 +1,471 @@
+// @import "vars"
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+  .top-line
+    .phone
+      // padding-top: 5px
+      margin-top: 10px
+      font-size: 32px
+      ul
+        text-align: center
+
+    .smm
+      .menu-trigger
+        display: block
+        border-bottom: 1px #1b1b1b solid
+        // background-color: green
+        nav ul
+          li
+            display: block
+            // border-top: 1px #79896D solid
+            height: 32px
+            display: none
+        ul li
+          border: 0
+
+    .kontakty
+      padding-top: 25px
+      padding-bottom: 10px
+      font-size: 5px
+
+// ≥768px
++media-breakpoint-down(sm)
+
+  .smm
+    .menu-trigger
+      display: block
+      border-bottom: 1px #1b1b1b solid
+      // background-color: green
+      nav ul
+        li
+          display: block
+                // border-top: 1px #79896D solid
+          display: none
+        ul li
+          border: 0
+
+    .one
+      height: 450px
+      .w-background-video, .background-video
+        height: 450px
+        .vbg-text
+          top: 25%
+          font-size: 42px
+          line-height: 45px
+    .one-work-inner
+      .vopros
+        margin-top: 20px
+        margin-bottom: 20px
+        height: 360px
+        .vopros-box
+          height: 100%
+          paddig-bottom: 20px
+          p
+            text-align: center
+            padding-bottom: 20px
+        .garant-farkop
+          height: 820px
+          ul
+            font-size: 25px
+            li
+              font-size: 25px
+        .choice
+          height: 800px
+          background-color: red
+          ul
+            font-size: 25px
+            color: red
+            li
+              font-size: 25px
+
+// ≥576px
++media-breakpoint-down(xs)
+
+  // .one
+  //  background-color: #000
+
+  h2,h3
+    font-size: 28px
+    line-height: 40px
+    span
+      white-space: normal
+
+    .top-line
+      padding: calc( $gutter / 4 ) 0 calc( $gutter / 4 )
+      .logo
+        img
+          height: 68px
+          width: auto
+        .phone
+          // padding-top: 5px
+          margin-top: 10px
+          font-size: 32px
+          ul
+            text-align: center
+            // margin-left: 15px
+    .smm
+      .menu-trigger
+        display: block
+        // background-color: green
+        border-bottom: 1px #1b1b1b solid
+        nav ul
+          li
+            display: block
+            // border-top: 1px #79896D solid
+            display: none
+        ul li
+          border: 0
+
+    .one
+      height: 300px
+
+      .w-background-video, .background-video
+        height: 300px
+
+        .vbg-text
+          top: 6%
+          font-size: 34px
+          line-height: 36px
+          padding-top: 20px
+          padding-bottom: 35px
+          p
+            padding-bottom: 12px
+            .button-red
+              font-size: 34px
+              line-height: 40px
+
+        .next
+          top: 75%
+          left: 42%
+
+    .card
+      margin-bottom: calc( $gutter / 2 )
+      &-top-head
+        height: $gutter
+
+    .three
+      // height: 100vh
+      .yamap-wrap
+        height: 400px
+        padding: 0
+        margin: 0
+        .as
+          // position: absolute
+          bottom: 0
+          height: 100px
+          // background-color: red
+          background: rgba(0, 0, 0, 0.5)
+          padding-top: 5px
+          // width: 100%
+          ul
+            li
+              // list-style: none
+              // margin-bottom: 10px
+              font-size: 12px
+              font-family: oswald-exlight , sans-serif
+              // text-transform: uppercase
+              // font-weight: bold
+              i
+                margin-right: 15px
+                margin-left: -30px
+    .one-work-inner
+      .call-price
+        height: 50px
+        margin-bottom: $gutter
+        .button-red
+          font-size: 28px
+          line-height: 40px
+        .logo-left-right
+          text-align: center
+
+        .farkop-one
+          height: 300px
+          // background: red
+          .bg-pattern
+            height: 320px
+            .farkop-bg-text
+              // height: 250px
+              p
+                font-size: 28px
+                line-height: 30px
+        .dovodchiki-one
+          height: 400px
+          .bg-pattern
+            height: 400px
+            .dovodchiki-bg-text
+              // height: 250px
+              p
+                font-size: 32px
+                line-height: 32px
+                padding-bottom: 0px
+
+                &.warning
+                  font-size: 16px
+                  line-height: 20px
+
+        .garant-farkop
+          height: 700px
+
+        .profit-farkop
+          button
+            font-size: 25px
+
+        .fc-bg-txt
+          img
+            height: 80px
+            width: auto
+        .principle
+          .button-red
+            font-size: 20px
+        .slogan
+          font-size: 18px
+          margin-top: calc($gutter / 3)
+          line-height: calc($gutter * 1.05)
+        .profit
+          // margin-top: -40px
+          .profitBox
+            min-height: 200px
+        .zakaz
+          .zz-bg
+            background: none
+
+        .bonus
+          .garant-stamp
+            opacity: .2
+            .bonus-line
+              margin-left: -15px
+              font-size: 20px
+              line-height: 28px
+              padding-bottom: 15px
+              i
+                display: inline-block
+                padding-right: 10px
+                span
+                  font-size: 16px
+            .garant-slogan
+              li
+                padding-left: 55px
+        .choice
+          height: 850px
+
+    .onglass-one
+      height: 400px
+      h1
+        font-size: 34px
+        line-height: 36px
+        .button-red
+          font-size: 34px
+          line-height: 40px
+        .phone-h1
+          font-size: 38px
+
+    .onglass-how-works
+      .how-works__item
+        .item-text
+          font-size: 1.2rem
+          line-height: 1.4rem
+        .note
+          font-size: 1.2rem
+          line-height: 1.5rem
+    .onglass-profit
+      .profit__card
+        margin-bottom: $gutter*0.8
+        .item-text
+          font-size: 1.06rem
+
+    .onglass-price
+      h2
+        margin-bottom: $gutter*2
+        table.onglass-price__table
+          tbody td
+            font-size: 0.8rem
+            thead
+              th
+                font-size: 0.8rem
+                padding: 5px
+    .onglass-whyus
+      h2
+        margin-bottom: $gutter
+        .onglass-whyus__card
+          margin-bottom: $gutter*0.95
+            // height: 85px
+          .onglass-whyus__text
+            // height: 85px
+            font-size: 1.06rem
+            line-height: 1.5rem
+                // background-color: red
+
+    .ixsound-one
+      h1
+        color: #fff
+        font-size: 34px
+        line-height: 36px
+        .phone-h1
+          font-size: 38px
+        .warning
+          margin-top: $gutter*1.5
+    .ixsound-two
+      .profitBox
+        height: 240px
+
+    .ixsound-two
+      .profitBox
+        .wrap
+          height: 200px
+          flex-wrap: wrap
+          justify-content: center
+          .profit-content
+            text-align: center
+
+    footer
+      font-family: oswald-exlight , sans-serif
+      .logo
+        text-align: center
+        img
+          width: 260px
+        .footer-mail, .footer-time, .footer-address
+          font-size: 13px
+          line-height: 30px
+
+        .footer-phone
+          font-size: 12px
+          margin-left: -4px
+          span
+            padding-bottom: 0px
+            ul
+              li
+                padding-bottom: 1px
+                a
+                  font-size: 12px
+
+        .footer-address
+          p
+            font-size: 12px
+            line-height: 20px
+        .copyleft-ms
+          font-size: 11px
+          line-height: 20px
+
+        ul
+          padding: 0
+
+        .footer-menu
+          padding-bottom: 15px
+
+        .social
+          margin-top: 10px
+          padding-bottom: 15px
+          text-align: center!important
+          // padding-top: 5px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+  .one-work-inner
+    .logo-left-right
+      text-align: left
+      .logo-right-left
+        text-align: right
+        // .choice
+        //  height: 1000px
+        //  .choice-list
+        //   color: red
+        //   font-size: 20px
+    .profit
+      margin-top: -40px
+
+    .ixsound-one
+      h1
+        color: #fff
+        font-size: 50px
+
+    .ixsound-four
+      .ixsound-four-two
+        img
+          margin: 0 auto
+    .ixsound-five
+      .ixsound-five-list
+        font-size: 22px
+        line-height: 40px
+        background-color: red
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+    // .one-work-inner
+    //  h2
+    //   color: red
+    //   &:after
+    //    content: "-LX"
+
+// /* Horizontal masonry bricks on desktop-sized screen
+
+  .masonry-brick--h
+    &:nth-child(4n+1)
+      width: 200px
+      &:nth-child(4n+2)
+        width: 250px
+        &:nth-child(4n+3)
+          width: 120px
+        &:nth-child(4n+4)
+          width: 280px
+
+    // /* Adjusting vertical masonry height on desktop-sized screen
+
+    .masonry--v
+      max-height: 1600px
+
+    // /* Vertical masonry bricks on desktop-sized screen
+
+    .masonry-brick--v
+      width: 33.33333%
+
+// @media screen and (min-device-aspect-ratio: 16/9) and (max-height: 768px), screen and (min-device-aspect-ratio: 16/10) and (max-height: 768px)
+
+@media screen and (device-aspect-ratio: 1336/768)
+  .one
+    height: 74vh
+        // background-color: red
+    .w-background-video
+      height: 74vh
+      .background-video
+        height: 74vh
+        .vbg-text
+          font-size: 60px
+          line-height: 60px
+            // color: blue
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) and (min-resolution: 120dpi)
+  .one
+    height: 620px
+    .w-background-video
+      height: 620px
+      .background-video
+        height: 620px
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) and (min-resolution: 100dpi)
+  .one
+    height: 74vh
+        // background-color: red
+    .w-background-video
+      height: 74vh
+      .background-video
+        height: 74vh
+        .vbg-text
+          font-size: 60px
+          line-height: 60px
