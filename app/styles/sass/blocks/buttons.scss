@@ -1,0 +1,32 @@
+.button-red {
+    position: relative;
+    display: inline;
+    // width: 8em;
+    // height: 68px;
+    font-size: 40px;
+    font-family: $default-font;
+    text-transform: uppercase;
+    line-height: 50px;
+    line-height: 2.5em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    padding: 10px 24px 10px 24px;
+    // border: 2px solid #F64C2B;
+    border-radius: 5px;
+    // box-shadow: 0 0 0 60px rgba(0, 0, 0, 0) inset, 0.1em 0.1em 0.2em #800;
+    // background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+    background-color: $btn;
+    transition: all .15s ease;
+
+    &:active {
+        top: .04em;
+        // left: .04em;
+        // box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.05) inset;
+        box-shadow: 0 2px 0 darken($btn, 20);
+        transform: translateY(2px);
+    }
+}
