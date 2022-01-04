@@ -1,0 +1,177 @@
+.two {
+    height: auto;
+    background-color: #fff;
+    padding: 30px 0;
+
+    .wrap-line3d {
+        color: #000;
+        position: relative;
+
+        .line3d {
+            position: relative;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: green;
+            z-index: 250;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 30px;
+                width: 100%;
+                height: 17px;
+                background-size: contain;
+                background: url(../img/bottom-bg.png) no-repeat top center;
+                z-index: 250;
+            }
+        }
+    }
+
+    .card {
+        margin-bottom: 60px;
+        border: none;
+
+        .card-text {
+            color: #000;
+            font-size: 26px;
+            text-transform: uppercase;
+            line-height: .5rem;
+            min-height: 100px;
+        }
+    }
+
+    .card-top-head {
+        height: 78px;
+        width: 100%;
+        display: table;
+
+        .card-block {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    .card-hover {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: #fff;
+        background-color: rgba(170, 7, 76, 0.9);
+        overflow: hidden;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+
+        &.fade-in {
+            -webkit-transition: opacity 150ms;
+            -o-transition: opacity 150ms;
+            transition: opacity 150ms;
+        }
+
+        &.zoom-in {
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: opacity .3s, -webkit-transform 0s .3s;
+            transition: opacity .3s, -webkit-transform 0s .3s;
+            -o-transition: opacity .3s, transform 0s .3s;
+            transition: opacity .3s, transform 0s .3s;
+            transition: opacity 0.3s, transform 0s 0.3s, -webkit-transform 0s 0.3s;
+        }
+
+        &.slide-down {
+            height: 0;
+            -webkit-transition: opacity .3s, height 0s .3s;
+            -o-transition: opacity .3s, height 0s .3s;
+            transition: opacity 0.3s, height 0s 0.3s;
+        }
+    }
+
+    .card-hover-content {
+        padding: 1.5rem;
+    }
+
+    .has-card-hover {
+        &:hover .card-hover {
+            &.fade-in {
+                opacity: 1;
+            }
+
+            &.zoom-in {
+                opacity: 1;
+                -webkit-transition: -webkit-transform 450ms;
+                transition: -webkit-transform 450ms;
+                -o-transition: transform 450ms;
+                transition: transform 450ms;
+                transition: transform 450ms, -webkit-transform 450ms;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+
+            &.slide-down {
+                opacity: 1;
+                height: 100%;
+                -webkit-transition: height .3s;
+                -o-transition: height .3s;
+                transition: height 0.3s;
+            }
+        }
+
+        position: relative;
+        cursor: pointer;
+    }
+
+    .card-img-with-frame {
+        padding: 1rem;
+        background: #fff;
+
+        &.card-img-top {
+            padding-bottom: 10px;
+        }
+
+        &.card-img-bottom {
+            padding-top: 0;
+        }
+    }
+
+    .card-with-transparent-card-block {
+        background: 0 0;
+        border-color: transparent;
+
+        .card-img-bottom,
+        .card-img-top {
+            border: 1px solid rgba(0, 0, 0, 0.125);
+        }
+
+        .card-img-with-frame {
+            &.card-img-top {
+                padding-bottom: 1rem;
+            }
+
+            &.card-img-bottom {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .crd-img {
+        img {
+            -webkit-transition: all .4s linear 0s;
+            -o-transition: all .4s linear 0s;
+            transition: all .4s linear 0s;
+            z-index: 220;
+        }
+
+        &:hover img {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+        }
+    }
+}

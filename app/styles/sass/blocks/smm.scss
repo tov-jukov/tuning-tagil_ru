@@ -1,0 +1,46 @@
+.smm {
+    text-align: center;
+    padding: 0;
+
+    nav {
+        width: 100%;
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            display: inline-block;
+            border-top: 0;
+            border-right: 1px solid #fff;
+            border-bottom: 0;
+            border-left: 0;
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+
+    .menu-trigger {
+        display: none;
+        color: #f8ecc2;
+    }
+
+    a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding: 4px 20px;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: rgba(254, 210, 191, 0);
+            background-image: -o-radial-gradient(center center, ellipse 120px 25px, #f94900 0, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+            background-image: radial-gradient(ellipse 120px 25px at center center, #f94900 0, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+            background-image: -ms-radial-gradient(center center, 120px 25px, #f94900 0, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.top-line {
+    padding: 15px 0 0;
+
+    .logo {
+        text-align: center;
+
+        img {
+            height: 80px;
+            width: auto;
+        }
+    }
+
+    i {
+        font-size: 21px;
+    }
+
+    .phone {
+        font-size: 22px;
+        margin-top: 32px;
+
+        ul {
+            padding: 0;
+            text-align: center;
+
+            li {
+                list-style-type: none;
+            }
+        }
+
+        i {
+            margin: 0 10px 0;
+        }
+    }
+}
+
+.social {
+    margin-top: 32px;
+    font-size: 21px;
+
+    li {
+        display: inline-block;
+        text-decoration: none;
+
+        a {
+            color: #fff;
+        }
+
+        i {
+            font-size: 21px;
+            margin: 0 10px 0;
+        }
+    }
+}
+
+.top-menu {
+    margin-top: 10px;
+    background-color: #000;
+    text-align: center;
+
+    a {
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    li,
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sf-menu {
+        margin: auto;
+        display: inline-block;
+        float: none;
+        font-size: 22px;
+
+        li {
+            background-color: transparent;
+
+            &:hover {
+                background-color: rgba(254, 210, 191, 0);
+                background-image: -o-radial-gradient(center center, ellipse 120px 25px, #f94900 0, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+                background-image: radial-gradient(ellipse 120px 25px at center center, #f94900 0, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+                background-image: -ms-radial-gradient(center center, 120px 25px, #f94900 0, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            a {
+                color: #fff;
+                border-bottom: none;
+                border-top: none;
+                border-top-width: 0;
+                border-left-color: #333;
+                padding: 0 20px 0;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
